@@ -1,0 +1,343 @@
+%% The first command in your LaTeX source must be the \documentclass command.
+%%
+%% Options:
+%% twocolumn : Two column layout.
+%% hf: enable header and footer.
+\documentclass[
+% twocolumn,
+% hf,
+]{ceurart}
+
+%%
+%% One can fix some overfulls
+\sloppy
+
+%%
+%% Minted listings support 
+%% Need pygment <http://pygments.org/> <http://pypi.python.org/pypi/Pygments>
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{threeparttable}
+\graphicspath{ {./img/} }
+%% auto break lines
+\lstset{breaklines=true}
+
+% \newcommand{\newrev}[1]{{\textbf{{\color{blue}#1}}}}
+\newcommand{\newrev}[1]{{{#1}}}
+
+\newcommand{\CellWithForceBreak}[2][c]{
+\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% Rights management information.
+%% CC-BY is default license.
+\copyrightyear{2022}
+\copyrightclause{Copyright for this paper by its authors.
+  Use permitted under Creative Commons License Attribution 4.0
+  International (CC BY 4.0).}
+
+%%
+%% This command is for the conference information
+\conference{To be decided}
+
+%%
+%% The "title" command
+\title{An Analytical Framework for Knowledge Wealth of Knowledge Graphs}
+
+% \tnotemark[1]
+% \tnotetext[1]{You can use this document as the template for preparing your
+%   publication. We recommend using the latest version of the ceurart style.}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+\author[1]{TBD}[%
+% orcid=0000-0002-0877-7063,
+email=tbd@ui.ac.id,
+% url=https://yamadharma.github.io/,
+]
+% \cormark[1]
+% \fnmark[1]
+\author[1]{TBD}[%
+% orcid=0000-0002-0877-7063,
+email=tbd@ui.ac.id,
+% url=https://yamadharma.github.io/,
+]
+% \cormark[1]
+% \fnmark[1]
+\address[1]{Faculty of Computer Science, Universitas Indonesia, Depok, Indonesia}
+
+\author[2]{TBD}[%
+% orcid=0000-0001-7116-9338,
+email=tbd@catapa.com,
+% url=https://kmitd.github.io/ilaria/,
+]
+% \fnmark[1]
+\address[2]{CATAPA, Jakarta, Indonesia}
+
+\author[3]{TBD}[%
+% orcid=0000-0002-9421-8566,
+email=tbd@gdplabs.id,
+% url=http://conceptbase.sourceforge.net/mjf/,
+]
+% \fnmark[1]
+\address[3]{GDP Labs, Jakarta, Indonesia}
+
+%% Footnotes
+% \cortext[1]{Corresponding author.}
+% \fntext[1]{These authors contributed equally.}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+Along with the rapid development of data volumes, the need for machine-readable data is inevitable. As a result, the use of knowledge graph data structures becomes more popular. With its development, quality aspects of a knowledge graph need to be considered, one of which is knowledge wealth: the amount of information contained in a knowledge graph. A high level of knowledge wealth in a knowledge graph may indicate the high quality of a knowledge graph; conversely, a low level of knowledge wealth can be a sign of poor quality of a knowledge graph. However, there is no formal way to define knowledge wealth and how to measure and analyze it. This study proposes a framework to analyze knowledge wealth and the level of knowledge imbalance in the RDF knowledge graph by seeing how the knowledge wealth of an entity class is spread over the knowledge graph using statistical measures and visualization. In addition, this framework also helps to identify entity groups based on the level of wealth in their class, finds the best theoretical distribution that fits best to knowledge wealth distribution, performs clustering on classes based on the shape of knowledge wealth distribution, and detects bias in a knowledge graph. To evaluate this framework, some use cases were conducted on several classes on Wikidata. It is hoped that the results of this study can assist in researching knowledge wealth in the knowledge graph and be used to optimize the efforts of editing and developing knowledge graph projects by the contributors.
+\end{abstract}
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+\begin{keywords}
+  Knowledge graphs \sep
+  knowledge wealth \sep
+  knowledge imbalance analysis
+\end{keywords}
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+
+%% include motivating scenario
+\section{Introduction}
+
+Our study proposes a formal model of knowledge wealth in the RDF knowledge graph by seeing how the knowledge wealth of an entity class is spread over the knowledge graph using statistical measures and visualization. In addition, a comprehensive analytical framework is also contructed that would give insights about the wealth of a class, the inequality between classes, and similarity of class distributions. To evaluate this framework, some use cases were conducted on \textbf{several <here change to exact number>} classes on Wikidata.
+
+\section{Related Work}
+\paragraph{Data Completeness Profiling} Wisesa et al. (2019) presented ProWD, a framework and web application tool for profiling the completeness of Wikidata. It is used to provide insight on degree of attribute completeness of a class in Wikidata. The visualization provided in the we dashboard is equipped with single, compare, or multidimensional view to help in analyzing the facet at entity or class level.
+
+\paragraph{Imbalance and Gap in Wikidata}
+- Refo: Gini index
+
+
+- Nio: gap property
+Ramadizsa1 et al. (2023) introduced the concept of gap properties that helps to characterize class-level knowledge gaps within knowledge graphs. The framework adapts association rule mining to determine ...
+
+
+\section{Knowledge Wealth Analytics Framework}
+
+\subsection{Wealth Formal Model}
+Knowledge graphs follow Resource Description Framework (RDF) as a means of data organization. Data is stored in the form of triple \((S, p, o)\); a combination of a subject \(S\), a predicate \(p\), and an object \(o\) which can be visualized as nodes and directed-arc diagrams. For example, the statement "William Shakespeare's notable work is Romeo and Juliet" is mapped to the triple (\textit{WilliamShakespeare}, \textit{notableWork}, \textit{RomeoAndJuliet}).
+
+There are 3 kind of nodes: IRIs, literals, and blank nodes. A triple is in the form of \((S, p, o) ∈ G) \cap (I \cup B) \times I \times (I \cup B \cup L) \) where \(I\) is the node with type IRIs, \(B\) is the node with type of blank node, and \(L\) is the node with type of literals.
+
+\subsubsection{Class}
+In this study, we re-use the class model defined by Ramadizsa1 et al. (2023). A class is a group of entities that are the subject of the study. \textit{Human}, \textit{film}, and \textit{taxon} are some examples of class. In general, entity \(S\) is an instance of class \(C\) is expressed by the triple (\(S\), \textit{instanceOf}, \(C\)). We can get a more narrow class inside the defined class by specifying additional conditions, each consisting of a particular property and value associated with it. Example of such conditions for human class is \textit{gender} with associated value \textit{male}, while example for a country would be \textit{continent} with value \textit{Asia}. For instance, the class of human with gender male that lived during English Renaissance is queried using
+\[
+    (?S, \{(?S, instanceOf, Human), (?S, gender, male), (?S, timePeriod, EnglishRenaissance)\})
+\]
+
+\subsubsection{Entity-Level Wealth: Knowledge Wealth Type and Definition}
+
+\begin{figure}
+     \centering
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[scale=.3]{Wealth Type 1}
+         \caption{Illustration of bag of properties and set of properties}
+         \label{fig:wealth-type1}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[scale=.3]{Wealth Type 2}
+         \caption{Illustration of 3 types of property: object, literal, ID}
+         \label{fig:wealth-type2}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[scale=.3]{Wealth Type 3}
+         \caption{Illustration of incoming link vs. outgoing link}
+         \label{fig:wealth-type3}
+     \end{subfigure}
+     \caption{Three simple graphs}
+     \label{fig:three graphs}
+\end{figure}
+
+Let \(S\) be any entity in a knowledge graph \(G\). We quantify the wealth of entity \(S\) in \(G\) as the amount of information about \(S\) available in \(G\). Thus, the knowledge wealth of an entity is defined by the number of properties associated/linked to it. For example, the wealth of William Shakespeare (Q692) in Wikidata counts all triples describing Q692 in Wikidata, including those detailing his family, occupation, image, and so on.
+
+There are several notion on how to calculate the knowledge wealth of an entity: (1) wealth based on the (non-)uniqueness of individual property; (2) wealth based on type of property; and (3) wealth based on the direction of the link. The wealth of \(S\) with regard to graph \(G\) for each wealth category is denoted by \(W\), formalized and explained as follows.
+
+\paragraph{Wealth based on the (non-)uniqueness of individual properties}
+The first measure of the knowledge wealth of \(S\) is bag of properties---the cardinality of set of all triples that has \(S\) in their subject position. In this definition, the triples \((S, p_1, o_1)\) and \((S, p_1, o_2)\) account for a wealth of 1 each, thus both have a total of 2.
+Let \(N_{bag}(S,G)\) be a set that comprises all pair of predicate/property and object \((p,o)\) that is connected to \(S\). Then \(W_{bag}(S, G)\) is the cardinality of \(N_{bag}(S,G)\).
+\[
+    N_{bag}(S,G) = \{(p, o) | (S, p, o) ∈ G\}
+\]
+\[
+    W_{bag}(S,G) = |N_{bag}(S)|
+\]
+
+Another way of measuring the wealth is by counting the number of distinct properties describing the entity, or set of properties. By this way, we are capturing the variety of information about an entity. In contrast to bag of properties, in set of properties \((S, p_1, o_1)\) and \((S, p_1, o_2)\) would be regarded as the "same" information because of the identical property \(p_1\), thus they only account for a total wealth of 1. Let \(N_{set}(S,G)\) be a set that comprises all predicate/property \((p\) that is connected to \(S\). Then \(W_{set}(S, G)\) is the cardinality of \(N_{set}(S,G)\).
+\[
+    N_{set}(S, G) = \{p | \exists o, (S, p, o) ∈ G\}
+\]
+\[
+    W_{set}(S, G) = |N_{set}(S,G)|
+\]
+
+By the above definition, the wealth of entity \(S\) in \autoref{fig:wealth-type1} is 3 and 2, using bag of properties and set of properties respectively.
+It is intuitive that the first measure will always give higher (or at least, equal) amount of wealth compared to the second. Set of property will have an upper bound of number of unique property, while bag of property does not have any upper bound. Moreover, using bag of properties, a large number of triples having the same property may inflate the wealth substantially--though this is not necessarily a problem nor an advantage. Set of properties might be more suitable if the main concern is the presence of properties, instead of the abundance of information it contains. We will take William Shakespeare (Q692) in Wikidata as an example. It is reasonable if property like  \textit{date of birth} (P569) to be treated using set of properties, but for a well-known playwright and poet, we shall expect the property \textit{notable work} (P800) to incorporate all or most of his well-known works. If only few works registered in \(G\) despite he has dozens of works, then we might conclude the entity is poor. For this case, treating the property using the notion of set is not preferable because it will fail to capture the aforementioned poor condition, while blatantly using bag of properties might skew the wealth amount. Due to this, the notion of (non-)uniqueness can be extended to a weighted form. The weight is given independently for each property and can be defined in such a way that is most appropriate for the nature of the property. Example of definition for weight are threshold function and inverse of median.
+
+Let \(w_i\) be the weight of property \(p_i\) in graph \(G\). Let \(N_{bag}(S,G,p_i)\) be a set that comprises all pair  \((o,p_i)\), that is, property \(p_i\) and an object that is connected to \(S\). Then \(W_{weighted}(S, G)\) is the sum of \(N_{bag}(S,G,p_i)\) multiplied by the associated weight \(h_i\).
+
+\textit{how can we formalize wi to be the function of set(amount of pi in class C in G)??}
+\[
+    \forall p_i, h_i = f(....)
+\]
+\[
+    N_{bag}(S,G,p_i) = \{(p_i, o) | (S, p_i, o) ∈ G\}
+\]
+\[
+    W_{weighted}(S, G) = \sum_i |N_{bag}(S,G,p_i)| * h_i
+\]
+
+\autoref{fig:wealth-weighted} shows how the notion of weighted wealth can be calculated. Let's define \(h_1 = 1/median\) and \(h_2 = 1\). For property \(p_1\), \({1, 2, 2, 4}\) list all sorted amount of information contributed from \(p_1\) in each individual entity from \(S_1\) to \(S_4\), from which we get \(h_1 = 1/median = 1/2\). With the above definition, \(W_{weighted}(S1, G) = 2\), \(W_{weighted}(S2, G) = 2\), \(W_{weighted}(S3, G) = 3.5\), \(W_{weighted}(S1, G) = 1.5\).
+
+=====> OR (alternative of weighted, or generalized form of Wealth based on the (non-)uniqueness of individual properties)
+
+=====> \(T_i\) is a multiset \(T_i = ... \) -> isinya list semua kontribusi wealth dari property \(p_i\) pada seluruh entity \(S\) pada class \(C\) di graph \(G\) -> keuntungannya disini kita jadi bisa punya fungsi konstan, sehingga bisa catter definisi set, bag, dan weighted secara bersamaan.
+
+Let \(S_1\), \(S_2\), ... \(S_m\) be \(m\) distinct entities in graph \(G\), which all of them collectively create a class \(C\). Let \(N_{bag}(S_j,G,p_i)\) be a set that comprises all pair of a particular property \(p_i\) and object, \((p_i,o)\), that is connected to \(S_j\). We define \(T_{C,i}\) a multiset consisted of the number of non-unique properties of all entities of \(C\) contributed from property \(p_i\), i.e., cardinality of \(N_{bag}(S_j,G,p_i)\). Let \(f\) be a multivariate function with 2 arguments: \(T_{C,i}\) and \(N_{bag}(S_j,G,p_i)\). \(w_{j,i}\) is the amount of wealth of \(S_j\) attributed from property \(p_i\), which is calculated by function \(f\). Then \(W_{}(S_j, G)\) is the sum of \(w_{j,i}\).
+
+
+\[
+    N_{bag}(S_j,G,p_i) = \{(p_i,o) | (S_j, p_i, o) ∈ G\}
+\]
+\[
+    T_{C,i} = \{|N_{bag}(S_j,G,p_i)| | S_j ∈ C\}
+\]
+\[
+    w_{j,i} = f(T_{C,i}, |N_{bag}(S_j,G,p_i)|)
+\]
+\[
+    W_{}(S_j, G) = \sum_i w_{j,i}
+\]
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=.3]{Wealth Weighted}
+    \caption{Illustration of ...}
+    \label{fig:wealth-weighted}
+\end{figure}
+
+\paragraph{Wealth based on type of property}
+Object properties are other entities besides \(S\) that is connected with \(S\) through a property \(p\). Wealth of \(S\) using bag of properties with only considering the object properties is defined as:
+\[
+    W_{bag, object}(S, G) = |\{(p,o) | ((S, p, o) ∈ G) \cap (o ∈ I)\}|
+\]
+Data properties are non-object properties that is connected with \(S\) through a property \(p\). Wealth of \(S\) using bag of properties with only considering the data properties is defined as:
+\[
+    W_{bag, data}(S, G) = |\{(p,o) | ((S, p, o) ∈ G) \cap (o ∈ L)\}|
+\]
+
+An ID is a special type of property to identify an entity in an external source. In Wikidata, an ID is element of subclass of \textit{Wikidata property for an identifier} (Q19847637). Just like any other property, an ID is connected with \(S\) through a property \(p\). Let  \(C_{ID,G}\) be a set comprising ID property in graph \(G\). Wealth of \(S\) using bag of properties with only considering the ID properties is defined as:
+\[
+    W_{bag, ID}(S, G) = |\{(p,o) | ((S, p, o) ∈ G) \cap (o ∈ I) \cap (o ∈ C_{ID,G})\}|
+\]
+
+\paragraph{Wealth based on the direction of the link}
+In outgoing link type of wealth, the properties that are used in the wealth calculation of an entity \(S\) are those obtained from link with outwards direction from that particular entity \(S\); that is where \(S\) appears to be the subject in the set of triples in graph \(G\). All types of wealth defined before use the notion of outgoing link.
+
+In incoming link type of wealth, the properties that are used in the wealth calculation of an entity \(S\) are those obtained from link with inwards direction to that particular entity \(S\); that is where \(S\) appears to be the object in the set of triples in graph \(G\). To illustrate, let \(N_{bag}(S)\) be a set that comprises all pair of object and predicate/property \((o,P)\) that is connected to \(S\) in incoming direction to \(S\) i.e., \(N_{bag}(S)\) = \(\{(o, p) | (o, p, S) ∈ G\}\). Then the wealth of \(S\) using bag of properties and the view of incoming link is notated as \(W_{bag, incoming}(S, G)\), and equal to the cardinality of \(N_{bag}(S)\).
+\[
+    N_{bag, incoming}(S, G) = \{(o,p) | (o, p, S) ∈ G\}
+\]
+\[
+    W_{bag, incoming}(S, G) = |N_{bag, incoming}(S, G)|
+\]
+
+Looking at in \autoref{fig:wealth-type3}, the wealth of entity \(S\) is 1 using outgoing link, which is from the triple \((S, p_1, o1)\). Its wealth is also 1 and using incoming link, which comes from the triple \((o2, p_2, S)\).
+
+Each definition above can be used simultaneously. For example, the wealth of entity \(S\) using set of properties, calculating object and data but not ID properties, and using the direction of outgoing link is denoted by \(W_{set, outgoing, (object \cup data) \cap ID^\complement}(S, G) = |N_{set, outgoing, (object \cup data) \cap ID^\complement}(S, G)|\) with \(N_{set, outgoing, (object \cup data) \cap ID^\complement}(S, G) = \{p | \exists o, (S, p, o) ∈ G, \cap (o ∈ ((I \cup L) \cap C_{ID,G}^\complement)\}\)
+
+\subsubsection{Class-Level Wealth}
+Let \(C\) be a class that consists of \(m\) distinct entities \(S_1\), \(S_2\), ... \(S_m\) in graph \(G\). The wealth of \(C\) can be be quantified using its contituent entities. It can be described by several measures, such as entity count, mean and median of its entities' wealth, and percentile of its entities's wealth. To illustrate, let a class \(C\) consists of 4 entities  \(S_1\), \(S_2\), \(S_3\), and \(S_4\) from \autoref{fig:wealth-weighted}. We may say class \(C\) has a total wealth of 4 when we look from count of entities.
+
+
+%% can be formal background and literature studies
+\subsection{Insight Model?}
+
+\textit{(Here, should we mention about EDA and simple measures we use in this study? i.e., mean, median mode, etc)}
+
+\paragraph{Exploratory Data Analysis (EDA): Descriptive Statistics Measures.} Descriptive statistics is concerned with the description and summarization of data. It is a summary of a dataset that helps to describe features of data quantitatively (Ross, 2019). To have a general view of wealth distribution of a class, we use the following measures:
+\begin{itemize}
+  \item measures of central tendency: mean, median, mode
+  \item measures of frequency: count, cumulative frequency/percentage
+  \item measures of position: quartile, percentile
+  \item measures of dispersion: minimum, maximum, range, interquartile range, standard deviation, coefficient of variation, kurtosis
+  \item measures of symmetry: skewness
+\end{itemize}
+
+
+\paragraph{Gini Coefficient}
+
+\paragraph{Lorenz Curve} Lorenz curve is a graphical representation of wealth inequality (The Lorenz Curve: What It Tells You About Economic Inequality, 2022). It shows how the wealth is cumulatively distributed, with data points sorted from the poorest to the richest. \textit{(Here, give the example of Lorenz Curve)}. 
+
+
+\section{Use Cases and Evaluation}
+
+\subsection{Bias in Wikidata}
+In this subchapter, analysis is conducted to see whether any particular entity group in Wikidata is underrepresented compared to others. There are 2 analysis done: gender bias and western bias.
+\input{chapters/gender bias}
+\input{chapters/western bias}
+
+\subsection{Effect of Type of Wealth on Gini Ratio}
+\input{chapters/wealth type on gini coef}
+
+\subsection{Proxy of Knowledge Wealth: Real-World Rankings}
+- Popularity
+- Movie IMDb
+- GDP, economic wealth
+- Personal net worth
+
+\subsection{(Tentative) Basics of Knowledge Wealth Comparison}
+
+\paragraph{Subclass-to-Subclass Wealth Comparison}
+\paragraph{Subclass-to-Superclass Wealth Comparison}
+\paragraph{Totally Different Classes Wealth Comparison}
+
+\subsection{(Tentative) Knowledge Wealth Evolution using Wikidata History}
+
+\subsection{(Tentative) Pareto Principle in Wikidata}
+
+\subsection{(Tentative)}
+This is additional, if possible. Based on WN notes to use statistical measures for machine learning
+
+\section{Discussion}
+
+TBD
+
+\section{Conclusions}
+
+TBD
+
+\begin{acknowledgments}
+
+TBD
+
+\end{acknowledgments}
+
+\bibliography{mybibliography}
+
+\end{document}
