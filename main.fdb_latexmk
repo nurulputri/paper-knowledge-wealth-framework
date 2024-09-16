@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1726412057.21314 "main.aux" "main.bbl" "main" 1726412057.52465 2
+["bibtex main"] 1726458866.74782 "main.aux" "main.bbl" "main" 1726458930.43659 2
   "./mybibliography.bib" 1726386482 7004 4323fb32874aea4dbff6c31a5599632e ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/elsarticle/elsarticle-num-names.bst" 1712688483 28896 b24eb82d1afd0a3fa7d82c6efbe1f559 ""
-  "main.aux" 1726412057.21067 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.aux" 1726458930.02313 19062 f61aaea657722245ee4b87f72437e283 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1726412053.91375 "/Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex" "main.pdf" "main" 1726412057.08648 2
-  "/Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex" 1726412053.26282 20937 f7120a2b8c6cb693e91e31247f24902b ""
+["pdflatex"] 1726458927.42154 "/Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex" "main.pdf" "main" 1726458930.43676 2
+  "/Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex" 1726458923.93532 20937 df8be21cc16a6c3fa12b1ff72b24d4ea ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc" 1667852677 3022 13dbae1db4ca7b6d6a3611a22a194cb8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.enc" 1667852677 3039 b94e5746763ffece6312a6e9abac298f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_nufysp.enc" 1667852677 3020 5d8857a1b98c2fe839d85dd536083a57 ""
@@ -93,6 +93,7 @@
   "/usr/local/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty" 1576015897 19007 15924f7228aca6c6d184b115f4baa231 ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/pdftex/glyphtounicode.tex" 1353199370 216747 92ec6cf8e39216b4894417b5aa6f057a ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty" 1593379760 20089 80423eac55aa175305d35b49e04fe23b ""
+  "/usr/local/texlive/2024/texmf-dist/tex/generic/stringenc/se-utf8.def" 1575152242 11635 4fd2019d04ad095a0b1bde5aaed4a70e ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/stringenc/stringenc.sty" 1575152242 21514 b7557edcee22835ef6b03ede1802dad4 ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty" 1576624663 7008 f92eaa0a3872ed622bbf538217cd2ab7 ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex" 1655411236 19231 27205ee17aaa2902aea3e0c07a3cfc65 ""
@@ -240,12 +241,13 @@
   "img/Wealth Type 2.png" 1726386482 250461 ba5570173cbebd07bdf2e5fdf092e78c ""
   "img/Wealth Type 3.png" 1726386482 45844 12fe17a5e221582f8e754d9c1f69c016 ""
   "img/Wealth Weighted.png" 1726386482 1209617 b24f6e41cf296356b8f2d4ad4961346a ""
-  "main.abs" 1726412055.33875 1536 280c04557451802b68bc45af031ec13c "pdflatex"
-  "main.aux" 1726412057.21067 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "main.bbl" 1726412057.52368 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
-  "main.out" 0 -1 0 "pdflatex"
-  "main.tex" 1726412053.26282 20937 f7120a2b8c6cb693e91e31247f24902b ""
-  "pdfa.xmpi" 1726412055.06692 5045 5f72bf722e60562b4077a5a395d4fbe4 "pdflatex"
+  "main.abs" 1726458928.76771 1536 280c04557451802b68bc45af031ec13c "pdflatex"
+  "main.aux" 1726458930.02313 19062 f61aaea657722245ee4b87f72437e283 "pdflatex"
+  "main.bbl" 1726458866.8752 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
+  "main.out" 1726458928.74555 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1726458923.93532 20937 df8be21cc16a6c3fa12b1ff72b24d4ea ""
+  "main.xmpdata" 1726458930.02596 529 b1d9d1572354753cb786f8ba279b7f86 "pdflatex"
+  "pdfa.xmpi" 1726458928.49166 6745 29a4691cf3784899a528a80a7bc68d17 "pdflatex"
   (generated)
   "main.abs"
   "main.aux"
@@ -255,3 +257,5 @@
   "main.xmpdata"
   "pdfa.xmpi"
   (rewritten before read)
+  "main.abs"
+  "pdfa.xmpi"
