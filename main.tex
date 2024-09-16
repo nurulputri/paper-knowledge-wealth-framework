@@ -251,9 +251,9 @@ Data properties are non-object properties that is connected with \(S\) through a
     W_{bag, data}(S, G) = |\{(p,o) | ((S, p, o) \in G) \cap (o \in L)\}|
 \]
 
-An ID is a special type of property to identify an entity in an external source. In Wikidata, an ID is element of subclass of \textit{Wikidata property for an identifier} (Q19847637). Just like any other property, an ID is connected with \(S\) through a property \(p\). Let  \(C_{ID,G}\) be a set comprising ID property in graph \(G\). Wealth of \(S\) using bag of properties with only considering the ID properties is defined as:
+An external ID is a special type of string that is used to represent an entity in an external source. In Wikidata, an ID is element of subclass of \textit{Wikidata property for an identifier} (Q19847637). Just like any other property, an ID is connected with \(S\) through a property \(p\). Let  \(C_{ID,G}\) be a set comprising ID property in graph \(G\). Wealth of \(S\) using bag of properties with only considering the ID properties is defined as:
 \[
-    W_{bag, ID}(S, G) = |\{(p,o) | ((S, p, o) \in G) \cap (o \in I) \cap (o \in C_{ID,G})\}|
+    W_{bag, ID}(S, G) = |\{(p,o) | ((S, p, o) \in G) \cap (o \in L) \cap (o \in C_{ID,G})\}|
 \]
 
 \paragraph{Wealth based on the direction of the link}
@@ -272,7 +272,7 @@ Looking at in \autoref{fig:wealth-type3}, the wealth of entity \(S\) is 1 using 
 Each definition above can be used simultaneously. For example, the wealth of entity \(S\) using set of properties, calculating object and data but not ID properties, and using the direction of outgoing link is denoted by \(W_{set, outgoing, (object \cup data) \cap ID^\complement}(S, G) = |N_{set, outgoing, (object \cup data) \cap ID^\complement}(S, G)|\) with \(N_{set, outgoing, (object \cup data) \cap ID^\complement}(S, G) = \{p | \exists o, (S, p, o) \in G, \cap (o \in ((I \cup L) \cap C_{ID,G}^\complement)\}\)
 
 \subsubsection{Class-Level Wealth}
-Let \(C\) be a class that consists of \(m\) distinct entities \(S_1\), \(S_2\), ... \(S_m\) in graph \(G\). The wealth of \(C\) can be be quantified using its contituent entities. It can be described by several measures, such as entity count, mean and median of its entities' wealth, and percentile of its entities's wealth. To illustrate, let a class \(C\) consists of 4 entities  \(S_1\), \(S_2\), \(S_3\), and \(S_4\) from \autoref{fig:wealth-weighted}. We may say class \(C\) has a total wealth of 4 when we look from count of entities.
+Let \(C\) be a class that consists of \(m\) distinct entities \(S_1\), \(S_2\), ... \(S_m\) in graph \(G\). The wealth of \(C\) can be be quantified using its constituent entities. It can be described by several measures, such as entity count, mean and median of its entities' wealth, and percentile of its entities's wealth. To illustrate, let a class \(C\) consists of 4 entities  \(S_1\), \(S_2\), \(S_3\), and \(S_4\) from \autoref{fig:wealth-weighted}. We may say class \(C\) has a total wealth of 4 when we look from count of entities.
 
 
 %% can be formal background and literature studies
