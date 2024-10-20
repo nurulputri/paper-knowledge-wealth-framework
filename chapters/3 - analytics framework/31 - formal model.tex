@@ -1,0 +1,95 @@
+\subsection{Wealth Formal Model}
+Knowledge graphs follow Resource Description Framework (RDF) as a means of data organization. Data is stored in the form of triple \((S, p, o)\); a combination of a subject \(S\), a predicate \(p\), and an object \(o\) which can be visualized as nodes and directed-arc diagrams. For example, the statement "William Shakespeare's notable work is Romeo and Juliet" is mapped to the triple (\textit{WilliamShakespeare}, \textit{notableWork}, \textit{RomeoAndJuliet}).
+
+There are 3 kind of nodes: IRIs, literals, and blank nodes. A triple is in the form of \((S, p, o) \in G) \cap (I \cup B) \times I \times (I \cup B \cup L) \) where \(I\) is the node with type IRIs, \(B\) is the node with type of blank node, and \(L\) is the node with type of literals.
+
+\subsubsection{Class}
+In this study, we re-use the class model defined by Ramadizsa1 et al. (2023). A class is a group of entities that are the subject of the study. \textit{Human}, \textit{film}, and \textit{taxon} are some examples of class. In general, entity \(S\) is an instance of class \(C\) is expressed by the triple (\(S\), \textit{instanceOf}, \(C\)). We can get a more narrow class inside the defined class by specifying additional conditions, each consisting of a particular property and value associated with it. Example of such conditions for human class is \textit{gender} with associated value \textit{male}, while example for a country would be \textit{continent} with value \textit{Asia}. For instance, the class of human with gender male that lived during English Renaissance is queried using
+\[
+    (?S, \{(?S, instanceOf, Human), (?S, gender, male), (?S, timePeriod, EnglishRenaissance)\})
+\]
+
+\subsubsection{Entity-Level Wealth: Knowledge Wealth Type and Definition}
+
+\begin{figure}
+     \centering
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[scale=.3]{Wealth Type 1}
+         \caption{Illustration of bag of properties and set of properties}
+         \label{fig:wealth-type1}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[scale=.3]{Wealth Type 2}
+         \caption{Illustration of 3 types of property: object, literal, ID}
+         \label{fig:wealth-type2}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[scale=.3]{Wealth Type 3}
+         \caption{Illustration of incoming link vs. outgoing link}
+         \label{fig:wealth-type3}
+     \end{subfigure}
+     \caption{Three simple graphs}
+     \label{fig:three graphs}
+\end{figure}
+
+Let \(S\) be any entity in a knowledge graph \(G\). We quantify the wealth of entity \(S\) in \(G\) as the amount of information about \(S\) available in \(G\). Thus, the knowledge wealth of an entity is defined by the number of properties associated/linked to it. For example, the wealth of William Shakespeare (Q692) in Wikidata counts all triples describing Q692 in Wikidata, including those detailing his family, occupation, image, and so on.
+
+There are several notion on how to calculate the knowledge wealth of an entity: (1) wealth based on the (non-)uniqueness of individual property; (2) wealth based on type of property; and (3) wealth based on the direction of the link. The wealth of \(S\) with regard to graph \(G\) for each wealth category is denoted by \(W\), formalized and explained as follows.
+
+\paragraph{Wealth based on the (non-)uniqueness of individual properties}
+The first measure of the knowledge wealth of \(S\) is bag of properties---the cardinality of set of all triples that has \(S\) in their subject position. In this definition, the triples \((S, p_1, o_1)\) and \((S, p_1, o_2)\) account for a wealth of 1 each, thus both have a total of 2.
+Let \(N_{bag}(S,G)\) be a set that comprises all pair of predicate/property and object \((p,o)\) that is connected to \(S\). Then \(W_{bag}(S, G)\) is the cardinality of \(N_{bag}(S,G)\).
+\[
+    N_{bag}(S,G) = \{(p, o) | (S, p, o) \in G\}
+\]
+\[
+    W_{bag}(S,G) = |N_{bag}(S)|
+\]
+
+Another way of measuring the wealth is by counting the number of distinct properties describing the entity, or set of properties. By this way, we are capturing the variety of information about an entity. In contrast to bag of properties, in set of properties \((S, p_1, o_1)\) and \((S, p_1, o_2)\) would be regarded as the "same" information because of the identical property \(p_1\), thus they only account for a total wealth of 1. Let \(N_{set}(S,G)\) be a set that comprises all predicate/property \((p\) that is connected to \(S\). Then \(W_{set}(S, G)\) is the cardinality of \(N_{set}(S,G)\).
+\[
+    N_{set}(S, G) = \{p | \exists o, (S, p, o) \in G\}
+\]
+\[
+    W_{set}(S, G) = |N_{set}(S,G)|
+\]
+
+By the above definition, the wealth of entity \(S\) in \autoref{fig:wealth-type1} is 3 and 2, using bag of properties and set of properties respectively.
+
+\paragraph{Wealth based on type of property}
+Object properties are other entities besides \(S\) that is connected with \(S\) through a property \(p\). Wealth of \(S\) using bag of properties with only considering the object properties is defined as:
+\[
+    W_{bag, object}(S, G) = |\{(p,o) | ((S, p, o) \in G) \cap (o \in I)\}|
+\]
+Data properties are non-object properties that is connected with \(S\) through a property \(p\). Wealth of \(S\) using bag of properties with only considering the data properties is defined as:
+\[
+    W_{bag, data}(S, G) = |\{(p,o) | ((S, p, o) \in G) \cap (o \in L)\}|
+\]
+
+An external ID is a special type of string that is used to represent an entity in an external source. In Wikidata, an ID is element of subclass of \textit{Wikidata property for an identifier} (Q19847637). Just like any other property, an ID is connected with \(S\) through a property \(p\). Let  \(C_{ID,G}\) be a set comprising ID property in graph \(G\). Wealth of \(S\) using bag of properties with only considering the ID properties is defined as:
+\[
+    W_{bag, ID}(S, G) = |\{(p,o) | ((S, p, o) \in G) \cap (o \in L) \cap (o \in C_{ID,G})\}|
+\]
+
+\paragraph{Wealth based on the direction of the link}
+In outgoing link type of wealth, the properties that are used in the wealth calculation of an entity \(S\) are those obtained from link with outwards direction from that particular entity \(S\); that is where \(S\) appears to be the subject in the set of triples in graph \(G\). All types of wealth defined before use the notion of outgoing link.
+
+In incoming link type of wealth, the properties that are used in the wealth calculation of an entity \(S\) are those obtained from link with inwards direction to that particular entity \(S\); that is where \(S\) appears to be the object in the set of triples in graph \(G\). To illustrate, let \(N_{bag}(S)\) be a set that comprises all pair of object and predicate/property \((o,P)\) that is connected to \(S\) in incoming direction to \(S\) i.e., \(N_{bag}(S)\) = \(\{(o, p) | (o, p, S) \in G\}\). Then the wealth of \(S\) using bag of properties and the view of incoming link is notated as \(W_{bag, incoming}(S, G)\), and equal to the cardinality of \(N_{bag}(S)\).
+\[
+    N_{bag, incoming}(S, G) = \{(o,p) | (o, p, S) \in G\}
+\]
+\[
+    W_{bag, incoming}(S, G) = |N_{bag, incoming}(S, G)|
+\]
+
+Looking at in \autoref{fig:wealth-type3}, the wealth of entity \(S\) is 1 using outgoing link, which is from the triple \((S, p_1, o1)\). Its wealth is also 1 and using incoming link, which comes from the triple \((o2, p_2, S)\).
+
+Each definition above can be used simultaneously. For example, the wealth of entity \(S\) using set of properties, calculating object and data but not ID properties, and using the direction of outgoing link is denoted by \(W_{set, outgoing, (object \cup data) \cap ID^\complement}(S, G) = |N_{set, outgoing, (object \cup data) \cap ID^\complement}(S, G)|\) with \(N_{set, outgoing, (object \cup data) \cap ID^\complement}(S, G) = \{p | \exists o, (S, p, o) \in G, \cap (o \in ((I \cup L) \cap C_{ID,G}^\complement)\}\)
+
+\subsubsection{Class-Level Wealth}
+Let \(C\) be a class that consists of \(m\) distinct entities \(S_1\), \(S_2\), ... \(S_m\) in graph \(G\). The wealth of \(C\) can be be quantified using its constituent entities. It can be described by several measures, such as entity count, mean and median of its entities' wealth, and percentile of its entities's wealth. To illustrate, let a class \(C\) consists of 4 entities  \(S_1\), \(S_2\), \(S_3\), and \(S_4\) from \autoref{fig:wealth-weighted}. We may say class \(C\) has a total wealth of 4 when we look from count of entities.

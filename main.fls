@@ -321,6 +321,9 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/libertinus-type1/T1Libertinus
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/libertinus-type1/T1LibertinusSerif-TLF.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/libertinus-type1/T1LibertinusSerif-TLF.fd
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Regular-tlf-t1.tfm
+INPUT ./main.aux
+INPUT ./main.aux
+INPUT main.aux
 OUTPUT main.aux
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -424,8 +427,14 @@ INPUT ./ceur-ws-logo.pdf
 INPUT ./ceur-ws-logo.pdf
 INPUT ./ceur-ws-logo.pdf
 INPUT ./ceur-ws-logo.pdf
+INPUT ./chapters/1 - introduction/1 - introduction.tex
+INPUT ./chapters/1 - introduction/1 - introduction.tex
+INPUT chapters/1 - introduction/1 - introduction.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Regular-tlf-t1.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Bold-tlf-t1.tfm
+INPUT ./chapters/2- related work/2 - related work.tex
+INPUT ./chapters/2- related work/2 - related work.tex
+INPUT chapters/2- related work/2 - related work.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Regular-tlf-t1.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
@@ -462,6 +471,12 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/Liber
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_rlktsf.enc
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSerif-Regular-tlf-t1.vf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Regular-tlf-t1--base.tfm
+INPUT ./chapters/3 - analytics framework/3 - analytics framework master.tex
+INPUT ./chapters/3 - analytics framework/3 - analytics framework master.tex
+INPUT chapters/3 - analytics framework/3 - analytics framework master.tex
+INPUT ./chapters/3 - analytics framework/31 - formal model.tex
+INPUT ./chapters/3 - analytics framework/31 - formal model.tex
+INPUT chapters/3 - analytics framework/31 - formal model.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Bold-tlf-t1.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
@@ -492,18 +507,21 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/Libert
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Bold-tlf-t1--base.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSans-Regular-tlf-t1.vf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Regular-tlf-t1--base.tfm
-INPUT ./img/Wealth Weighted.png
-INPUT ./img/Wealth Weighted.png
-INPUT ./img/Wealth Weighted.png
-INPUT ./img/Wealth Weighted.png
+INPUT ./chapters/3 - analytics framework/32 - insight model.tex
+INPUT ./chapters/3 - analytics framework/32 - insight model.tex
+INPUT chapters/3 - analytics framework/32 - insight model.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Regular-tlf-ts1.tfm
+INPUT ./chapters/4 - use case/4 - use case master.tex
+INPUT ./chapters/4 - use case/4 - use case master.tex
+INPUT chapters/4 - use case/4 - use case master.tex
+INPUT ./chapters/4 - use case/41 - bias/41 - bias master.tex
+INPUT ./chapters/4 - use case/41 - bias/41 - bias master.tex
+INPUT chapters/4 - use case/41 - bias/41 - bias master.tex
+INPUT ./chapters/4 - use case/41 - bias/411 - gender bias.tex
+INPUT ./chapters/4 - use case/41 - bias/411 - gender bias.tex
+INPUT chapters/4 - use case/41 - bias/411 - gender bias.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSerif-Regular-tlf-ts1.vf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Regular-tlf-ts1--base.tfm
-INPUT ./chapters/gender bias.tex
-INPUT ./chapters/gender bias.tex
-INPUT ./chapters/gender bias.tex
-INPUT ./chapters/gender bias.tex
-INPUT chapters/gender bias.tex
 INPUT ./img/Histogram of Wealth - Computer Scientist.png
 INPUT ./img/Histogram of Wealth - Computer Scientist.png
 INPUT ./img/Histogram of Wealth - Computer Scientist.png
@@ -520,11 +538,9 @@ INPUT ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Aver
 INPUT ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender.png
 INPUT ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender.png
 INPUT ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender.png
-INPUT ./chapters/western bias.tex
-INPUT ./chapters/western bias.tex
-INPUT ./chapters/western bias.tex
-INPUT ./chapters/western bias.tex
-INPUT chapters/western bias.tex
+INPUT ./chapters/4 - use case/41 - bias/412 - western bias.tex
+INPUT ./chapters/4 - use case/41 - bias/412 - western bias.tex
+INPUT chapters/4 - use case/41 - bias/412 - western bias.tex
 INPUT ./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png
 INPUT ./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png
 INPUT ./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png
@@ -533,11 +549,22 @@ INPUT ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Aver
 INPUT ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png
 INPUT ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png
 INPUT ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png
-INPUT ./chapters/wealth type on gini coef.tex
-INPUT ./chapters/wealth type on gini coef.tex
-INPUT ./chapters/wealth type on gini coef.tex
-INPUT ./chapters/wealth type on gini coef.tex
-INPUT chapters/wealth type on gini coef.tex
+INPUT ./chapters/4 - use case/42 - gini/42 - gini master.tex
+INPUT ./chapters/4 - use case/42 - gini/42 - gini master.tex
+INPUT chapters/4 - use case/42 - gini/42 - gini master.tex
+INPUT ./chapters/4 - use case/42 - gini/421 - wealth type on gini coef.tex
+INPUT ./chapters/4 - use case/42 - gini/421 - wealth type on gini coef.tex
+INPUT chapters/4 - use case/42 - gini/421 - wealth type on gini coef.tex
+INPUT ./chapters/5 - discussion/5 - discussion.tex
+INPUT ./chapters/5 - discussion/5 - discussion.tex
+INPUT chapters/5 - discussion/5 - discussion.tex
+INPUT ./img/Wealth Weighted.png
+INPUT ./img/Wealth Weighted.png
+INPUT ./img/Wealth Weighted.png
+INPUT ./img/Wealth Weighted.png
+INPUT ./chapters/6 - conclusion/6 - conclusion.tex
+INPUT ./chapters/6 - conclusion/6 - conclusion.tex
+INPUT chapters/6 - conclusion/6 - conclusion.tex
 INPUT ./main.bbl
 INPUT ./main.bbl
 INPUT main.bbl
