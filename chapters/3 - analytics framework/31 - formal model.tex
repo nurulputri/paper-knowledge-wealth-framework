@@ -4,10 +4,7 @@ Knowledge graphs follow Resource Description Framework (RDF) as a means of data 
 There are 3 kind of nodes: IRIs, literals, and blank nodes. A triple is in the form of \((s, p, o) \in G) \cap (I \cup B) \times I \times (I \cup B \cup L) \) where \(I\) is the node with type IRIs, \(B\) is the node with type of blank node, and \(L\) is the node with type of literals.
 
 \subsubsection{Class}
-In this study, we re-use the class model defined by Ramadizsa et al. (2023). A class is a group of entities that are the subject of the study. \textit{Human}, \textit{film}, and \textit{taxon} are some examples of class. In general, entity \(s\) is an instance of class \(C\) is expressed by the triple (\(s\), \textit{instanceOf}, \(C\)). We can get a more narrow class inside the defined class by specifying additional conditions, each consisting of a particular property and value associated with it. Example of such conditions for human class is \textit{gender} with associated value \textit{male}, while example for a country would be \textit{continent} with value \textit{Asia}. For instance, the class of human with gender male that lived during English Renaissance is queried using
-\[
-    (?s, \{(?s, instanceOf, Human), (?s, gender, male), (?s, timePeriod, EnglishRenaissance)\})
-\]
+In this study, we re-use the class model defined by Ramadizsa et al. (2023). A class is a group of entities that are the subject of the study. \textit{Human}, \textit{film}, and \textit{taxon} are some examples of class. In general, entity \(s\) is an instance of class \(C\) is expressed by the triple (\(s\), \textit{instanceOf}, \(C\)). We can get a more narrow class inside the defined class by specifying additional conditions, each consisting of a particular property and value associated with it. Example of such conditions for human class is \textit{gender} with associated value \textit{male}, while example for a country would be \textit{continent} with value \textit{Asia}. For instance, the class of human with gender male that lived during English Renaissance is queried using (\(?s\), \{(\(?s\), \textit{instanceOf}, \textit{human}), (\(?s\), \textit{gender}, \textit{male}), (\(?s\), \textit{timePeriod}, \textit{EnglishRenaissance})\}).
 
 \subsubsection{Entity-Level Wealth: Knowledge Wealth Type and Definition}
 
