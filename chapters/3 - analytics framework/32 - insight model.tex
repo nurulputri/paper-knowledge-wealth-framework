@@ -1,6 +1,4 @@
-\subsection{Insight Model?}
-
-\textit{(Here, should we mention about EDA and simple measures we use in this study? i.e., mean, median mode, etc)}
+\subsection{Insight Model}
 
 \paragraph{Exploratory Data Analysis (EDA): Descriptive Statistics Measures.} Descriptive statistics is concerned with the description and summarization of data. It is a summary of a dataset that helps to describe features of data quantitatively (Ross, 2019). To have a general view of wealth distribution of a class, we use the following measures:
 \begin{itemize}
@@ -13,5 +11,18 @@
 
 
 \paragraph{Gini Coefficient}
+Gini coefficient is a metric used to measure the economic wealth gaps between countries. A study by Akbar (2020) utilized the Gini coefficient to measure the level of knowledge imbalance in knowledge graphs, particularly Wikidata classes. To calculate the imbalance level of a Wikidata class using Gini coefficient, the researcher started by calculating the number of properties of each entity of that particular class and storing them in an array. The array will then be sorted in descending order, from the smallest to the largest i.e., \(y_{i} \geq y_{i+1} \forall i \in \{1, 2, ..., n\}\). The Gini coefficient will be calculated from the sorted array using the Gini coefficient formula below.
+
+\[G = 1 - \frac{1}{n^{2}\mu} \sum_{i=1}^{n} \sum_{j=1}^{n} Min(y_{i}, y_{j})\]
+\[G = 1 + \frac{1}{n} - \frac{1}{n^{2}\mu} - (y_{1} + 2y_{2} + ... + ny_{n})\]
+
+In economics context, \(n\) is the size of population of a country, $\mu$ is the average income, and \(y\) is an array containing data of each country's income. However, in the context of knowledge graph, \(n\) is the number of entities in the class, $\mu$ is the average knowledge wealth of the entities, and \(y\) is an array containing data of each entity's wealth, sorted in descending order.
+
+For example, let's say we have a class that consists of 10 entities. After counting the number of properties of each entities (using the notion of bag of property for wealth) and sorting them in descending order, we will have an array of \(y = [10,8,8,7,4,2,2,1,1,1]\). The length of the array is \(n = 10\) and the average wealth is \(\mu = 4.4\). Then, apply the Gini coefficient formula and we get \(G = 1 + \frac{1}{10} - \frac{2}{10^{2}\times4.4}(1\times10 + 2\times8 + ... + 10\times1) = 0.414\)
+
+For another another example, let's say we have another array of 10 entities \(z = [10, 9, 9, 9, 9, 9, 9, 9, 9, 5]\). By applying the same formula to z, we get a Gini coefficient value of \(0.052\).
+
+The Gini coefficient has a value between \(0\) and \(1\). The higher the coefficient value, the greater the imbalance level. The value of 0 is achieved when all observed entities have the same amount of wealth. The value of 1 occurs when all income is owned solely by one entity and this phenomenon expresses full inequality.
+
 
 \paragraph{Lorenz Curve} Lorenz curve is a graphical representation of wealth inequality (The Lorenz Curve: What It Tells You About Economic Inequality, 2022). It shows how the wealth is cumulatively distributed, with data points sorted from the poorest to the richest. \textit{(Here, give the example of Lorenz Curve)}. 
