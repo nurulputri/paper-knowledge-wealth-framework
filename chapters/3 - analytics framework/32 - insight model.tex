@@ -18,7 +18,7 @@ Gini coefficient is a metric used to measure the economic wealth gaps between co
 
 In economics context, \(n\) is the size of population of a country, $\mu$ is the average income, and \(y\) is an array containing data of each country's income. However, in the context of knowledge graph, \(n\) is the number of entities in the class, $\mu$ is the average knowledge wealth of the entities, and \(y\) is an array containing data of each entity's wealth, sorted in descending order.
 
-For example, let's say we have a class that consists of 10 entities. After counting the number of properties of each entities (using the notion of bag of property for wealth) and sorting them in descending order, we will have an array of \(y = [10,8,8,7,4,2,2,1,1,1]\). The length of the array is \(n = 10\) and the average wealth is \(\mu = 4.4\). Then, apply the Gini coefficient formula and we get \(G = 1 + \frac{1}{10} - \frac{2}{10^{2}\times4.4}(1\times10 + 2\times8 + ... + 10\times1) = 0.414\)
+For example, let's say we have a class that consists of 10 entities. After counting the number of properties of each entities (using the notion of bag of properties for wealth) and sorting them in descending order, we will have an array of \(y = [10,8,8,7,4,2,2,1,1,1]\). The length of the array is \(n = 10\) and the average wealth is \(\mu = 4.4\). Then, apply the Gini coefficient formula and we get \(G = 1 + \frac{1}{10} - \frac{2}{10^{2}\times4.4}(1\times10 + 2\times8 + ... + 10\times1) = 0.414\)
 
 For another another example, let's say we have another array of 10 entities \(z = [10, 9, 9, 9, 9, 9, 9, 9, 9, 5]\). By applying the same formula to z, we get a Gini coefficient value of \(0.052\).
 

@@ -1,27 +1,35 @@
-\subsection{Effect of Type of Wealth on Gini Coefficient}
+\subsection{Effect of Type of Wealth on Inequality Measure}
 
 % \input{chapters/4 - use case/42 - gini/421 - gini bag-set.tex}
 % \input{chapters/4 - use case/42 - gini/422 - gini object-literal-id.tex}
 % \input{chapters/4 - use case/42 - gini/423 - gini outgoing-incoming.tex}
 
+In this subchapter, analysis is done to see how each wealth type affects the level of inequality of Wikidata classes. There are 2 ways this is done--quantitatively using Gini coefficient and qualitatively using Lorenz curve. The analysis is performed on 8 Wikidata classes, in which 4 of them are human-related class while the other 4 are not.
+
+When looking at the notion of wealth using the characteristics of (non-)uniqueness of individual properties, it is intuitive that the measure of bag of properties will always give higher (or at least, equal) amount of wealth compared to the measure of set. Set of property will have an upper bound of number of unique property, while bag of properties does not have any upper bound. Moreover, using bag of properties, a large number of triples having the same property may inflate the wealth substantially--though this is not necessarily a problem nor an advantage. This characteristics has a direct impact on inequality measure and it well depicted on the value of Gini coefficient. From \autoref{table:gini-coef}, in all clasess, the Gini coefficient using bag of properties is always higher than of set of properties.
+
+- object, literal, ID: object tends to have lower inequality
+
+- outgoing, incoming: incoming shows very high Gini, this is because it is harder --> show the lorenz curve
+
 \begin{center}
     \small
     \begin{threeparttable}
-    \caption{Gini Coefficient}
-    \label{tab:gini bag-set}
-    \begin{tabular}{c c c | c c  c | c c } 
+    \caption{Knowledge Wealth Type on Gini Coefficient}
+    \label{table:gini-coef}
+    \begin{tabular}{c | c c | c c c | c c} 
     
     \toprule
         Class Name & \CellWithForceBreak{Gini \\ Bag} & \CellWithForceBreak{Gini \\ Set} & \CellWithForceBreak{Gini \\ Object} & \CellWithForceBreak{Gini \\ Literal} & \CellWithForceBreak{Gini \\ ID} & \CellWithForceBreak{Gini \\ Outgoing} & \CellWithForceBreak{Gini \\ Incoming} \\ [0.5ex] 
     \midrule
-        Historical painting & 0.22 & 0.14 & 0.26 & 0.50 & 0.50 & 0.22 & 0.86 \\
-        University & 0.44 & 0.41 & 0.29 & 0.50 & 0.53 & 0.44 & 0.91 \\
-        Sci-fi book & 0.32 & 0.22 & 0.30 & 0.36 & 0.60 & 0.32 & 0.82 \\
-        Memorial & 0.22 & 0.18 & 0.36 & 0.54 & 0.56 & 0.22 & 0.99 \\
         American researcher & 0.33 & 0.31 & 0.25 & 0.27 & 0.44 & 0.33 & 0.77 \\
         American singer & 0.40 & 0.39 & 0.20 & 0.30 & 0.40 & 0.40 & 0.82 \\
         Badminton player & 0.29 & 0.14 & 0.35 & 0.34 & 0.42 & 0.29 & 0.68 \\
         Computer scientist & 0.41 & 0.37 & 0.40 & 0.49 & 0.53 & 0.41 & 0.81 \\
+        Memorial & 0.22 & 0.18 & 0.36 & 0.54 & 0.56 & 0.22 & 0.99 \\
+        Historical painting & 0.22 & 0.14 & 0.26 & 0.50 & 0.50 & 0.22 & 0.86 \\
+        Sci-fi book & 0.32 & 0.22 & 0.30 & 0.36 & 0.60 & 0.32 & 0.82 \\
+        University & 0.44 & 0.41 & 0.29 & 0.50 & 0.53 & 0.44 & 0.91 \\
         [1ex]
     \bottomrule
     \end{tabular}
