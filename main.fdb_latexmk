@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1730173965.99668 "main.aux" "main.bbl" "main" 1730176162.80958 2
+["bibtex main"] 1730519865.13925 "main.aux" "main.bbl" "main" 1730520444.28554 2
   "./mybibliography.bib" 1726386482 7004 4323fb32874aea4dbff6c31a5599632e ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/elsarticle/elsarticle-num-names.bst" 1712688483 28896 b24eb82d1afd0a3fa7d82c6efbe1f559 ""
-  "main.aux" 1730176162.39928 19183 46d20fd344ffc4da600bb21c5d3e1eb8 "pdflatex"
+  "main.aux" 1730520443.87403 18761 f234bb28fcabadd85e81478f133c5c0f "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1730176159.69158 "/Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex" "main.pdf" "main" 1730176162.80976 2
+["pdflatex"] 1730520441.06973 "/Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex" "main.pdf" "main" 1730520444.28571 2
   "/Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex" 1730172826.72941 5016 15fee7f5d4f61ef59d4a0cda30430f42 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc" 1667852677 3022 13dbae1db4ca7b6d6a3611a22a194cb8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.enc" 1667852677 3039 b94e5746763ffece6312a6e9abac298f ""
@@ -238,8 +238,7 @@
   "chapters/4 - use case/41 - bias/41 - bias master.tex" 1729399474.64642 351 392050bb0a037c84f2d2eb584063ebf3 ""
   "chapters/4 - use case/41 - bias/411 - gender bias.tex" 1726386482 13264 1432fb8062ff71a1131d2bbeaeffddc4 ""
   "chapters/4 - use case/41 - bias/412 - western bias.tex" 1729399729.64174 6783 834cc15fbd4c074d253ef9578bfd7a72 ""
-  "chapters/4 - use case/42 - gini/42 - gini master.tex" 1729399397.71195 127 c9463a0f76bb2ffa131e4b8ba0c55637 ""
-  "chapters/4 - use case/42 - gini/421 - wealth type on gini coef.tex" 1729399381.18482 51 4552ea8b5a879432557b847430eff7f7 ""
+  "chapters/4 - use case/42 - gini/42 - gini master.tex" 1730520437.4879 1592 4797d64c925656215b2c24199d99a578 ""
   "chapters/5 - discussion/5 - discussion.tex" 1729400185.19946 4179 b4fff9b74655ef193dadde09281af213 ""
   "chapters/6 - conclusion/6 - conclusion.tex" 1729399983.66689 26 ca978933d259a8d7aaf3fbb035862c07 ""
   "img/Histogram of Wealth - American Singer.png" 1726386482 51237 97df0793b581a7e586436bcca2387ef2 ""
@@ -252,13 +251,13 @@
   "img/Wealth Type 2.png" 1726386482 250461 ba5570173cbebd07bdf2e5fdf092e78c ""
   "img/Wealth Type 3.png" 1726386482 45844 12fe17a5e221582f8e754d9c1f69c016 ""
   "img/Wealth Weighted.png" 1726386482 1209617 b24f6e41cf296356b8f2d4ad4961346a ""
-  "main.abs" 1730176161.05746 1536 280c04557451802b68bc45af031ec13c "pdflatex"
-  "main.aux" 1730176162.39928 19183 46d20fd344ffc4da600bb21c5d3e1eb8 "pdflatex"
-  "main.bbl" 1730173966.10615 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
-  "main.out" 1730176161.0357 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.abs" 1730520442.56722 1536 280c04557451802b68bc45af031ec13c "pdflatex"
+  "main.aux" 1730520443.87403 18761 f234bb28fcabadd85e81478f133c5c0f "pdflatex"
+  "main.bbl" 1730519865.23816 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
+  "main.out" 1730520442.54564 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "main.tex" 1730172826.72941 5016 15fee7f5d4f61ef59d4a0cda30430f42 ""
-  "main.xmpdata" 1730176162.40221 554 89640ff5b54f6a904f989df738ce864e "pdflatex"
-  "pdfa.xmpi" 1730176160.81212 6770 0ccc24ea4c37ec7ced21df026c0f6772 "pdflatex"
+  "main.xmpdata" 1730520443.87684 554 89640ff5b54f6a904f989df738ce864e "pdflatex"
+  "pdfa.xmpi" 1730520442.28102 6770 d75fdae13c13d2af5bf84396dc1d8f7d "pdflatex"
   (generated)
   "main.abs"
   "main.aux"

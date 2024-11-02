@@ -1,3 +1,33 @@
-\subsection{Effect of Type of Wealth on Gini Ratio}
+\subsection{Effect of Type of Wealth on Gini Coefficient}
 
-\input{chapters/4 - use case/42 - gini/421 - wealth type on gini coef.tex}
+% \input{chapters/4 - use case/42 - gini/421 - gini bag-set.tex}
+% \input{chapters/4 - use case/42 - gini/422 - gini object-literal-id.tex}
+% \input{chapters/4 - use case/42 - gini/423 - gini outgoing-incoming.tex}
+
+\begin{center}
+    \small
+    \begin{threeparttable}
+    \caption{Gini Coefficient}
+    \label{tab:gini bag-set}
+    \begin{tabular}{c c c | c c  c | c c } 
+    
+    \toprule
+        Class Name & \CellWithForceBreak{Gini \\ Bag} & \CellWithForceBreak{Gini \\ Set} & \CellWithForceBreak{Gini \\ Object} & \CellWithForceBreak{Gini \\ Literal} & \CellWithForceBreak{Gini \\ ID} & \CellWithForceBreak{Gini \\ Outgoing} & \CellWithForceBreak{Gini \\ Incoming} \\ [0.5ex] 
+    \midrule
+        Historical painting & 0.22 & 0.14 & 0.26 & 0.50 & 0.50 & 0.22 & 0.86 \\
+        University & 0.44 & 0.41 & 0.29 & 0.50 & 0.53 & 0.44 & 0.91 \\
+        Sci-fi book & 0.32 & 0.22 & 0.30 & 0.36 & 0.60 & 0.32 & 0.82 \\
+        Memorial & 0.22 & 0.18 & 0.36 & 0.54 & 0.56 & 0.22 & 0.99 \\
+        American researcher & 0.33 & 0.31 & 0.25 & 0.27 & 0.44 & 0.33 & 0.77 \\
+        American singer & 0.40 & 0.39 & 0.20 & 0.30 & 0.40 & 0.40 & 0.82 \\
+        Badminton player & 0.29 & 0.14 & 0.35 & 0.34 & 0.42 & 0.29 & 0.68 \\
+        Computer scientist & 0.41 & 0.37 & 0.40 & 0.49 & 0.53 & 0.41 & 0.81 \\
+        [1ex]
+    \bottomrule
+    \end{tabular}
+    \begin{tablenotes}
+        \footnotesize
+        This table shows the comparison of Gini coefficient of 8 Wikidata classes
+    \end{tablenotes}
+    \end{threeparttable}
+\end{center}
