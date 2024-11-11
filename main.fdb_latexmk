@@ -1,15 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1731296278.0289 "main.aux" "main.bbl" "main" 1731296278.18402 2
+["bibtex main"] 1731296661.66275 "main.aux" "main.bbl" "main" 1731296661.75746 2
   "./mybibliography.bib" 1726386482 7004 4323fb32874aea4dbff6c31a5599632e ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/elsarticle/elsarticle-num-names.bst" 1712688483 28896 b24eb82d1afd0a3fa7d82c6efbe1f559 ""
-  "main.aux" 1731296278.02577 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.aux" 1731296661.65939 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1731296274.48058 "/Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex" "main.pdf" "main" 1731296277.91128 2
-  "/Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex" 1731296274.68588 5027 27c55400f8c79689deec98ee71e06db2 ""
-  "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
+["pdflatex"] 1731296658.31186 "/Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex" "main.pdf" "main" 1731296661.54299 2
+  "/Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex" 1731296658.04973 4871 db2a65c9b798b7f14cc95a670b150b9b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc" 1667852677 3022 13dbae1db4ca7b6d6a3611a22a194cb8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.enc" 1667852677 3039 b94e5746763ffece6312a6e9abac298f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_nufysp.enc" 1667852677 3020 5d8857a1b98c2fe839d85dd536083a57 ""
@@ -41,7 +40,6 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm" 1136768653 1116 25a7bf822c58caf309a702ef79f4afbb ""
-  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/fontawesome5/fa5free1regular.tfm" 1622837620 1204 3c27bf26105e0c1f2d31dba92f1c652d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Bold-tlf-t1--base.tfm" 1667852677 1760 ee81e76d710e32743d934eb2cea95d1a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Bold-tlf-t1.tfm" 1667852677 19208 33f4a8e6c4eac25e4b20544036294fee ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Regular-tlf-t1--base.tfm" 1667852677 1728 0ebc2d36c0051d37db5a971a42569585 ""
@@ -65,7 +63,6 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb" 1248133631 33366 60462f3d16c3d0f024f1f856e64b09cd ""
-  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb" 1651520503 58496 99faf1e070706908acf67d1cfee72833 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Bold.pfb" 1667852677 653527 72b80044df24883e5578e14e7f7fcd47 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Regular.pfb" 1667852677 611408 8076ed7c853b786fc606765a750f504b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Bold.pfb" 1667852677 646447 bb0bcdca9b677023a14bb3031ff48fac ""
@@ -142,7 +139,6 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic-helper.sty" 1651520503 1796 6d3390e7a3f2a0f63ce89532aa30ac20 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping.def" 1651520503 107808 07e47606922c76b1824e149c54155c4c ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty" 1651520503 8112 16dbb19fca3f2df864fea49874356f35 ""
-  "/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd" 1651520503 980 1b42613a5245ed252c04030af746d737 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/fontaxes/fontaxes.sty" 1595539507 14310 41fdb35c51be792ddf00696848d0cfef ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/footmisc/footmisc.sty" 1688586963 21399 e9fa1517a82f349507e998594ef20b82 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
@@ -255,13 +251,13 @@
   "img/Wealth Type 2.png" 1726386482 250461 ba5570173cbebd07bdf2e5fdf092e78c ""
   "img/Wealth Type 3.png" 1726386482 45844 12fe17a5e221582f8e754d9c1f69c016 ""
   "img/Wealth Weighted.png" 1726386482 1209617 b24f6e41cf296356b8f2d4ad4961346a ""
-  "main.abs" 1731296276.09958 1536 280c04557451802b68bc45af031ec13c "pdflatex"
-  "main.aux" 1731296278.02577 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "main.bbl" 1731296278.1827 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
+  "main.abs" 1731296659.81769 1536 280c04557451802b68bc45af031ec13c "pdflatex"
+  "main.aux" 1731296661.65939 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.bbl" 1731296661.75652 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
   "main.out" 0 -1 0 "pdflatex"
-  "main.tex" 1731296274.68588 5027 27c55400f8c79689deec98ee71e06db2 ""
-  "main.xmpdata" 1731296277.43251 564 c0173e06b513b158597ab595d3a5fc3d "pdflatex"
-  "pdfa.xmpi" 1731296275.82404 6770 9c2001a35d7d9190b7de99d605fbf384 "pdflatex"
+  "main.tex" 1731296658.04973 4871 db2a65c9b798b7f14cc95a670b150b9b ""
+  "main.xmpdata" 1731296661.12225 539 56265870b036ee4450d6ecdaaa088c8f "pdflatex"
+  "pdfa.xmpi" 1731296659.54083 6780 a9b49339d10a2b6f2f010adec7a917bf "pdflatex"
   (generated)
   "main.abs"
   "main.aux"
