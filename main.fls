@@ -582,3 +582,29 @@ INPUT ./img/Gini - Incoming.png
 INPUT ./chapters/5 - discussion/5 - discussion.tex
 INPUT ./chapters/5 - discussion/5 - discussion.tex
 INPUT chapters/5 - discussion/5 - discussion.tex
+INPUT ./chapters/6 - conclusion/6 - conclusion.tex
+INPUT ./chapters/6 - conclusion/6 - conclusion.tex
+INPUT chapters/6 - conclusion/6 - conclusion.tex
+INPUT ./main.bbl
+INPUT ./main.bbl
+INPUT main.bbl
+INPUT main.aux
+INPUT ./main.out
+INPUT ./main.out
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Bold.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Regular.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Italic.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Regular.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb
