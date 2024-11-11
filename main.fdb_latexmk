@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1731296661.66275 "main.aux" "main.bbl" "main" 1731296661.75746 2
+["bibtex main"] 1731298467.98894 "main.aux" "main.bbl" "main" 1731298468.10028 2
   "./mybibliography.bib" 1726386482 7004 4323fb32874aea4dbff6c31a5599632e ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/elsarticle/elsarticle-num-names.bst" 1712688483 28896 b24eb82d1afd0a3fa7d82c6efbe1f559 ""
-  "main.aux" 1731296661.65939 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.aux" 1731298467.98676 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1731296658.31186 "/Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex" "main.pdf" "main" 1731296661.54299 2
+["pdflatex"] 1731298442.94358 "/Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex" "main.pdf" "main" 1731298445.96368 2
   "/Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex" 1731296658.04973 4871 db2a65c9b798b7f14cc95a670b150b9b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc" 1667852677 3022 13dbae1db4ca7b6d6a3611a22a194cb8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.enc" 1667852677 3039 b94e5746763ffece6312a6e9abac298f ""
@@ -232,7 +232,7 @@
   "chapters/1 - introduction/1 - introduction.tex" 1729397992.23593 594 cbddc5139feac70767800f0d455ade7f ""
   "chapters/2 - related work/2 - related work.tex" 1730530936.7622 734 e3e5bc6eefcb60970dd41ca7fafb2d34 ""
   "chapters/3 - analytics framework/3 - analytics framework master.tex" 1729398973.8613 174 ddcd0200d7b5660761965725b10dabae ""
-  "chapters/3 - analytics framework/31 - formal model.tex" 1730176156.23452 8686 e1e0658dd1a7c144953ef955faacd6ce ""
+  "chapters/3 - analytics framework/31 - formal model.tex" 1731298441.9428 9014 c31481eea21ca6830bf4a22b8ab24b50 ""
   "chapters/3 - analytics framework/32 - insight model.tex" 1730527918.68574 3398 9186b7a1afd2ccbc82e285c24253c486 ""
   "chapters/4 - use case/4 - use case master.tex" 1730520635.57146 808 6fc753a2a9deb2fe875600d807eb9651 ""
   "chapters/4 - use case/41 - bias/41 - bias master.tex" 1729399474.64642 351 392050bb0a037c84f2d2eb584063ebf3 ""
@@ -251,13 +251,13 @@
   "img/Wealth Type 2.png" 1726386482 250461 ba5570173cbebd07bdf2e5fdf092e78c ""
   "img/Wealth Type 3.png" 1726386482 45844 12fe17a5e221582f8e754d9c1f69c016 ""
   "img/Wealth Weighted.png" 1726386482 1209617 b24f6e41cf296356b8f2d4ad4961346a ""
-  "main.abs" 1731296659.81769 1536 280c04557451802b68bc45af031ec13c "pdflatex"
-  "main.aux" 1731296661.65939 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "main.bbl" 1731296661.75652 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
+  "main.abs" 1731298444.29673 1536 280c04557451802b68bc45af031ec13c "pdflatex"
+  "main.aux" 1731298467.98676 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.bbl" 1731298468.09932 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
   "main.out" 0 -1 0 "pdflatex"
   "main.tex" 1731296658.04973 4871 db2a65c9b798b7f14cc95a670b150b9b ""
-  "main.xmpdata" 1731296661.12225 539 56265870b036ee4450d6ecdaaa088c8f "pdflatex"
-  "pdfa.xmpi" 1731296659.54083 6780 a9b49339d10a2b6f2f010adec7a917bf "pdflatex"
+  "main.xmpdata" 1731298445.56391 539 56265870b036ee4450d6ecdaaa088c8f "pdflatex"
+  "pdfa.xmpi" 1731298444.0518 6755 61f92a0cb9cb6a65b4a768c167b7bad2 "pdflatex"
   (generated)
   "main.abs"
   "main.aux"
