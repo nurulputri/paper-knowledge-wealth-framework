@@ -1,5 +1,17 @@
 \section{Discussion}
 
+% add to discussion 
+% - Wikidata = entity-centric knowledge graph, dimana bentuknya (s,p,o) dengan s sebagai subject of interest. jadi memang expected bahwa outgoing banyak 
+% sedangkan incoming mostly justru 0.
+% - sedrastis ini perbedaan incoming vs outgoing. incoming link is underestimated. given o, what is the (s, p)
+% - kasih contoh: 2 entitas yang secara outgoing mirip, tapi incoming-nya jomplang (1 kaya 1 miskin)
+\paragraph{Generality of Framework}
+The framework that is proposed in this study is applicable to any kind of knowledge graph. However, the library that we built for experimentation is specifically for Wikidata, because the query service, structure, and response is very unique for each knowledge graph. If further experimentation is to be conducted for other knowledge graph, then the library needs to be modified.
+
+\paragraph{Issue of Incoming Link}
+Wikidata is an entity-centric knowledge graph which means in the editathon efforts, the subject \(s\) is always be the subject of interest and the starting point to be edited by contributors. It is very unlikely that the opposite approach is done, that is, an object \((o)\) is given and a pair subject and property \((s, p)\) is to be searched. Not only from the contributors, the platform itself does not support the later view. This explains the phenomenon that we observed in \autoref{wealth & gini} regarding outgoing and incoming link. With existing subject-centric point of view, the number of new outgoing link introduced to the knowledge graph will grow in a much higher rate as opposed to incoming link. As a result, incoming link will be very rare, or even only present in certain entites.
+
+\paragraph{Weight of Property}
 %Content dump for weighted form
 
 % It is intuitive that the measure of bag of properties will always give higher (or at least, equal) amount of wealth compared to the measure of set. Set of property will have an upper bound of number of unique property, while bag of property does not have any upper bound. Moreover, using bag of properties, a large number of triples having the same property may inflate the wealth substantially--though this is not necessarily a problem nor an advantage.

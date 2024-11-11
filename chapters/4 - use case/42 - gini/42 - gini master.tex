@@ -1,4 +1,4 @@
-\subsection{Effect of Type of Wealth on Inequality Measure}
+\subsection{Effect of Type of Wealth on Inequality Measure} \label{wealth & gini}
 
 % \input{chapters/4 - use case/42 - gini/421 - gini bag-set.tex}
 % \input{chapters/4 - use case/42 - gini/422 - gini object-literal-id.tex}
@@ -6,17 +6,19 @@
 
 In this subchapter, analysis is done to see how each wealth type affects the level of inequality of Wikidata classes. There are 2 ways this is done--quantitatively using Gini coefficient and qualitatively using Lorenz curve. The analysis is performed on 8 Wikidata classes, in which 4 of them are human-related class while the other 4 are not.
 
-When looking at the notion of wealth using the characteristics of (non-)uniqueness of individual properties, it is intuitive that the measure of bag of properties will always give higher (or at least, equal) amount of wealth compared to the measure of set. Set of property will have an upper bound of number of unique property, while bag of properties does not have any upper bound. Moreover, using bag of properties, a large number of triples having the same property may inflate the wealth substantially--though this is not necessarily a problem nor an advantage. This characteristics has a direct impact on inequality measure and it well depicted on the value of Gini coefficient. From \autoref{table:gini-coef}, in all clasess, the Gini coefficient using bag of properties is always higher than of set of properties.
+When looking at the notion of wealth using the characteristics of (non-)uniqueness of individual properties, it is intuitive that the measure of bag of properties will always give higher (or at least, equal) amount of wealth compared to the measure of set. Set of property will have an upper bound of number of unique property, while bag of properties does not have any upper bound. Moreover, using bag of properties, a large number of triples having the same property may inflate the wealth substantially--though this is not necessarily a problem nor an advantage. This characteristics has a direct impact on inequality measure and it is well depicted on the value of Gini coefficient. From \autoref{table:gini-coef}, in all clasess, the Gini coefficient using bag of properties is always higher than of set of properties.
 
-- object, literal, ID: object tends to have lower inequality
+% - object, literal, ID: object tends to have lower inequality
+Using the notion of wealth by type of property, in general the smallest Gini coefficient value is mostly from wealth using object property. The second one is when using literal, while the biggest one always comes when using ID.
 
-- outgoing, incoming: incoming shows very high Gini, this is because it is harder --> show the lorenz curve
+% - outgoing, incoming: incoming shows very high Gini, this is because it is harder --> show the lorenz curve
+Using the notion of wealth by the direction of the link, the Gini coefficient when using incoming link is always higher than using outgoing link. By inspecting the Lorenz curve, we can see that most entities do not have any incoming link, and only the small percentage of entites has some incoming link. \autoref{fig:gini-outgoin&incoming} shows the comparison of Lorenz curve of knowledge wealth based on the direction of the link from 3 Wikidata classes. The difference between the two is very significant, because in \autoref{fig:gini-outgoing} the Lorenz curves are closer to the perfect equality line, meanwhile in \autoref{fig:gini-incoming} the diagonal and the Lorenz curve almost form a right triangle which is very close to maximum inequality.
 
-add to discussion 
-- Wikidata = entity-centric knowledge graph, dimana bentuknya (s,p,o) dengan s sebagai subject of interest. jadi memang expected bahwa outgoing banyak 
-sedangkan incoming mostly justru 0.
-- sedrastis ini perbedaan incoming vs outgoing. incoming link is underestimated. given o, what is the (s, p)
-- kasih contoh: 2 entitas yang secara outgoing mirip, tapi incoming-nya jomplang (1 kaya 1 miskin)
+% add to discussion 
+% - Wikidata = entity-centric knowledge graph, dimana bentuknya (s,p,o) dengan s sebagai subject of interest. jadi memang expected bahwa outgoing banyak 
+% sedangkan incoming mostly justru 0.
+% - sedrastis ini perbedaan incoming vs outgoing. incoming link is underestimated. given o, what is the (s, p)
+% - kasih contoh: 2 entitas yang secara outgoing mirip, tapi incoming-nya jomplang (1 kaya 1 miskin)
 
 \begin{center}
     \small
@@ -45,3 +47,18 @@ sedangkan incoming mostly justru 0.
     \end{tablenotes}
     \end{threeparttable}
 \end{center}
+
+\begin{figure}[!h]
+    \centering 
+    \subfloat[Lorenz curve of wealth using outgoing link
+    \label{fig:gini-outgoing}]{%
+      \includegraphics[clip,width=1.0\columnwidth]{Gini - Outgoing}%
+    }
+    
+    \subfloat[Lorenz curve of wealth using incoming link\label{fig:gini-incoming}]{%
+      \includegraphics[clip,width=1.0\columnwidth]{Gini - Incoming.png}%
+    }
+    
+    \caption{Comparison of Lorenz curve of wealth based on the direction of link} \label{fig:gini-outgoin&incoming}
+    
+\end{figure}
