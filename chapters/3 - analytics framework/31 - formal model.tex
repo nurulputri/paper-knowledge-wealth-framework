@@ -1,5 +1,5 @@
 \subsection{Wealth Formal Model}
-Knowledge graphs follow Resource Description Framework (RDF) as a means of data organization. Without loss of generality of how the form of the URIs is, data is stored in the form of triple \((s, p, o)\); a combination of a subject \(s\), a predicate \(p\), and an object \(o\) which can be visualized as nodes and directed-arc diagrams. For example, the statement "William Shakespeare's notable work is Romeo and Juliet" in human-readable URIs is mapped to the triple (\textit{WilliamShakespeare}, \textit{notableWork}, \textit{RomeoAndJuliet}). Likewise, the statement in Wikidata, which uses ID-based URIs, is mapped to (\textit{Q692}, \textit{P800}, \textit{Q83186}).
+Knowledge graphs follow Resource Description Framework (RDF) as a means of data organization. Without loss of generality of how the form of the URIs is, data is stored in the form of triple \((s, p, o)\); a combination of a subject \(s\), a predicate \(p\), and an object \(o\) which can be visualized as nodes and directed-arc diagrams. For example, the statement "William Shakespeare's notable work is Romeo and Juliet" in human-readable URIs is mapped to the triple (\textit{WilliamShakespeare}, \textit{notableWork}, \textit{RomeoAndJuliet}). Likewise, the statement in Wikidata, which uses ID-based URIs, is mapped to (Q692, P800, Q83186).
 
 There are 3 kind of nodes: IRIs, literals, and blank nodes. A triple is in the form of \((s, p, o) \in G) \cap (I \cup B) \times I \times (I \cup B \cup L) \) where \(I\) is the node with type IRIs, \(B\) is the node with type of blank node, and \(L\) is the node with type of literals. In this study, we omit the usage of blank node, as this adds complexity to the analysis and may result in quality issue.
 
@@ -8,35 +8,31 @@ In this study, we re-use the class model defined by Ramadizsa et al. (2023). A c
 
 \subsubsection{Entity-Level Wealth: Knowledge Wealth Type and Definition}
 
-\begin{figure}
-     \centering
-     \begin{subfigure}[b]{0.3\textwidth}
-         \centering
-         \includegraphics[scale=.3]{Wealth Type 1}
-         \caption{Illustration of bag of properties and set of properties}
-         \label{fig:wealth-type1}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.3\textwidth}
-         \centering
-         \includegraphics[scale=.3]{Wealth Type 2}
-         \caption{Illustration of 3 types of property: object, literal, ID}
-         \label{fig:wealth-type2}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.3\textwidth}
-         \centering
-         \includegraphics[scale=.3]{Wealth Type 3}
-         \caption{Illustration of incoming link vs. outgoing link}
-         \label{fig:wealth-type3}
-     \end{subfigure}
-     \caption{Three simple graphs}
-     \label{fig:three graphs}
-\end{figure}
-
 Let \(s\) be any entity in a knowledge graph \(G\). We quantify the wealth of entity \(s\) in \(G\) as the amount of information about \(s\) available in \(G\). Thus, the knowledge wealth of an entity is defined by the number of properties associated/linked to it. For example, the wealth of William Shakespeare (Q692) in Wikidata counts all triples describing Q692 in Wikidata, including those detailing his family, occupation, image, and so on.
 
 There are several notion on how to calculate the knowledge wealth of an entity: (1) wealth based on the (non-)uniqueness of individual property; (2) wealth based on type of property; and (3) wealth based on the direction of the link. The wealth of \(s\) with regard to graph \(G\) for each wealth category is denoted by \(W\), formalized and explained as follows.
+
+\begin{figure}[!h]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \includegraphics[scale=.3]{Wealth Type 1}
+        \caption{Illustration of bag of properties and set of properties} \label{fig:wealth-type1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \includegraphics[scale=.3]{Wealth Type 2}
+        \caption{Illustration of 3 types of property: object, literal, ID} \label{fig:wealth-type2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \includegraphics[scale=.3]{Wealth Type 3}
+        \caption{Illustration of incoming link vs. outgoing link} \label{fig:wealth-type3}
+    \end{subfigure}
+    \caption{Three simple graphs} \label{fig:three graphs}
+\end{figure}
 
 \paragraph{Wealth based on the (non-)uniqueness of individual properties}
 The first measure of the knowledge wealth of \(s\) is bag of properties---the cardinality of set of all triples that has \(s\) in their subject position. In this definition, the triples \((s, p_1, o_1)\) and \((s, p_1, o_2)\) account for a wealth of 1 each, thus both have a total of 2.
