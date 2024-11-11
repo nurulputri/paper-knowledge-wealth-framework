@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1731323415.58514 "main.aux" "main.bbl" "main" 1731323443.21019 0
+["bibtex main"] 1731323834.61696 "main.aux" "main.bbl" "main" 1731324053.56525 0
   "./mybibliography.bib" 1726386482 7004 4323fb32874aea4dbff6c31a5599632e ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/elsarticle/elsarticle-num-names.bst" 1712688483 28896 b24eb82d1afd0a3fa7d82c6efbe1f559 ""
-  "main.aux" 1731323442.78354 17476 a776e26e3c7f4da66ab0c924c7b6ac90 "pdflatex"
+  "main.aux" 1731324053.12435 17478 8d8c79722797e50dff9e677f0e340577 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1731323440.16108 "/Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex" "main.pdf" "main" 1731323443.21035 0
+["pdflatex"] 1731324050.46723 "/Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex" "main.pdf" "main" 1731324053.56542 0
   "/Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex" 1731315863.12377 4675 845af6d7b838e7e4eaa4acb37af1833e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc" 1667852677 3022 13dbae1db4ca7b6d6a3611a22a194cb8 ""
@@ -234,7 +234,7 @@
   "cc-by.pdf" 1726386482 59879 b534039833ae0720e95faf00c3f48850 ""
   "ceur-ws-logo.pdf" 1726386482 20969 d9204e31220ce2f16cdc03536deb4b36 ""
   "ceurart.cls" 1726386482 83699 c883d456d716613b09096752cb710410 ""
-  "chapters/1 - introduction/1 - introduction.tex" 1729397992.23593 594 cbddc5139feac70767800f0d455ade7f ""
+  "chapters/1 - introduction/1 - introduction.tex" 1731324050.22719 1173 51e8ec1e04148f69702122cb65f0cd46 ""
   "chapters/2 - related work/2 - related work.tex" 1730530936.7622 734 e3e5bc6eefcb60970dd41ca7fafb2d34 ""
   "chapters/3 - analytics framework/3 - analytics framework master.tex" 1731300599.07466 249 75f113ba17645f71ba6291fab809a107 ""
   "chapters/3 - analytics framework/31 - formal model.tex" 1731304050.47631 8940 712f8cf1c3f3717da73f0112cab8634c ""
@@ -260,13 +260,13 @@
   "img/Wealth Type 2.png" 1726386482 250461 ba5570173cbebd07bdf2e5fdf092e78c ""
   "img/Wealth Type 3.png" 1726386482 45844 12fe17a5e221582f8e754d9c1f69c016 ""
   "img/Wealth Weighted.png" 1731300280.02695 211439 2fdbaede2e4d64b20dda377a1a21a247 ""
-  "main.abs" 1731323441.59908 1340 b4d50ca407ae99df27f832eb277c9603 "pdflatex"
-  "main.aux" 1731323442.78354 17476 a776e26e3c7f4da66ab0c924c7b6ac90 "pdflatex"
-  "main.bbl" 1731323415.70776 568 42560143a314657d2116f76ef857ae07 "bibtex main"
-  "main.out" 1731323441.57342 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.abs" 1731324051.90665 1340 b4d50ca407ae99df27f832eb277c9603 "pdflatex"
+  "main.aux" 1731324053.12435 17478 8d8c79722797e50dff9e677f0e340577 "pdflatex"
+  "main.bbl" 1731323834.70974 568 42560143a314657d2116f76ef857ae07 "bibtex main"
+  "main.out" 1731324051.88354 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "main.tex" 1731315863.12377 4675 845af6d7b838e7e4eaa4acb37af1833e ""
-  "main.xmpdata" 1731323442.78577 539 56265870b036ee4450d6ecdaaa088c8f "pdflatex"
-  "pdfa.xmpi" 1731323441.33703 6755 7148749d8be0eacd09a0899b953c67af "pdflatex"
+  "main.xmpdata" 1731324053.12771 539 56265870b036ee4450d6ecdaaa088c8f "pdflatex"
+  "pdfa.xmpi" 1731324051.63294 6755 180e5266ea5c6fd299815f541969c94b "pdflatex"
   (generated)
   "main.abs"
   "main.aux"
