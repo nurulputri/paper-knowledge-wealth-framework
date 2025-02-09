@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1739078869.4472 "main.aux" "main.bbl" "main" 1739079443.01795 0
+["bibtex main"] 1739083952.81435 "main.aux" "main.bbl" "main" 1739083984.65227 2
   "./mybibliography.bib" 1726386482 7004 4323fb32874aea4dbff6c31a5599632e ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/elsarticle/elsarticle-num-names.bst" 1712688483 28896 b24eb82d1afd0a3fa7d82c6efbe1f559 ""
-  "main.aux" 1739079442.57876 18152 081367ccbaabbe73cebac2c67df52be8 "pdflatex"
+  "main.aux" 1739083984.27655 18279 91ed410618b37bfd78c7a72193aee75b "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1739079439.96842 "/Users/nurulsriandaputri/Desktop/Penting/3. Research/S1 - Thesis/paper-nurul-et-al/main.tex" "main.pdf" "main" 1739079443.01814 0
+["pdflatex"] 1739083981.70758 "/Users/nurulsriandaputri/Desktop/Penting/3. Research/S1 - Thesis/paper-nurul-et-al/main.tex" "main.pdf" "main" 1739083984.65243 0
   "/Users/nurulsriandaputri/Desktop/Penting/3. Research/S1 - Thesis/paper-nurul-et-al/main.tex" 1739078728.55938 4675 845af6d7b838e7e4eaa4acb37af1833e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc" 1667852677 3022 13dbae1db4ca7b6d6a3611a22a194cb8 ""
@@ -241,8 +241,8 @@
   "chapters/4 - use case/41 - bias/41 - bias master.tex" 1729399474.64642 351 392050bb0a037c84f2d2eb584063ebf3 ""
   "chapters/4 - use case/41 - bias/411 - gender bias.tex" 1731315356.75785 13352 33efc43980c5153b206e01519ab3151d ""
   "chapters/4 - use case/41 - bias/412 - western bias.tex" 1731315774.93409 6858 b12d6956a9bd52b351c8ba83e7b2dfba ""
-  "chapters/4 - use case/42 - gini/42 - gini master.tex" 1739079439.71978 9275 bd0352e62403d47b1e4eae6c50761b3c ""
-  "chapters/5 - discussion/5 - discussion.tex" 1739038619.73102 7535 9fd7d6cf4da9ccdae05b5c64f2887545 ""
+  "chapters/4 - use case/42 - gini/42 - gini master.tex" 1739083788.21041 10196 3925834ae59b0432de94d2abf4e86c34 ""
+  "chapters/5 - discussion/5 - discussion.tex" 1739083975.29178 8263 a09e3300f1317eea5b4dfd5845451d3f ""
   "chapters/6 - conclusion/6 - conclusion.tex" 1729399983.66689 26 ca978933d259a8d7aaf3fbb035862c07 ""
   "img/Gini - Incoming.png" 1731318262.43254 87500 3c599608c70e3cd4310a708f5a9c62c1 ""
   "img/Gini - Outgoing.png" 1731318262.43878 93364 34779f6b54bfe17717ae7e7141d75084 ""
@@ -257,13 +257,13 @@
   "img/Wealth Type 2.png" 1726386482 250461 ba5570173cbebd07bdf2e5fdf092e78c ""
   "img/Wealth Type 3.png" 1726386482 45844 12fe17a5e221582f8e754d9c1f69c016 ""
   "img/Wealth Weighted.png" 1731300280.02695 211439 2fdbaede2e4d64b20dda377a1a21a247 ""
-  "main.abs" 1739079441.38796 1340 b4d50ca407ae99df27f832eb277c9603 "pdflatex"
-  "main.aux" 1739079442.57876 18152 081367ccbaabbe73cebac2c67df52be8 "pdflatex"
-  "main.bbl" 1739078869.54844 568 42560143a314657d2116f76ef857ae07 "bibtex main"
-  "main.out" 1739079441.36369 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.abs" 1739083983.10445 1340 b4d50ca407ae99df27f832eb277c9603 "pdflatex"
+  "main.aux" 1739083984.27655 18279 91ed410618b37bfd78c7a72193aee75b "pdflatex"
+  "main.bbl" 1739083952.9282 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
+  "main.out" 1739083983.0577 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "main.tex" 1739078728.55938 4675 845af6d7b838e7e4eaa4acb37af1833e ""
-  "main.xmpdata" 1739079442.58165 539 56265870b036ee4450d6ecdaaa088c8f "pdflatex"
-  "pdfa.xmpi" 1739079441.12961 6755 e329381f42aca8de555866e25a486967 "pdflatex"
+  "main.xmpdata" 1739083984.279 539 56265870b036ee4450d6ecdaaa088c8f "pdflatex"
+  "pdfa.xmpi" 1739083982.8366 6755 0d22733edf285d77784a9e332a517584 "pdflatex"
   (generated)
   "main.abs"
   "main.aux"

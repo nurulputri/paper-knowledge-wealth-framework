@@ -15,12 +15,12 @@ In this subchapter, analysis is done to see how each wealth type affects the lev
     \begin{tabular}{c | c c | c c c | c c} 
     
     \toprule
-        Class Name & \CellWithForceBreak{Gini \\ Bag} & \CellWithForceBreak{Gini \\ Set} & \CellWithForceBreak{Gini \\ Object} & \CellWithForceBreak{Gini \\ Literal} & \CellWithForceBreak{Gini \\ ID} & \CellWithForceBreak{Gini \\ Outgoing} & \CellWithForceBreak{Gini \\ Incoming} \\ [0.5ex] 
+        Class Name & \CellWithForceBreak{Gini \\ Bag} & \CellWithForceBreak{Gini \\ Set} & \CellWithForceBreak{Gini \\ Object} & \CellWithForceBreak{Gini \\ Pure Literal} & \CellWithForceBreak{Gini \\ ID} & \CellWithForceBreak{Gini \\ Outgoing} & \CellWithForceBreak{Gini \\ Incoming} \\ [0.5ex] 
     \midrule
-        American researcher & 0.33 & 0.31 & 0.26 & 0.65 & 0.50 & 0.33 & 0.77 \\
+        American researcher & 0.33 & 0.31 & 0.26 & *0.65 & 0.50 & 0.33 & 0.77 \\
         American singer & 0.40 & 0.39 & 0.29 & 0.36 & 0.53 & 0.40 & 0.82  \\
-        Badminton player & 0.29 & 0.14 & 0.30 & 0.14 & 0.60 & 0.29 & 0.68 \\
-        Computer scientist & 0.41 & 0.37 & 0.36 & 0.64 & 0.56 & 0.41 & 0.81 \\
+        Badminton player & 0.29 & 0.14 & 0.30 & *0.14 & 0.60 & 0.29 & 0.68 \\
+        Computer scientist & 0.41 & 0.37 & 0.36 & *0.64 & 0.56 & 0.41 & 0.81 \\
         Historical painting & 0.23 & 0.15 & 0.25 & 0.26 & 0.45 & 0.23 & 0.87 \\
         Memorial & 0.22 & 0.19 & 0.20 & 0.31 & 0.41 & 0.22 & 0.99 \\
         Sci-fi book & 0.30 & 0.21 & 0.31 & 0.33 & 0.44 & 0.30 & 0.82 \\
@@ -39,7 +39,12 @@ In this subchapter, analysis is done to see how each wealth type affects the lev
 When looking at the notion of wealth using the characteristics of (non-)uniqueness of individual properties, it is intuitive that the measure of bag of properties will always give higher (or at least, equal) amount of wealth compared to the measure of set. Set of property will have an upper bound of number of unique property, while bag of properties does not have any upper bound. Moreover, using bag of properties, a large number of triples having the same property may inflate the wealth substantially--though this is not necessarily a problem nor an advantage. This characteristics has a direct impact on inequality measure and it is well depicted on the value of Gini coefficient. From \autoref{table:gini-coef}, in all clasess, the Gini coefficient using bag of properties is always higher than of set of properties.
 
 % - object, literal, ID: object tends to have lower inequality
-Using the notion of wealth by type of property, in general the smallest Gini coefficient value is mostly from wealth using object property. The second one is when using literal, while the biggest one always comes when using ID. When we look at the contribution of each type of property to the overall wealth, 
+Using the notion of wealth by type of property, in general the smallest Gini coefficient value is mostly from wealth using object property, followed by literal, and ID as the biggest one. This condition holds for the 4 non-human classes that are being observed. However, there are anomalies in the human classes. In the classes of American researcher and computer scientist, the Gini coefficients for wealth using pure literal properties are significantly higher than other's. This is due to approximately 50\% of these classes' entities have 0 pure literal properties, not even basic human-related literal properties such as \textit{date of birth} (P569). For example, an American researcher \textit{John Heidemann} (Q29354581) has a total wealth of 61 (using bag of properties) and is among top 4\% entities in its class, yet this entity has 0 literal properties. In contrast, ...
+
+Badminton anomaly: <insert explanation here??? whyyy???>
+
+When we look at the contribution of each type of property to the overall wealth, ....
+Overall, the usage of pure literal properties is lower than of object and ID. This aligns with the principle of knowledge graph to use URI for internal connections and ID for external resources.
 
 \begin{center}
     \small
