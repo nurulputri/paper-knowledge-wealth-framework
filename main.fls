@@ -1,8 +1,8 @@
-PWD /Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al
+PWD /Users/nurulsriandaputri/Desktop/Penting/3. Research/S1 - Thesis/paper-nurul-et-al
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/nurulsriandaputri/Desktop/Skripsi/paper-nurul-et-al/main.tex
+INPUT /Users/nurulsriandaputri/Desktop/Penting/3. Research/S1 - Thesis/paper-nurul-et-al/main.tex
 OUTPUT main.log
 INPUT ./ceurart.cls
 INPUT ceurart.cls
@@ -598,6 +598,7 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/Lib
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Regular.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
