@@ -6,10 +6,101 @@
 
 In this subchapter, analysis is done to see how each wealth type affects the level of inequality of Wikidata classes. There are 2 ways this is done--quantitatively using Gini coefficient and qualitatively using Lorenz curve. The analysis is performed on 8 Wikidata classes, in which 4 of them are human-related class while the other 4 are not.
 
+\begin{center}
+    \small
+    \makebox[\linewidth]{
+    \begin{threeparttable}
+    \caption{Knowledge Wealth Type on Gini Coefficient}
+    \label{table:gini-coef}
+    \begin{tabular}{c | c c | c c c | c c} 
+    
+    \toprule
+        Class Name & \CellWithForceBreak{Gini \\ Bag} & \CellWithForceBreak{Gini \\ Set} & \CellWithForceBreak{Gini \\ Object} & \CellWithForceBreak{Gini \\ Literal} & \CellWithForceBreak{Gini \\ ID} & \CellWithForceBreak{Gini \\ Outgoing} & \CellWithForceBreak{Gini \\ Incoming} \\ [0.5ex] 
+    \midrule
+        American researcher & 0.33 & 0.31 & 0.26 & 0.65 & 0.50 & 0.33 & 0.77 \\
+        American singer & 0.40 & 0.39 & 0.29 & 0.36 & 0.53 & 0.40 & 0.82  \\
+        Badminton player & 0.29 & 0.14 & 0.30 & 0.14 & 0.60 & 0.29 & 0.68 \\
+        Computer scientist & 0.41 & 0.37 & 0.36 & 0.64 & 0.56 & 0.41 & 0.81 \\
+        Historical painting & 0.23 & 0.15 & 0.25 & 0.26 & 0.45 & 0.23 & 0.87 \\
+        Memorial & 0.22 & 0.19 & 0.20 & 0.31 & 0.41 & 0.22 & 0.99 \\
+        Sci-fi book & 0.30 & 0.21 & 0.31 & 0.33 & 0.44 & 0.30 & 0.82 \\
+        University & 0.44 & 0.41 & 0.39 & 0.49 & 0.53 & 0.44 & 0.91 \\
+        [1ex]
+    \bottomrule
+    \end{tabular}
+    \begin{tablenotes}
+        \footnotesize
+        \item{This table shows the comparison of Gini coefficient of 8 Wikidata classes}
+    \end{tablenotes}
+    \end{threeparttable}
+    }
+\end{center}
+
 When looking at the notion of wealth using the characteristics of (non-)uniqueness of individual properties, it is intuitive that the measure of bag of properties will always give higher (or at least, equal) amount of wealth compared to the measure of set. Set of property will have an upper bound of number of unique property, while bag of properties does not have any upper bound. Moreover, using bag of properties, a large number of triples having the same property may inflate the wealth substantially--though this is not necessarily a problem nor an advantage. This characteristics has a direct impact on inequality measure and it is well depicted on the value of Gini coefficient. From \autoref{table:gini-coef}, in all clasess, the Gini coefficient using bag of properties is always higher than of set of properties.
 
 % - object, literal, ID: object tends to have lower inequality
-Using the notion of wealth by type of property, in general the smallest Gini coefficient value is mostly from wealth using object property. The second one is when using literal, while the biggest one always comes when using ID.
+Using the notion of wealth by type of property, in general the smallest Gini coefficient value is mostly from wealth using object property. The second one is when using literal, while the biggest one always comes when using ID. When we look at the contribution of each type of property to the overall wealth, 
+
+\begin{center}
+    \small
+    \makebox[\linewidth]{
+    \begin{threeparttable}
+    \caption{Contribution of Property Type to Knowledge Wealth Using Bag of Properties}
+    \label{table:prop-contribution-bag}
+    \begin{tabular}{c | c c c | c | c} 
+    
+    \toprule
+        Class Name & \CellWithForceBreak{\% Object \\ Bag} & \CellWithForceBreak{\% Literal \\ Bag} & \CellWithForceBreak{\% ID \\ Bag} & \CellWithForceBreak{\% Literal + ID \\ Bag} & \CellWithForceBreak{\% Object + Literal \\ Bag} \\ [0.5ex] 
+    \midrule
+        American researcher & 59.55 / 65.65 & 3.32 / 2.8 & 37.12 / 31.55 & 40.45 / 34.35 & 62.88 / 68.45 \\
+        American singer & 40.44 / 48.42 & 7.47 / 8.48 & 52.09 / 43.1 & 59.56 / 51.58 & 47.91 / 56.9 \\
+        Badminton player & 79.34 / 78.96 & 10.14 / 11.68 & 10.52 / 9.36 & 20.66 / 21.04 & 89.48 / 90.64 \\
+        Computer scientist & 59.36 / 65.93 & 4.19 / 3.71 & 36.44 / 30.36 & 40.64 / 34.07 & 63.56 / 69.64 \\
+        Historical painting & 66.35 / 66.46 & 25.48 / 25.85 & 8.17 / 7.69 & 33.65 / 33.54 & 91.83 / 92.31 \\
+        Memorial & 62.82 / 64.16 & 21.0 / 20.4 & 16.18 / 15.44 & 37.18 / 35.84 & 83.82 / 84.56 \\
+        Sci-fi book & 62.96 / 62.62 & 14.44 / 15.78 & 22.59 / 21.6 & 37.04 / 37.38 & 77.41 / 78.4 \\
+        University & 37.59 / 44.79 & 18.11 / 18.31 & 44.3 / 36.9 & 62.41 / 55.21 & 55.7 / 63.1 \\
+        [1ex]
+    \bottomrule
+    \end{tabular}
+    \begin{tablenotes}
+        \footnotesize
+        \item{This table shows the contribution of each property type of 8 Wikidata classes based on the notion of bag of properties. Each record has 2 values separated by "/". The first value is the contribution rate when calculated with total sum method, and the second one is when using the average of individual percentage method}
+    \end{tablenotes}
+    \end{threeparttable}
+    }
+\end{center}
+
+\begin{center}
+    \small
+    \makebox[\linewidth]{
+    \begin{threeparttable}
+    \caption{Contribution of Property Type to Knowledge Wealth Using Set of Properties}
+    \label{table:prop-contribution-set}
+    \begin{tabular}{c | c c c | c | c} 
+    
+    \toprule
+        Class Name & \CellWithForceBreak{\% Object \\ Set} & \CellWithForceBreak{\% Literal \\ Set} & \CellWithForceBreak{\% ID \\ Set} & \CellWithForceBreak{\% Literal + ID \\ Set} & \CellWithForceBreak{\% Object + Literal \\ Set} \\ [0.5ex] 
+    \midrule
+        American researcher & 51.25 / 59.69 & 3.97 / 3.29 & 44.78 / 37.02 & 48.75 / 40.31 & 55.22 / 62.98 \\
+        American singer & 33.91 / 43.58 & 8.1 / 9.18 & 57.99 / 47.24 & 66.09 / 56.42 & 42.01 / 52.76 \\
+        Badminton player & 71.75 / 74.13 & 13.79 / 13.9 & 14.46 / 11.97 & 28.25 / 25.87 & 85.54 / 88.03 \\
+        Computer scientist & 50.53 / 60.54 & 4.98 / 4.27 & 44.49 / 35.19 & 49.47 / 39.46 & 55.51 / 64.81 \\
+        Historical painting & 60.57 / 61.91 & 28.88 / 28.61 & 10.55 / 9.48 & 39.43 / 38.09 & 89.45 / 90.52 \\
+        Memorial & 60.06 / 62.01 & 22.41 / 21.59 & 17.54 / 16.4 & 39.94 / 37.99 & 82.46 / 83.6 \\
+        Sci-fi book & 59.36 / 61.91 & 13.86 / 14.59 & 26.78 / 23.5 & 40.64 / 38.09 & 73.22 / 76.5 \\
+        University & 33.93 / 42.74 & 17.67 / 18.32 & 48.4 / 38.95 & 66.07 / 57.26 & 51.6 / 61.05 \\
+        [1ex]
+    \bottomrule
+    \end{tabular}
+    \begin{tablenotes}
+        \footnotesize
+        \item{This table shows the contribution of each property type of 8 Wikidata classes based on the notion of set of properties. Each record has 2 values separated by "/". The first value is the contribution rate when calculated with total sum method, and the second one is when using the average of individual percentage method}
+    \end{tablenotes}
+    \end{threeparttable}
+    }
+\end{center}
+
 % - object: 
 % - literal: analisis kenapa yang badminton beda sendiri (object > literal). perlu cek yang literal only tanpa ID (cek query vs hitung manual literala all - ID)
 % - ID: ID itu kan menandakan apakah suatu entity terdaftar di suatu DB external lain. nah ini lebih sensitif terhadap popularitas entity. biasanya hanya entity yang populer banget yang  (aspek eksponensial, ketika dia populer dia terdaftar di banyak db dibandingkan yang medioker. ketika viral, dia kaya domina effect terdaftar lagi di yang lain2). semacam incoming link
@@ -37,31 +128,3 @@ Using the notion of wealth by the direction of the link, the Gini coefficient wh
     \caption{Comparison of Lorenz curve of wealth based on the direction of link} \label{fig:gini-outgoin&incoming}
     
 \end{figure}
-
-\begin{center}
-    \small
-    \begin{threeparttable}
-    \caption{Knowledge Wealth Type on Gini Coefficient}
-    \label{table:gini-coef}
-    \begin{tabular}{c | c c | c c c | c c} 
-    
-    \toprule
-        Class Name & \CellWithForceBreak{Gini \\ Bag} & \CellWithForceBreak{Gini \\ Set} & \CellWithForceBreak{Gini \\ Object} & \CellWithForceBreak{Gini \\ Literal} & \CellWithForceBreak{Gini \\ ID} & \CellWithForceBreak{Gini \\ Outgoing} & \CellWithForceBreak{Gini \\ Incoming} \\ [0.5ex] 
-    \midrule
-        American researcher & 0.32 & 0.31 & 0.26 & 0.65 & 0.50 & 0.32 & 0.77 \\
-        American singer & 0.40 & 0.39 & 0.29 & 0.36 & 0.53 & 0.40 & 0.82 \\
-        Badminton player & 0.29 & 0.14 & 0.30 & 0.14 & 0.60 & 0.29 & 0.68 \\
-        Computer scientist & 0.41 & 0.37 & 0.36 & 0.64 & 0.56 & 0.41 & 0.81 \\
-        Historical painting & 0.22 & 0.14 & 0.25 & 0.25 & 0.44 & 0.22 & 0.86 \\
-        Memorial & 0.22 & 0.19 & 0.20 & 0.31 & 0.40 & 0.22 & 0.99 \\
-        Sci-fi book & 0.31 & 0.22 & 0.32 & 0.33 & 0.45 & 0.31 & 0.83 \\
-        University & 0.44 & 0.41 & 0.39 & 0.48 & 0.53 & 0.44 & 0.91 \\
-        [1ex]
-    \bottomrule
-    \end{tabular}
-    \begin{tablenotes}
-        \footnotesize
-        \item{This table shows the comparison of Gini coefficient of 8 Wikidata classes}
-    \end{tablenotes}
-    \end{threeparttable}
-\end{center}
