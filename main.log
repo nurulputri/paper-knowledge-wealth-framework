@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  9 FEB 2025 14:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  12 FEB 2025 01:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1472,30 +1472,24 @@ Underfull \hbox (badness 1052) in paragraph at lines 23--24
  []
 
 ) (./chapters/3 - analytics framework/33 - model application sample.tex
-<./img/Wealth Weighted.png, id=115, 1030.85126pt x 578.16pt>
+<./img/Wealth Weighted.png, id=114, 1030.85126pt x 578.16pt>
 File: ./img/Wealth Weighted.png Graphic file (type png)
 <use ./img/Wealth Weighted.png>
-Package pdftex.def Info: ./img/Wealth Weighted.png  used on input line 7.
-(pdftex.def)             Requested size: 309.25777pt x 173.44933pt.
+Package pdftex.def Info: ./img/Wealth Weighted.png  used on input line 5.
+(pdftex.def)             Requested size: 412.33319pt x 231.2599pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./img/Sample Lorenz Curve.png, id=118, 363.3575pt x 215.80624pt>
+[6]
+<./img/Sample Lorenz Curve.png, id=127, 363.3575pt x 215.80624pt>
 File: ./img/Sample Lorenz Curve.png Graphic file (type png)
 <use ./img/Sample Lorenz Curve.png>
 Package pdftex.def Info: ./img/Sample Lorenz Curve.png  used on input line 38.
 (pdftex.def)             Requested size: 290.68639pt x 172.64522pt.
+)) (./chapters/4 - use case/4 - use case master.tex (./chapters/4 - use case/41 - bias/41 - bias master.tex
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+[7 <./img/Wealth Weighted.png>] (./chapters/4 - use case/41 - bias/411 - gender bias.tex
 
-)) (./chapters/4 - use case/4 - use case master.tex
-
-[6] (./chapters/4 - use case/41 - bias/41 - bias master.tex (./chapters/4 - use case/41 - bias/411 - gender bias.tex
-
-[7 <./img/Wealth Weighted.png> <./img/Sample Lorenz Curve.png>]
-
-[8]
+[8 <./img/Sample Lorenz Curve.png>]
 
 [9]
 Overfull \hbox (35.02386pt too wide) in paragraph at lines 84--108
@@ -1595,7 +1589,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  122i,21n,121p,11005b,2548s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (20 pages, 1354304 bytes).
+Output written on main.pdf (20 pages, 1355351 bytes).
 PDF statistics:
  409 PDF objects out of 1000 (max. 8388607)
  87 named destinations out of 1000 (max. 500000)
