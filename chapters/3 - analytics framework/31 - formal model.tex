@@ -59,12 +59,12 @@ Object properties are other entities besides \(s\) that is connected with \(s\) 
 \[
     W_{bag, object}(s, G) = |\{(p,o) | ((s, p, o) \in G) \cap (o \in I)\}|
 \]
-Data properties are non-object properties that is connected with \(s\) through a property \(p\). Wealth of \(s\) using bag of properties with only considering the data properties is defined as:
+Literal properties are non-object properties that is connected with \(s\) through a property \(p\). Wealth of \(s\) using bag of properties with only considering the literal properties is defined as:
 \[
-    W_{bag, data}(s, G) = |\{(p,o) | ((s, p, o) \in G) \cap (o \in L)\}|
+    W_{bag, literal}(s, G) = |\{(p,o) | ((s, p, o) \in G) \cap (o \in L)\}|
 \]
 
-An external ID is a special type of string that is used to represent an entity in an external source. In Wikidata, an ID is element of subclass of \textit{Wikidata property for an identifier} (Q19847637). Just like any other property, an ID is connected with \(s\) through a property \(p\). Let  \(C_{ID,G}\) be a set comprising ID property in graph \(G\). Wealth of \(s\) using bag of properties with only considering the ID properties is defined as:
+An external ID is a special type of string that is used to represent an entity in an external source. In Wikidata, an ID is identifiable by property type \textit{wikibase:ExternalId}. Just like any other property, an ID is connected with \(s\) through a property \(p\). Let  \(C_{ID,G}\) be a set comprising ID property in graph \(G\). Wealth of \(s\) using bag of properties with only considering the ID properties is defined as:
 \[
     W_{bag, ID}(s, G) = |\{(p,o) | ((s, p, o) \in G) \cap (o \in L) \cap (o \in C_{ID,G})\}|
 \]

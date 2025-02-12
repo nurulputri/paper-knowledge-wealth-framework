@@ -39,81 +39,25 @@ In this subchapter, analysis is done to see how each wealth type affects the lev
 When looking at the notion of wealth using the characteristics of (non-)uniqueness of individual properties, it is intuitive that the measure of the bag of properties will always give higher (or at least, equal) amount of wealth compared to the measure of set. Set of property will have an upper bound of number of unique property, while the bag of properties does not have any upper bound. Moreover, using the bag of properties, a large number of triples having the same property may inflate the wealth substantially--though this is not necessarily a problem nor an advantage. This characteristics has a direct impact on inequality measure and it is well depicted on the value of Gini coefficient. From \autoref{table:gini-coef}, in all clasess, the Gini coefficient using the bag of properties is always higher than of set of properties.
 
 % - object, literal, ID: object tends to have lower inequality
-Using the notion of wealth by type of property, in general the smallest Gini coefficient value comes from wealth using object properties, followed by literal properties, with ID properties having the highest value. This condition holds for the four non-human classes that are being observed. However, there are anomalies in the human classes.
+Using the notion of wealth by type of property, in general the smallest Gini coefficient value comes from wealth using object properties, followed by literal properties, with ID properties having the highest value. This condition holds for the four non-human classes that are being observed. However, there are anomalies in the human classes, as illustrated in \autoref{fig:gini-literal}.
+
+\begin{figure}[!htbp]
+    \centering
+    % \includegraphics[scale=.5]{Gini - Pure Literal}
+    \makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{Gini - Pure Literal}}%
+    \caption{Lorenz curve of wealth using literal properties} \label{fig:gini-literal}
+\end{figure}
 
 In the classes of American researchers and computer scientists, the Gini coefficients for wealth using pure literal properties are significantly higher than those of other classes. This is due to approximately 50\% of the entities in these classes having 0 pure literal properties--not even basic human-related literal properties such as \textit{date of birth} (P569). For example, an American researcher \textit{John Heidemann} (Q29354581) has a total wealth of 61 (using the bag of properties) and is among the top 4\% entities in his class, yet this entity has 0 literal properties. In contrast, only 818 out of 16150 (just about 5\%) entities of American singer class have 0 literal properties. Moreover, an instance of American singer, {Kris Allen} (Q216927), who also has a total wealth of 61 (using the bag of properties), has 6 literal properties.
 
 Another anomaly is found in the class of badminton players where the Gini coefficient for wealth using pure literal is significantly lower than others'. Upon inspection, two main reasons for this were identified. First, there is no entity in this class with 0 literal properties; all entites have at least 1 literal. Second, the range of wealth in this class is smaller, with a minimum value of 1 and maximum value of 10, in comparison to the classes of American researcher, American singer, and Badminton player which all have a minimum value of 0 and maximum values of 16, 26, and 54, respectively.
-
-When we look at the contribution of each type of property to the overall wealth, ....
-Overall, the usage of pure literal properties is lower than of object and ID. This aligns with the principle of knowledge graph to use URI for internal connections and ID for external resources.
-
-\begin{center}
-    \small
-    \makebox[\linewidth]{
-    \begin{threeparttable}
-    \caption{Contribution of Property Type to Knowledge Wealth Using Bag of Properties}
-    \label{table:prop-contribution-bag}
-    \begin{tabular}{c | c c c | c | c} 
-    
-    \toprule
-        Class Name & \CellWithForceBreak{\% Object \\ Bag} & \CellWithForceBreak{\% Literal \\ Bag} & \CellWithForceBreak{\% ID \\ Bag} & \CellWithForceBreak{\% Literal + ID \\ Bag} & \CellWithForceBreak{\% Object + Literal \\ Bag} \\ [0.5ex] 
-    \midrule
-        American researcher & 59.55 / 65.65 & 3.32 / 2.8 & 37.12 / 31.55 & 40.45 / 34.35 & 62.88 / 68.45 \\
-        American singer & 40.44 / 48.42 & 7.47 / 8.48 & 52.09 / 43.1 & 59.56 / 51.58 & 47.91 / 56.9 \\
-        Badminton player & 79.34 / 78.96 & 10.14 / 11.68 & 10.52 / 9.36 & 20.66 / 21.04 & 89.48 / 90.64 \\
-        Computer scientist & 59.36 / 65.93 & 4.19 / 3.71 & 36.44 / 30.36 & 40.64 / 34.07 & 63.56 / 69.64 \\
-        Historical painting & 66.35 / 66.46 & 25.48 / 25.85 & 8.17 / 7.69 & 33.65 / 33.54 & 91.83 / 92.31 \\
-        Memorial & 62.82 / 64.16 & 21.0 / 20.4 & 16.18 / 15.44 & 37.18 / 35.84 & 83.82 / 84.56 \\
-        Sci-fi book & 62.96 / 62.62 & 14.44 / 15.78 & 22.59 / 21.6 & 37.04 / 37.38 & 77.41 / 78.4 \\
-        University & 37.59 / 44.79 & 18.11 / 18.31 & 44.3 / 36.9 & 62.41 / 55.21 & 55.7 / 63.1 \\
-        [1ex]
-    \bottomrule
-    \end{tabular}
-    \begin{tablenotes}
-        \footnotesize
-        \item{This table shows the contribution of each property type of 8 Wikidata classes based on the notion of bag of properties. Each record has 2 values separated by "/". The first value is the contribution rate when calculated with total sum method, and the second one is when using the average of individual percentage method}
-    \end{tablenotes}
-    \end{threeparttable}
-    }
-\end{center}
-
-\begin{center}
-    \small
-    \makebox[\linewidth]{
-    \begin{threeparttable}
-    \caption{Contribution of Property Type to Knowledge Wealth Using Set of Properties}
-    \label{table:prop-contribution-set}
-    \begin{tabular}{c | c c c | c | c} 
-    
-    \toprule
-        Class Name & \CellWithForceBreak{\% Object \\ Set} & \CellWithForceBreak{\% Literal \\ Set} & \CellWithForceBreak{\% ID \\ Set} & \CellWithForceBreak{\% Literal + ID \\ Set} & \CellWithForceBreak{\% Object + Literal \\ Set} \\ [0.5ex] 
-    \midrule
-        American researcher & 51.25 / 59.69 & 3.97 / 3.29 & 44.78 / 37.02 & 48.75 / 40.31 & 55.22 / 62.98 \\
-        American singer & 33.91 / 43.58 & 8.1 / 9.18 & 57.99 / 47.24 & 66.09 / 56.42 & 42.01 / 52.76 \\
-        Badminton player & 71.75 / 74.13 & 13.79 / 13.9 & 14.46 / 11.97 & 28.25 / 25.87 & 85.54 / 88.03 \\
-        Computer scientist & 50.53 / 60.54 & 4.98 / 4.27 & 44.49 / 35.19 & 49.47 / 39.46 & 55.51 / 64.81 \\
-        Historical painting & 60.57 / 61.91 & 28.88 / 28.61 & 10.55 / 9.48 & 39.43 / 38.09 & 89.45 / 90.52 \\
-        Memorial & 60.06 / 62.01 & 22.41 / 21.59 & 17.54 / 16.4 & 39.94 / 37.99 & 82.46 / 83.6 \\
-        Sci-fi book & 59.36 / 61.91 & 13.86 / 14.59 & 26.78 / 23.5 & 40.64 / 38.09 & 73.22 / 76.5 \\
-        University & 33.93 / 42.74 & 17.67 / 18.32 & 48.4 / 38.95 & 66.07 / 57.26 & 51.6 / 61.05 \\
-        [1ex]
-    \bottomrule
-    \end{tabular}
-    \begin{tablenotes}
-        \footnotesize
-        \item{This table shows the contribution of each property type of 8 Wikidata classes based on the notion of set of properties. Each record has 2 values separated by "/". The first value is the contribution rate when calculated with total sum method, and the second one is when using the average of individual percentage method}
-    \end{tablenotes}
-    \end{threeparttable}
-    }
-\end{center}
 
 % - object: 
 % - literal: analisis kenapa yang badminton beda sendiri (object > literal). perlu cek yang literal only tanpa ID (cek query vs hitung manual literala all - ID)
 % - ID: ID itu kan menandakan apakah suatu entity terdaftar di suatu DB external lain. nah ini lebih sensitif terhadap popularitas entity. biasanya hanya entity yang populer banget yang  (aspek eksponensial, ketika dia populer dia terdaftar di banyak db dibandingkan yang medioker. ketika viral, dia kaya domina effect terdaftar lagi di yang lain2). semacam incoming link
 
 % - outgoing, incoming: incoming shows very high Gini, this is because it is harder --> show the lorenz curve
-Using the notion of wealth by the direction of the link, the Gini coefficient when using incoming link is always higher than using outgoing link. By inspecting the Lorenz curve, we can see that most entities do not have any incoming link, and only the small percentage of entites has some incoming link. \autoref{fig:gini-outgoin&incoming} shows the comparison of Lorenz curve of knowledge wealth based on the direction of the link from 3 Wikidata classes. The difference between the two is very significant, because in \autoref{fig:gini-outgoing} the Lorenz curves are closer to the perfect equality line, meanwhile in \autoref{fig:gini-incoming} the diagonal and the Lorenz curve almost form a right triangle which is very close to maximum inequality.
+Using the notion of wealth by the direction of the link, the Gini coefficient when using incoming link is always higher than using outgoing link. By inspecting the Lorenz curve, we can see that most entities do not have any incoming link, and only the small percentage of entites has some incoming link. \autoref{fig:gini-outgoing&incoming} shows the comparison of Lorenz curve of knowledge wealth based on the direction of the link from 3 Wikidata classes. The difference between the two is very significant, because in \autoref{fig:gini-outgoing} the Lorenz curves are closer to the perfect equality line, meanwhile in \autoref{fig:gini-incoming} the diagonal and the Lorenz curve almost form a right triangle which is very close to maximum inequality.
 
 % add to discussion 
 % - Wikidata = entity-centric knowledge graph, dimana bentuknya (s,p,o) dengan s sebagai subject of interest. jadi memang expected bahwa outgoing banyak 
@@ -132,6 +76,6 @@ Using the notion of wealth by the direction of the link, the Gini coefficient wh
       \includegraphics[clip,width=1.0\columnwidth]{Gini - Incoming.png}%
     }
     
-    \caption{Comparison of Lorenz curve of wealth based on the direction of link} \label{fig:gini-outgoin&incoming}
+    \caption{Comparison of Lorenz curve of wealth based on the direction of link} \label{fig:gini-outgoing&incoming}
     
 \end{figure}
