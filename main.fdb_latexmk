@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1739763744.93404 "main.aux" "main.bbl" "main" 1739763748.12453 0
+["bibtex main"] 1739787497.66453 "main.aux" "main.bbl" "main" 1739799388.28661 0
   "./mybibliography.bib" 1726386482 7004 4323fb32874aea4dbff6c31a5599632e ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/elsarticle/elsarticle-num-names.bst" 1712688483 28896 b24eb82d1afd0a3fa7d82c6efbe1f559 ""
-  "main.aux" 1739763747.70531 19505 0631ebfb64b48d03c923c7016642ff02 "pdflatex"
+  "main.aux" 1739799387.87504 19837 df4d58f3f0b309ee6c8d748f4d32173a "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1739763745.02688 "/Users/nurulsriandaputri/Desktop/Penting/3. Research/S1 - Thesis/paper-nurul-et-al/main.tex" "main.pdf" "main" 1739763748.1247 0
-  "/Users/nurulsriandaputri/Desktop/Penting/3. Research/S1 - Thesis/paper-nurul-et-al/main.tex" 1739296053.44655 4675 845af6d7b838e7e4eaa4acb37af1833e ""
+["pdflatex"] 1739799384.97267 "/Users/nurulsriandaputri/Desktop/Penting/3. Research/S1 - Thesis/paper-nurul-et-al/main.tex" "main.pdf" "main" 1739799388.28677 0
+  "/Users/nurulsriandaputri/Desktop/Penting/3. Research/S1 - Thesis/paper-nurul-et-al/main.tex" 1739798661.85164 4761 a7913e9902949445658027dbe0a715cd ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc" 1667852677 3022 13dbae1db4ca7b6d6a3611a22a194cb8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.enc" 1667852677 3039 b94e5746763ffece6312a6e9abac298f ""
@@ -231,7 +231,7 @@
   "cc-by.pdf" 1726386482 59879 b534039833ae0720e95faf00c3f48850 ""
   "ceur-ws-logo.pdf" 1726386482 20969 d9204e31220ce2f16cdc03536deb4b36 ""
   "ceurart.cls" 1726386482 83699 c883d456d716613b09096752cb710410 ""
-  "chapters/1 - introduction/1 - introduction.tex" 1739763739.55652 1897 756c521f7c0b94c1393aac0f2b4bc938 ""
+  "chapters/1 - introduction/1 - introduction.tex" 1739799384.69886 4997 d303dd1ba4e8121ad42fa667b92b8993 ""
   "chapters/2 - related work/2 - related work.tex" 1730530936.7622 734 e3e5bc6eefcb60970dd41ca7fafb2d34 ""
   "chapters/3 - analytics framework/3 - analytics framework master.tex" 1731300599.07466 249 75f113ba17645f71ba6291fab809a107 ""
   "chapters/3 - analytics framework/31 - formal model.tex" 1739342819.6085 8928 f943557fb8d2d060bd801f2eb4d661d2 ""
@@ -241,7 +241,7 @@
   "chapters/4 - use case/41 - bias/41 - bias master.tex" 1729399474.64642 351 392050bb0a037c84f2d2eb584063ebf3 ""
   "chapters/4 - use case/41 - bias/411 - gender bias.tex" 1731315356.75785 13352 33efc43980c5153b206e01519ab3151d ""
   "chapters/4 - use case/41 - bias/412 - western bias.tex" 1731315774.93409 6858 b12d6956a9bd52b351c8ba83e7b2dfba ""
-  "chapters/4 - use case/42 - gini/42 - gini master.tex" 1739763724.96807 8090 e5330ced30bac21d7896b6204ee7d5ae ""
+  "chapters/4 - use case/42 - gini/42 - gini master.tex" 1739763750.75508 8090 e5330ced30bac21d7896b6204ee7d5ae ""
   "chapters/4 - use case/43 - prop contribution/43 - prop contribution.tex" 1739369716.65693 10313 4a1e85e91fc4034bfc338d965a0f8391 ""
   "chapters/5 - discussion/5 - discussion.tex" 1739086858.73641 9595 32b0a5d193748e5fe8f95d5d55c1b45b ""
   "chapters/6 - conclusion/6 - conclusion.tex" 1729399983.66689 26 ca978933d259a8d7aaf3fbb035862c07 ""
@@ -250,6 +250,7 @@
   "img/Gini - Pure Literal.png" 1739347349.11562 124965 89660cc0f61627957dd35184552f0b06 ""
   "img/Histogram of Wealth - American Singer.png" 1726386482 51237 97df0793b581a7e586436bcca2387ef2 ""
   "img/Histogram of Wealth - Computer Scientist.png" 1726386482 49036 354766e6059d2297fd3af1a789471410 ""
+  "img/Introduction - Wikidata 2.pdf" 1739799344.22133 76965 fef3af7ad32669b70bcfce7a3080a00e ""
   "img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Gender.png" 1726386482 73622 850f9370de280c2b390235659f5d8ebd ""
   "img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png" 1726386482 69867 ad62672ea614fb680c31f1f767dc63a7 ""
   "img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png" 1726386482 81963 df4bd3ac932bfbca6fb2c8d2bfda48f1 ""
@@ -259,13 +260,13 @@
   "img/Wealth Type 2.png" 1726386482 250461 ba5570173cbebd07bdf2e5fdf092e78c ""
   "img/Wealth Type 3.png" 1726386482 45844 12fe17a5e221582f8e754d9c1f69c016 ""
   "img/Wealth Weighted.png" 1731300280.02695 211439 2fdbaede2e4d64b20dda377a1a21a247 ""
-  "main.abs" 1739763746.38268 1340 b4d50ca407ae99df27f832eb277c9603 "pdflatex"
-  "main.aux" 1739763747.70531 19505 0631ebfb64b48d03c923c7016642ff02 "pdflatex"
-  "main.bbl" 1739763745.02263 568 42560143a314657d2116f76ef857ae07 "bibtex main"
-  "main.out" 1739763746.36029 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1739296053.44655 4675 845af6d7b838e7e4eaa4acb37af1833e ""
-  "main.xmpdata" 1739763747.70943 539 56265870b036ee4450d6ecdaaa088c8f "pdflatex"
-  "pdfa.xmpi" 1739763746.13261 6755 622415b80be5ce822adfe3f8b5339d7e "pdflatex"
+  "main.abs" 1739799386.4334 1340 b4d50ca407ae99df27f832eb277c9603 "pdflatex"
+  "main.aux" 1739799387.87504 19837 df4d58f3f0b309ee6c8d748f4d32173a "pdflatex"
+  "main.bbl" 1739787497.77685 568 42560143a314657d2116f76ef857ae07 "bibtex main"
+  "main.out" 1739799386.40818 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1739798661.85164 4761 a7913e9902949445658027dbe0a715cd ""
+  "main.xmpdata" 1739799387.87778 539 56265870b036ee4450d6ecdaaa088c8f "pdflatex"
+  "pdfa.xmpi" 1739799386.15335 6755 5237fb1e11ca7b0b8db9e391277d0bd2 "pdflatex"
   (generated)
   "main.abs"
   "main.aux"
