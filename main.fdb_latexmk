@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1739350546.09278 "main.aux" "main.bbl" "main" 1739355160.69135 0
+["bibtex main"] 1739763744.93404 "main.aux" "main.bbl" "main" 1739763748.12453 0
   "./mybibliography.bib" 1726386482 7004 4323fb32874aea4dbff6c31a5599632e ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/elsarticle/elsarticle-num-names.bst" 1712688483 28896 b24eb82d1afd0a3fa7d82c6efbe1f559 ""
-  "main.aux" 1739355160.25233 19505 2e6b6b8790cde35aa64badf84c80de96 "pdflatex"
+  "main.aux" 1739763747.70531 19505 0631ebfb64b48d03c923c7016642ff02 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1739355157.48725 "/Users/nurulsriandaputri/Desktop/Penting/3. Research/S1 - Thesis/paper-nurul-et-al/main.tex" "main.pdf" "main" 1739355160.69151 0
+["pdflatex"] 1739763745.02688 "/Users/nurulsriandaputri/Desktop/Penting/3. Research/S1 - Thesis/paper-nurul-et-al/main.tex" "main.pdf" "main" 1739763748.1247 0
   "/Users/nurulsriandaputri/Desktop/Penting/3. Research/S1 - Thesis/paper-nurul-et-al/main.tex" 1739296053.44655 4675 845af6d7b838e7e4eaa4acb37af1833e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc" 1667852677 3022 13dbae1db4ca7b6d6a3611a22a194cb8 ""
@@ -231,7 +231,7 @@
   "cc-by.pdf" 1726386482 59879 b534039833ae0720e95faf00c3f48850 ""
   "ceur-ws-logo.pdf" 1726386482 20969 d9204e31220ce2f16cdc03536deb4b36 ""
   "ceurart.cls" 1726386482 83699 c883d456d716613b09096752cb710410 ""
-  "chapters/1 - introduction/1 - introduction.tex" 1735450272.99604 1183 c0fda00facf8e52d86e854d41329b579 ""
+  "chapters/1 - introduction/1 - introduction.tex" 1739763739.55652 1897 756c521f7c0b94c1393aac0f2b4bc938 ""
   "chapters/2 - related work/2 - related work.tex" 1730530936.7622 734 e3e5bc6eefcb60970dd41ca7fafb2d34 ""
   "chapters/3 - analytics framework/3 - analytics framework master.tex" 1731300599.07466 249 75f113ba17645f71ba6291fab809a107 ""
   "chapters/3 - analytics framework/31 - formal model.tex" 1739342819.6085 8928 f943557fb8d2d060bd801f2eb4d661d2 ""
@@ -241,8 +241,8 @@
   "chapters/4 - use case/41 - bias/41 - bias master.tex" 1729399474.64642 351 392050bb0a037c84f2d2eb584063ebf3 ""
   "chapters/4 - use case/41 - bias/411 - gender bias.tex" 1731315356.75785 13352 33efc43980c5153b206e01519ab3151d ""
   "chapters/4 - use case/41 - bias/412 - western bias.tex" 1731315774.93409 6858 b12d6956a9bd52b351c8ba83e7b2dfba ""
-  "chapters/4 - use case/42 - gini/42 - gini master.tex" 1739347470.00529 7417 ac72fc38b24efdaf8b3b14367429cad7 ""
-  "chapters/4 - use case/43 - prop contribution/43 - prop contribution.tex" 1739355159.05142 10313 4a1e85e91fc4034bfc338d965a0f8391 ""
+  "chapters/4 - use case/42 - gini/42 - gini master.tex" 1739763724.96807 8090 e5330ced30bac21d7896b6204ee7d5ae ""
+  "chapters/4 - use case/43 - prop contribution/43 - prop contribution.tex" 1739369716.65693 10313 4a1e85e91fc4034bfc338d965a0f8391 ""
   "chapters/5 - discussion/5 - discussion.tex" 1739086858.73641 9595 32b0a5d193748e5fe8f95d5d55c1b45b ""
   "chapters/6 - conclusion/6 - conclusion.tex" 1729399983.66689 26 ca978933d259a8d7aaf3fbb035862c07 ""
   "img/Gini - Incoming.png" 1739347214.01151 122916 2c51b2e861b3906f523334c28e7fdfb7 ""
@@ -259,13 +259,13 @@
   "img/Wealth Type 2.png" 1726386482 250461 ba5570173cbebd07bdf2e5fdf092e78c ""
   "img/Wealth Type 3.png" 1726386482 45844 12fe17a5e221582f8e754d9c1f69c016 ""
   "img/Wealth Weighted.png" 1731300280.02695 211439 2fdbaede2e4d64b20dda377a1a21a247 ""
-  "main.abs" 1739355158.90787 1340 b4d50ca407ae99df27f832eb277c9603 "pdflatex"
-  "main.aux" 1739355160.25233 19505 2e6b6b8790cde35aa64badf84c80de96 "pdflatex"
-  "main.bbl" 1739350546.18845 568 42560143a314657d2116f76ef857ae07 "bibtex main"
-  "main.out" 1739355158.88454 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.abs" 1739763746.38268 1340 b4d50ca407ae99df27f832eb277c9603 "pdflatex"
+  "main.aux" 1739763747.70531 19505 0631ebfb64b48d03c923c7016642ff02 "pdflatex"
+  "main.bbl" 1739763745.02263 568 42560143a314657d2116f76ef857ae07 "bibtex main"
+  "main.out" 1739763746.36029 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "main.tex" 1739296053.44655 4675 845af6d7b838e7e4eaa4acb37af1833e ""
-  "main.xmpdata" 1739355160.25471 539 56265870b036ee4450d6ecdaaa088c8f "pdflatex"
-  "pdfa.xmpi" 1739355158.63514 6755 c55ac1334b15e1b8d8c877a1dfa5d1fe "pdflatex"
+  "main.xmpdata" 1739763747.70943 539 56265870b036ee4450d6ecdaaa088c8f "pdflatex"
+  "pdfa.xmpi" 1739763746.13261 6755 622415b80be5ce822adfe3f8b5339d7e "pdflatex"
   (generated)
   "main.abs"
   "main.aux"
