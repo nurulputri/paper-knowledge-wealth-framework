@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  17 FEB 2025 20:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  25 FEB 2025 18:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1395,31 +1395,31 @@ LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 1.
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 27.
+(Font)              scaled to size 10.0pt on input line 33.
 <./img/Introduction - Wikidata 2.pdf, id=23, 774.97525pt x 310.27919pt>
 File: ./img/Introduction - Wikidata 2.pdf Graphic file (type pdf)
 <use ./img/Introduction - Wikidata 2.pdf>
-Package pdftex.def Info: ./img/Introduction - Wikidata 2.pdf  used on input line 30.
+Package pdftex.def Info: ./img/Introduction - Wikidata 2.pdf  used on input line 36.
 (pdftex.def)             Requested size: 418.25555pt x 167.4583pt.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 31.
+(Font)              scaled to size 10.0pt on input line 37.
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 31.
+(Font)              scaled to size 10.0pt on input line 37.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 36.
+(Font)              scaled to size 10.95pt on input line 42.
 
 
 [1
 
-{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_nufysp.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_rlktsf.enc} <./cc-by.pdf> <./ceur-ws-logo.pdf>]
+{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_nufysp.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_rlktsf.enc} <./cc-by.pdf> <./ceur-ws-logo.pdf>]) (./chapters/2 - related work/2 - related work.tex
 
-[2 <./img/Introduction - Wikidata 2.pdf>]) (./chapters/2 - related work/2 - related work.tex) (./chapters/3 - analytics framework/3 - analytics framework master.tex (./chapters/3 - analytics framework/31 - formal model.tex
+[2 <./img/Introduction - Wikidata 2.pdf>]) (./chapters/3 - analytics framework/3 - analytics framework master.tex (./chapters/3 - analytics framework/31 - formal model.tex
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
 
 
 [3]
-<./img/Wealth Type 1.png, id=94, 609.27625pt x 313.17pt>
+<./img/Wealth Type 1.png, id=91, 609.27625pt x 313.17pt>
 File: ./img/Wealth Type 1.png Graphic file (type png)
 <use ./img/Wealth Type 1.png>
 Package pdftex.def Info: ./img/Wealth Type 1.png  used on input line 19.
@@ -1429,7 +1429,7 @@ Overfull \hbox (57.30634pt too wide) in paragraph at lines 19--20
  [][] 
  []
 
-<./img/Wealth Type 2.png, id=96, 609.27625pt x 313.17pt>
+<./img/Wealth Type 2.png, id=93, 609.27625pt x 313.17pt>
 File: ./img/Wealth Type 2.png Graphic file (type png)
 <use ./img/Wealth Type 2.png>
 Package pdftex.def Info: ./img/Wealth Type 2.png  used on input line 25.
@@ -1444,7 +1444,7 @@ Underfull \hbox (badness 1521) in paragraph at lines 26--26
 [][][]|\T1/LibertinusSerif-TLF/m/n/10 (+20) Il-lus-tra-tion of 3 types of
  []
 
-<./img/Wealth Type 3.png, id=97, 609.27625pt x 313.17pt>
+<./img/Wealth Type 3.png, id=94, 609.27625pt x 313.17pt>
 File: ./img/Wealth Type 3.png Graphic file (type png)
 <use ./img/Wealth Type 3.png>
 Package pdftex.def Info: ./img/Wealth Type 3.png  used on input line 31.
@@ -1466,49 +1466,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 N[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s; G\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 j$ \T1/LibertinusSerif-TLF/m/n/10.95 (+20) with $\OML/cmm/m/it/10.95 N[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s; G\OT1/cmr/m/n/10.95 ) =
  []
 
+) (./chapters/3 - analytics framework/32 - insight model.tex
 
-
-[5]) (./chapters/3 - analytics framework/32 - insight model.tex
+[5]
 LaTeX Font Info:    Font shape `TS1/LibertinusSerif-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 5.
 
-
-[6]
 Underfull \hbox (badness 1052) in paragraph at lines 23--24
 []\T1/LibertinusSerif-TLF/m/n/10.95 (+20) For an-other an-other ex-am-ple, let's say we have an-other ar-ray of 10 en-ti-ties $\OML/cmm/m/it/10.95 z \OT1/cmr/m/n/10.95 =
  []
 
-) (./chapters/3 - analytics framework/33 - model application sample.tex
-<./img/Wealth Weighted.png, id=137, 1030.85126pt x 578.16pt>
+
+
+[6]) (./chapters/3 - analytics framework/33 - model application sample.tex
+<./img/Wealth Weighted.png, id=135, 1030.85126pt x 578.16pt>
 File: ./img/Wealth Weighted.png Graphic file (type png)
 <use ./img/Wealth Weighted.png>
 Package pdftex.def Info: ./img/Wealth Weighted.png  used on input line 5.
 (pdftex.def)             Requested size: 412.33319pt x 231.2599pt.
 
 
-[7]
-<./img/Sample Lorenz Curve.png, id=151, 363.3575pt x 215.80624pt>
+[7 <./img/Wealth Weighted.png>]
+<./img/Sample Lorenz Curve.png, id=148, 363.3575pt x 215.80624pt>
 File: ./img/Sample Lorenz Curve.png Graphic file (type png)
 <use ./img/Sample Lorenz Curve.png>
 Package pdftex.def Info: ./img/Sample Lorenz Curve.png  used on input line 38.
 (pdftex.def)             Requested size: 290.68639pt x 172.64522pt.
-)) (./chapters/4 - use case/4 - use case master.tex (./chapters/4 - use case/41 - bias/41 - bias master.tex
+)) (./chapters/4 - use case/4 - use case master.tex
 
-[8 <./img/Wealth Weighted.png>] (./chapters/4 - use case/41 - bias/411 - gender bias.tex
+[8 <./img/Sample Lorenz Curve.png>] (./chapters/4 - use case/41 - bias/41 - bias master.tex (./chapters/4 - use case/41 - bias/411 - gender bias.tex
 
-[9 <./img/Sample Lorenz Curve.png>]
+[9]
 
 [10]
 Overfull \hbox (35.02386pt too wide) in paragraph at lines 84--108
  [] 
  []
 
-<./img/Histogram of Wealth - Computer Scientist.png, id=181, 1500.60625pt x 526.96875pt>
+<./img/Histogram of Wealth - Computer Scientist.png, id=178, 1500.60625pt x 526.96875pt>
 File: ./img/Histogram of Wealth - Computer Scientist.png Graphic file (type png)
 <use ./img/Histogram of Wealth - Computer Scientist.png>
 Package pdftex.def Info: ./img/Histogram of Wealth - Computer Scientist.png  used on input line 114.
 (pdftex.def)             Requested size: 418.25555pt x 146.8748pt.
-<./img/Histogram of Wealth - American Singer.png, id=183, 1500.60625pt x 526.96875pt>
+<./img/Histogram of Wealth - American Singer.png, id=180, 1500.60625pt x 526.96875pt>
 File: ./img/Histogram of Wealth - American Singer.png Graphic file (type png)
 <use ./img/Histogram of Wealth - American Singer.png>
 Package pdftex.def Info: ./img/Histogram of Wealth - American Singer.png  used on input line 118.
@@ -1521,12 +1521,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [11]
 
 [12 <./img/Histogram of Wealth - Computer Scientist.png> <./img/Histogram of Wealth - American Singer.png>]
-<./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Gender.png, id=200, 1500.60625pt x 526.96875pt>
+<./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Gender.png, id=197, 1500.60625pt x 526.96875pt>
 File: ./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Gender.png Graphic file (type png)
 <use ./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Gender.png>
 Package pdftex.def Info: ./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Gender.png  used on input line 174.
 (pdftex.def)             Requested size: 418.25555pt x 146.8748pt.
-<./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender.png, id=202, 1500.60625pt x 526.96875pt>
+<./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender.png, id=199, 1500.60625pt x 526.96875pt>
 File: ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender.png Graphic file (type png)
 <use ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender.png>
 Package pdftex.def Info: ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender.png  used on input line 178.
@@ -1540,12 +1540,12 @@ Overfull \hbox (37.77388pt too wide) in paragraph at lines 66--86
  [] 
  []
 
-<./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png, id=225, 1500.60625pt x 526.96875pt>
+<./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png, id=222, 1500.60625pt x 526.96875pt>
 File: ./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png Graphic file (type png)
 <use ./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png>
 Package pdftex.def Info: ./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png  used on input line 119.
 (pdftex.def)             Requested size: 418.25555pt x 146.8748pt.
-<./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png, id=227, 1500.60625pt x 526.96875pt>
+<./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png, id=224, 1500.60625pt x 526.96875pt>
 File: ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png Graphic file (type png)
 <use ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png>
 Package pdftex.def Info: ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png  used on input line 123.
@@ -1555,7 +1555,7 @@ Package pdftex.def Info: ./img/Ratio of Class Wealth to Expectation per Quantile
 [15]
 
 [16 <./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png> <./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png>]
-<./img/Gini - Pure Literal.png, id=247, 1281.78876pt x 216.81pt>
+<./img/Gini - Pure Literal.png, id=244, 1281.78876pt x 216.81pt>
 File: ./img/Gini - Pure Literal.png Graphic file (type png)
 <use ./img/Gini - Pure Literal.png>
 Package pdftex.def Info: ./img/Gini - Pure Literal.png  used on input line 47.
@@ -1563,12 +1563,12 @@ Package pdftex.def Info: ./img/Gini - Pure Literal.png  used on input line 47.
 
 
 [17 <./img/Gini - Pure Literal.png>]
-<./img/Gini - Outgoing.png, id=258, 1281.78876pt x 216.81pt>
+<./img/Gini - Outgoing.png, id=255, 1281.78876pt x 216.81pt>
 File: ./img/Gini - Outgoing.png Graphic file (type png)
 <use ./img/Gini - Outgoing.png>
 Package pdftex.def Info: ./img/Gini - Outgoing.png  used on input line 73.
 (pdftex.def)             Requested size: 418.25555pt x 70.7436pt.
-<./img/Gini - Incoming.png, id=260, 1281.78876pt x 216.81pt>
+<./img/Gini - Incoming.png, id=257, 1281.78876pt x 216.81pt>
 File: ./img/Gini - Incoming.png Graphic file (type png)
 <use ./img/Gini - Incoming.png>
 Package pdftex.def Info: ./img/Gini - Incoming.png  used on input line 77.
@@ -1598,17 +1598,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30606 strings out of 473579
- 581999 string characters out of 5728228
+ 30601 strings out of 473579
+ 581919 string characters out of 5728228
  1104649 words of memory out of 5000000
- 52481 multiletter control sequences out of 15000+600000
+ 52479 multiletter control sequences out of 15000+600000
  709594 words of font info for 343 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,21n,121p,11005b,2548s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (23 pages, 1771294 bytes).
+Output written on main.pdf (23 pages, 1770891 bytes).
 PDF statistics:
- 451 PDF objects out of 1000 (max. 8388607)
- 93 named destinations out of 1000 (max. 500000)
+ 447 PDF objects out of 1000 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
  86320 words of extra memory for PDF output out of 89155 (max. 10000000)
 
