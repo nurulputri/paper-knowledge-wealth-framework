@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  25 FEB 2025 18:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  2 MAR 2025 00:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1395,31 +1395,31 @@ LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 1.
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 33.
+(Font)              scaled to size 10.0pt on input line 43.
 <./img/Introduction - Wikidata 2.pdf, id=23, 774.97525pt x 310.27919pt>
 File: ./img/Introduction - Wikidata 2.pdf Graphic file (type pdf)
 <use ./img/Introduction - Wikidata 2.pdf>
-Package pdftex.def Info: ./img/Introduction - Wikidata 2.pdf  used on input line 36.
+Package pdftex.def Info: ./img/Introduction - Wikidata 2.pdf  used on input line 46.
 (pdftex.def)             Requested size: 418.25555pt x 167.4583pt.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 37.
+(Font)              scaled to size 10.0pt on input line 47.
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 37.
+(Font)              scaled to size 10.0pt on input line 47.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 42.
+(Font)              scaled to size 10.95pt on input line 50.
 
 
 [1
 
-{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_nufysp.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_rlktsf.enc} <./cc-by.pdf> <./ceur-ws-logo.pdf>]) (./chapters/2 - related work/2 - related work.tex
+{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_nufysp.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_rlktsf.enc} <./cc-by.pdf> <./ceur-ws-logo.pdf>])
 
-[2 <./img/Introduction - Wikidata 2.pdf>]) (./chapters/3 - analytics framework/3 - analytics framework master.tex (./chapters/3 - analytics framework/31 - formal model.tex
+[2 <./img/Introduction - Wikidata 2.pdf>] (./chapters/2 - related work/2 - related work.tex) (./chapters/3 - analytics framework/3 - analytics framework master.tex (./chapters/3 - analytics framework/31 - formal model.tex
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
 
 
 [3]
-<./img/Wealth Type 1.png, id=91, 609.27625pt x 313.17pt>
+<./img/Wealth Type 1.png, id=90, 609.27625pt x 313.17pt>
 File: ./img/Wealth Type 1.png Graphic file (type png)
 <use ./img/Wealth Type 1.png>
 Package pdftex.def Info: ./img/Wealth Type 1.png  used on input line 19.
@@ -1429,7 +1429,7 @@ Overfull \hbox (57.30634pt too wide) in paragraph at lines 19--20
  [][] 
  []
 
-<./img/Wealth Type 2.png, id=93, 609.27625pt x 313.17pt>
+<./img/Wealth Type 2.png, id=92, 609.27625pt x 313.17pt>
 File: ./img/Wealth Type 2.png Graphic file (type png)
 <use ./img/Wealth Type 2.png>
 Package pdftex.def Info: ./img/Wealth Type 2.png  used on input line 25.
@@ -1444,7 +1444,7 @@ Underfull \hbox (badness 1521) in paragraph at lines 26--26
 [][][]|\T1/LibertinusSerif-TLF/m/n/10 (+20) Il-lus-tra-tion of 3 types of
  []
 
-<./img/Wealth Type 3.png, id=94, 609.27625pt x 313.17pt>
+<./img/Wealth Type 3.png, id=93, 609.27625pt x 313.17pt>
 File: ./img/Wealth Type 3.png Graphic file (type png)
 <use ./img/Wealth Type 3.png>
 Package pdftex.def Info: ./img/Wealth Type 3.png  used on input line 31.
@@ -1457,6 +1457,8 @@ Overfull \hbox (57.30634pt too wide) in paragraph at lines 31--32
 
 
 [4 <./img/Wealth Type 1.png> <./img/Wealth Type 2.png> <./img/Wealth Type 3.png>]
+
+[5]
 Underfull \hbox (badness 1259) in paragraph at lines 85--86
 \OML/cmm/m/it/10.95 s$ \T1/LibertinusSerif-TLF/m/n/10.95 (+20) us-ing set of prop-er-ties, cal-cu-lat-ing ob-ject and data but not ID prop-er-ties, and us-
  []
@@ -1467,36 +1469,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
  []
 
 ) (./chapters/3 - analytics framework/32 - insight model.tex
-
-[5]
 LaTeX Font Info:    Font shape `TS1/LibertinusSerif-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 5.
 
+
+[6]
 Underfull \hbox (badness 1052) in paragraph at lines 23--24
 []\T1/LibertinusSerif-TLF/m/n/10.95 (+20) For an-other an-other ex-am-ple, let's say we have an-other ar-ray of 10 en-ti-ties $\OML/cmm/m/it/10.95 z \OT1/cmr/m/n/10.95 =
  []
 
-
-
-[6]) (./chapters/3 - analytics framework/33 - model application sample.tex
-<./img/Wealth Weighted.png, id=135, 1030.85126pt x 578.16pt>
+) (./chapters/3 - analytics framework/33 - model application sample.tex
+<./img/Wealth Weighted.png, id=133, 1030.85126pt x 578.16pt>
 File: ./img/Wealth Weighted.png Graphic file (type png)
 <use ./img/Wealth Weighted.png>
 Package pdftex.def Info: ./img/Wealth Weighted.png  used on input line 5.
 (pdftex.def)             Requested size: 412.33319pt x 231.2599pt.
 
 
-[7 <./img/Wealth Weighted.png>]
-<./img/Sample Lorenz Curve.png, id=148, 363.3575pt x 215.80624pt>
+[7]
+<./img/Sample Lorenz Curve.png, id=147, 363.3575pt x 215.80624pt>
 File: ./img/Sample Lorenz Curve.png Graphic file (type png)
 <use ./img/Sample Lorenz Curve.png>
 Package pdftex.def Info: ./img/Sample Lorenz Curve.png  used on input line 38.
 (pdftex.def)             Requested size: 290.68639pt x 172.64522pt.
 )) (./chapters/4 - use case/4 - use case master.tex
 
-[8 <./img/Sample Lorenz Curve.png>] (./chapters/4 - use case/41 - bias/41 - bias master.tex (./chapters/4 - use case/41 - bias/411 - gender bias.tex
+[8 <./img/Wealth Weighted.png>] (./chapters/4 - use case/41 - bias/41 - bias master.tex (./chapters/4 - use case/41 - bias/411 - gender bias.tex
 
-[9]
+[9 <./img/Sample Lorenz Curve.png>]
 
 [10]
 Overfull \hbox (35.02386pt too wide) in paragraph at lines 84--108
@@ -1598,15 +1598,15 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30601 strings out of 473579
- 581919 string characters out of 5728228
- 1104649 words of memory out of 5000000
+ 30611 strings out of 473579
+ 582263 string characters out of 5728228
+ 1105123 words of memory out of 5000000
  52479 multiletter control sequences out of 15000+600000
- 709594 words of font info for 343 fonts, out of 8000000 for 9000
+ 710504 words of font info for 350 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,21n,121p,11005b,2548s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (23 pages, 1770891 bytes).
+Output written on main.pdf (23 pages, 1774850 bytes).
 PDF statistics:
  447 PDF objects out of 1000 (max. 8388607)
  90 named destinations out of 1000 (max. 500000)

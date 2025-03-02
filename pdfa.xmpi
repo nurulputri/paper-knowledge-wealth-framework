@@ -69,7 +69,7 @@
   <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> 
    <dc:format>application/pdf</dc:format> 
    <dc:type><rdf:Bag><rdf:li>journal</rdf:li></rdf:Bag></dc:type>
-   <dc:title><rdf:Alt><rdf:li xml:lang="x-default">Quantifying Knowledge Wealth in Knowledge Graphs: A Case Study of Wikidata</rdf:li></rdf:Alt></dc:title>
+   <dc:title><rdf:Alt><rdf:li xml:lang="x-default">How Quantifying Knowledge Wealth Reveals Knowledge Gap: A Case Study of Wikidata</rdf:li></rdf:Alt></dc:title>
    <dc:creator><rdf:Seq><rdf:li>TBD</rdf:li>
      <rdf:li>TBD</rdf:li>
      <rdf:li>TBD</rdf:li>
@@ -92,9 +92,9 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> 
    <xmp:CreatorTool>LaTeX with hyperref</xmp:CreatorTool> 
-   <xmp:ModifyDate>2025-02-25T18:15:21+07:00</xmp:ModifyDate> 
-   <xmp:CreateDate>2025-02-25T18:15:21+07:00</xmp:CreateDate> 
-   <xmp:MetadataDate>2025-02-25T18:15:21+07:00</xmp:MetadataDate> 
+   <xmp:ModifyDate>2025-03-02T00:13:44+07:00</xmp:ModifyDate> 
+   <xmp:CreateDate>2025-03-02T00:13:44+07:00</xmp:CreateDate> 
+   <xmp:MetadataDate>2025-03-02T00:13:44+07:00</xmp:MetadataDate> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpRights = "http://ns.adobe.com/xap/1.0/rights/"> 
    <xmpRights:Marked>True</xmpRights:Marked>
@@ -103,7 +103,7 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"> 
    <xmpMM:DocumentID>uuid:DF005B57-2A06-8753-7167-92D8CE935460</xmpMM:DocumentID> 
-   <xmpMM:InstanceID>uuid:3CBD13B6-5286-3C1F-C3F1-CA0506A79A0D</xmpMM:InstanceID> 
+   <xmpMM:InstanceID>uuid:6106AD0A-6D2E-74D4-746A-A92FEEA74985</xmpMM:InstanceID> 
   </rdf:Description> 
  </rdf:RDF> 
 </x:xmpmeta> 
