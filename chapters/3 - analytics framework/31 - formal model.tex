@@ -1,4 +1,4 @@
-\subsection{Wealth Formal Model}
+\subsection{Wealth Formal Model} \label{wealth-formal-model}
 Knowledge graphs follow Resource Description Framework (RDF) as a means of data organization. Without loss of generality of how the form of the URIs is, data is stored in the form of triple \((s, p, o)\); a combination of a subject \(s\), a predicate \(p\), and an object \(o\) which can be visualized as nodes and directed-arc diagrams. For example, the statement "William Shakespeare's notable work is Romeo and Juliet" in human-readable URIs is mapped to the triple (\textit{WilliamShakespeare}, \textit{notableWork}, \textit{RomeoAndJuliet}). Likewise, the statement in Wikidata, which uses ID-based URIs, is mapped to (Q692, P800, Q83186).
 
 There are 3 kind of nodes: IRIs, literals, and blank nodes. A triple is in the form of \((s, p, o) \in G) \cap (I \cup B) \times I \times (I \cup B \cup L) \) where \(I\) is the node with type IRIs, \(B\) is the node with type of blank node, and \(L\) is the node with type of literals. In this study, we omit the usage of blank node, as this adds complexity to the analysis and may result in quality issue.
