@@ -1,17 +1,32 @@
 \paragraph{Western Bias in Wikidata}
 
-Western bias analysis in Wikidata will be performed on 5 Wikidata classes: computer scientist, singer, memorial, university, and river. For each class, we collect the data for the western portion from 8 countries: Canada, France, Germany, Ireland, Poland, Switzerland, the United Kingdom (UK), and the United State of America (USA). For the non-western portion, we also chose 8 countries: China, Egypt, India, Indonesia, Japan, Morocco, Nigeria, and South Africa.
+Western bias analysis in Wikidata will be performed on 5 Wikidata classes: computer scientist, singer, memorial, university, and river. For each class, we collect the data for the western portion from 8 countries: Canada, France, Germany, Ireland, Poland, Switzerland, the United Kingdom (UK), and the United State of America (USA). For the non-western portion, we also selected 8 countries: China, Egypt, India, Indonesia, Japan, Morocco, Nigeria, and South Africa. The selected countries represent different continents to capture a diverse geographic distribution. Additionally, we focus on large and well-known countries to ensure the dataset is representative, as data from smaller countries may not provide meaningful insights due to limited coverage in Wikidata.
 
 To analyze the bias, the first aspect that will be considered is the proportion of each regional category in every class. We assume that there are equal numbers of western and non-western and this will be the basis to determine if there is any bias in the data. Pearson's chi-square test (goodness-of-fit) is then performed to test the null and alternative hypotheses with significance level of \(\alpha=5\%\) as follows:
 
-\(H_0\): The proportions of western and non-western entities in a particular class are equal
+% \(H_0\): The proportions of western and non-western entities in a particular class are equal
 
-\(H_1\): The proportions of western and non-western entities in a particular class are not equal
+% \(H_1\): The proportions of western and non-western entities in a particular class are not equal
 
+\begin{table}[h]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{|l p{12cm}|} 
+        \hline
+        \multicolumn{2}{|l|}{\textbf{Western Bias: Entity Count Gap (Pearson's chi-square test)}} \\
+        \hline
+        \textbf{$H_0$} & The proportions of western and non-western entities in a particular class are equal. \\
+        \textbf{$H_1$} & The proportions of western and non-western entities in a particular class are not equal. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+In terms of entity count, \autoref{tab:western - entity count} shows that there are big gaps between the westerners and non-westerners in all of the classes.
 
 \begin{center}
-\small
+\scriptsize
 \begin{threeparttable}
+\captionsetup{font=small}
 \caption{Entity Count of 5 Wikidata Classes per Regional Category}
 \label{tab:western - entity count}
 \begin{tabular}{c | c c c c c c c} 
@@ -28,17 +43,18 @@ To analyze the bias, the first aspect that will be considered is the proportion 
 \bottomrule
 \end{tabular}
 \begin{tablenotes}
-    \footnotesize
+    \scriptsize
     \item{This table shows the entity count of 5 Wikidata classes per regional category. Chi-square test result shows the significance of difference between the entity count of the two genders male and female.}
 \end{tablenotes}
 \end{threeparttable}
 \end{center}
 
-In terms of entity count, \autoref{tab:western - entity count} shows that there are big gaps between the westerners and non-westerners in all of the classes. From \autoref{tab:western - central tendency}, non-western entities generally have lower values of measure of central tendency (mean, median, mode). The range of property count of non-westerns is generally also lower than the westerns. Positive values of skewness (skewness > 0) and high kurtosis values (kurtosis > 3) in all classes denote the wealth distribution is right skewed and leptokurtic.
+From \autoref{tab:western - central tendency}, non-western entities generally have lower values of measure of central tendency (mean, median, mode). The range of property count of non-westerns is generally also lower than the westerns. Positive values of skewness (skewness > 0) and high kurtosis values (kurtosis > 3) in all classes denote the wealth distribution is right skewed and leptokurtic.
 
 \begin{center}
-\small
+\scriptsize
 \begin{threeparttable}
+\captionsetup{font=small}
 \caption{Measures of Central Tendency of 5 Wikidata Classes per Regional Category}
 \label{tab:western - central tendency}
 \begin{tabular}{c | c c c} 
@@ -54,15 +70,16 @@ In terms of entity count, \autoref{tab:western - entity count} shows that there 
 \bottomrule
 \end{tabular}
 \begin{tablenotes}
-    \footnotesize
-    \item{This table shows the measures of central tendency of 5 Wikidata classes per regional category. Each measure will have 3 values: o (overall), w (western), and f (non-western).}
+    \scriptsize
+    \item{This table shows the measures of central tendency of 5 Wikidata classes per regional category. Each measure will have 3 values: o (overall), w (western), and n (non-western).}
 \end{tablenotes}
 \end{threeparttable}
 \end{center}
 
 \begin{center}
-\small
+\scriptsize
 \begin{threeparttable}
+\captionsetup{font=small}
 \caption{Measures of Dispersion and Symmetry of 5 Wikidata Classes per Gender Category}
 \label{tab:western - dispersion and symmetry}
 \begin{tabular}{c | c c c c c} 
@@ -79,8 +96,8 @@ In terms of entity count, \autoref{tab:western - entity count} shows that there 
 \bottomrule
 \end{tabular}
 \begin{tablenotes}
-    \footnotesize
-    \item{This table shows the measures of dispersion and symmetry of 5 Wikidata classes per gender category. Each measure will have 3 values: o (overall), w (western), and f (non-western).}
+    \scriptsize
+    \item{This table shows the measures of dispersion and symmetry of 5 Wikidata classes per gender category. Each measure will have 3 values: o (overall), w (western), and n (non-western).}
 \end{tablenotes}
 \end{threeparttable}
 \end{center}
@@ -88,8 +105,9 @@ In terms of entity count, \autoref{tab:western - entity count} shows that there 
 Out of 5 classes, class of memorial is the only class where the null hypothesis is not rejected. In the other 4 classes, we can see a significant difference between the mean of the two reginal categories, which all are in favor of the western.
 
 \begin{center}
-\small
+\scriptsize
 \begin{threeparttable}
+\captionsetup{font=small}
 \caption{F-Test, T-Test, and Welch's Test Result of 5 Wikidata Classes}
 \label{tab:western - mean test}
 \begin{tabular}{c | c c c c c c} 
@@ -105,11 +123,28 @@ Out of 5 classes, class of memorial is the only class where the null hypothesis 
 \bottomrule
 \end{tabular}
 \begin{tablenotes}
-    \footnotesize
+    \scriptsize
     \item{}
 \end{tablenotes}
 \end{threeparttable}
 \end{center}
+
+As with gender bias, measuring western bias in Wikidata cannot rely solely on entity counts. The number of entities associated with western and non-western regions may reflect real-world disparities in documentation or notability, making raw counts an unreliable indicator of bias. Similarly, measures of central tendency—such as the mean or median—fail to capture how representation is distributed across the full spectrum of prominence or wealth. To address these limitations, we apply the same metric introduced in the gender bias analysis: the relative expectation ratio. This measure compares a region’s share of entities within a given quantile to its expected share under equal representation. A ratio of 1 indicates proportional representation, while values above or below 1 signal overrepresentation or underrepresentation, respectively. This allows for a more nuanced, quantile-level understanding of how Western and non-Western entities are distributed in knowledge graphs like Wikidata.
+
+\begin{table}[h]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{|l p{12cm}|} 
+        \hline
+        \multicolumn{2}{|l|}{\textbf{Western Bias: Relative Expectation Ratios}} \\
+        \hline
+        \textbf{Insight 1:} & On average across all 5 classes, the less prominent segments are dominated by non-western entities, while the more prominent ones are dominated by western entities. The middle quantiles exhibit a zig-zag pattern, reflecting inconsistent representation between the two groups. \\
+        \textbf{Insight 2:} & At the individual class level, 2 out of 5 classes display a particularly strong western dominance. The rests exhibit a zig-zag trend. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+On average across all classes, the lower four quantiles (i.e., the less prominent or "poorer" segments) are predominantly composed of non-Western entities, while the top three quantiles (i.e., the more prominent or "wealthier" segments) are dominated by Western entities. The middle quantiles exhibit a zig-zag pattern, reflecting inconsistent representation between the two groups. At the individual class level, the computer scientist and singer classes display a particularly strong Western bias. In both classes, non-Western entities are consistently overrepresented in the lower quantiles (Q1–Q4), while Western entities are consistently overrepresented in the upper quantiles (Q5–Q6). This pattern suggests a clear stratification, with non-Western entities disproportionately concentrated in less prominent positions. The memorial, university, and river classes, however, deviate from this pattern and exhibit a zig-zag trend across quantiles. This suggests a more unstable distribution of Western and non-Western entities across the quantiles.
 
 \begin{figure}
 \centering 

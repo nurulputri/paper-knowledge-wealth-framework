@@ -22,6 +22,15 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{threeparttable}
+\usepackage[english]{babel}
+\usepackage{booktabs}  % For professional table formatting
+\usepackage{tabularx}  % For flexible column width
+\usepackage{array}     % For better column formatting
+
+\addto\extrasenglish{
+  \def\subsectionautorefname{Subsection}
+}
+
 \graphicspath{ {./img/} }
 %% auto break lines
 \lstset{breaklines=true}
@@ -60,14 +69,14 @@
 %%
 %% The "author" command and its associated commands are used to define
 %% the authors and their affiliations.
-\author[1]{TBD}[%
+\author[1]{Nurul Srianda Putri}[%
 % orcid=0000-0002-0877-7063,
-email=tbd@tbd.com,
+email=nurul.srianda@ui.ac.id,
 % url=https://yamadharma.github.io/,
 ]
 % \cormark[1]
 % \fnmark[1]
-\author[1]{TBD}[%
+\author[1]{Fariz Darari}[%
 % orcid=0000-0002-0877-7063,
 email=tbd@tbd.com,
 % url=https://yamadharma.github.io/,
@@ -112,7 +121,7 @@ The increasing volume of data has amplified the demand for structured, machine-r
   knowledge wealth \sep
   knowledge imbalance \sep
   data quality \sep
-  Wikidata \sep
+  Wikidata
 \end{keywords}
 
 %%

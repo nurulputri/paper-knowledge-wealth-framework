@@ -7,9 +7,10 @@
 In this subchapter, analysis is done to see how each wealth type affects the level of inequality of Wikidata classes. There are 2 ways this is done--quantitatively using Gini coefficient and qualitatively using Lorenz curve. The analysis is performed on 8 Wikidata classes, in which 4 of them are human-related class while the other 4 are not.
 
 \begin{center}
-    \small
+    \scriptsize
     \makebox[\linewidth]{
     \begin{threeparttable}
+    \captionsetup{font=small}
     \caption{Knowledge Wealth Type on Gini Coefficient}
     \label{table:gini-coef}
     \begin{tabular}{c | c c | c c c | c c} 
@@ -29,7 +30,7 @@ In this subchapter, analysis is done to see how each wealth type affects the lev
     \bottomrule
     \end{tabular}
     \begin{tablenotes}
-        \footnotesize
+        \scriptsize
         \item{This table shows the comparison of Gini coefficient of 8 Wikidata classes}
     \end{tablenotes}
     \end{threeparttable}
@@ -48,7 +49,7 @@ Using the notion of wealth by type of property, in general the smallest Gini coe
     \caption{Lorenz curve of wealth using literal properties} \label{fig:gini-literal}
 \end{figure}
 
-In the classes of American researchers and computer scientists, the Gini coefficients for wealth using pure literal properties are significantly higher than those of other classes. This is due to approximately 50\% of the entities in these classes having 0 pure literal properties--not even basic human-related literal properties such as \textit{date of birth} (P569). For example, an American researcher \textit{John Heidemann} (Q29354581) has a total wealth of 61 (using the bag of properties) and is among the top 4\% entities in his class, yet this entity has 0 literal properties. In contrast, only 818 out of 16150 (just about 5\%) entities of American singer class have 0 literal properties. Moreover, an instance of American singer, {Kris Allen} (Q216927), who also has a total wealth of 61 (using the bag of properties), has 6 literal properties.
+In the classes of American researchers and computer scientists, the Gini coefficients for wealth using pure literal properties are significantly higher than those of other classes. This is due to approximately 50\% of the entities in these classes having 0 pure literal properties--not even basic human-related literal properties such as \textit{date of birth} (P569). For example, an American researcher \textit{John Heidemann} (Q29354581) has a total wealth of 61 (using the bag of properties) and is among the top 4\% entities in his class, yet this entity has 0 literal properties. In contrast, only 818 out of 16150 (just about 5\%) entities of American singer class have 0 literal properties. Moreover, an instance of American singer, \textit{Kris Allen} (Q216927), who also has a total wealth of 61 (using the bag of properties), has 6 literal properties.
 
 Another anomaly is observed in the class of badminton player where the Gini coefficient for wealth using pure literal is significantly lower than that of other classes. Upon inspection, three main reasons for this anomaly were identified. First, there are no entities in this class with 0 literal properties; all entites have at least 1 literal. Second, the range of wealth in this class is smaller, with a minimum value of 1 and maximum value of 10, in comparison to the classes of American researcher, American singer, and computer scientist which all have a minimum value of 0 and maximum values of 16, 26, and 54, respectively. This smaller range means the difference between the poorest and richest entities in the class of badminton player is minimal, and a small wealth range generally leads to a low Gini coefficient because inequality is limited by the narrow spread of wealth. The third reason is the large number of entities in this class, which totals 25,402. With such a high population size, the wealth of each individual—whether the poorest, middle, or richest entity—contributes only a tiny fraction to the total wealth of the class. Combined with the small wealth range, this further reduces the inequality measure, resulting in a low Gini coefficient.
 

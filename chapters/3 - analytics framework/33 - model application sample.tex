@@ -11,8 +11,9 @@ We provide small case in \autoref{fig:wealth-weighted} to illustrate how both mo
 A graph \(G\) has a class \(C\), which consists of four entities \(s_1\), \(s_2\), \(s_3\), and \(s_4\). Each entity has two distinct properties \(p_1\) and \(p_2\). For example, entity \(s_1\) is linked by property \(p_1\) to objects \(o_{111}\) and \(o_{112}\), and by property \(p_2\) to object \(o_{121}\). Using the bag of properties and outgoing link direction, the wealth of entity \(s_1\) is 3 (2 accounted for by \(p_1\) and 1 by \(p_2\)). Similarly, the wealth of entities \(s_2\), \(s_3\), and \(s_4\) is 3, 6, and 2, respectively. \autoref{tab:sample statistical summary} provides a statistical summary describing the wealth of class \(C\). Entities in class \(C\) have a mean wealth of 3.5, a median wealth of 3, a mode wealth of 3, a minimum wealth of 2, and a maximum wealth of 6. Based on each individual entity's wealth, the imbalance measure of class \(C\) is quantified using the Gini coefficient, which has a value of 0.21.
 
 \begin{center}
-    \small
+    \scriptsize
     \begin{threeparttable}
+    \captionsetup{font=small}
     \caption{Statistical Summary of Wealth of Class \(C\)}
     \label{tab:sample statistical summary}
     \begin{tabular}{c | c c c c c c c} 
@@ -25,7 +26,7 @@ A graph \(G\) has a class \(C\), which consists of four entities \(s_1\), \(s_2\
     \bottomrule
     \end{tabular}
     \begin{tablenotes}
-        \footnotesize
+        \scriptsize
         \item{This table shows some statistical measures to quantify the wealth of class \(C\).}
     \end{tablenotes}
     \end{threeparttable}

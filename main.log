@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  2 MAR 2025 13:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  13 APR 2025 15:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1180,75 +1180,103 @@ Package caption Info: New subtype `subtable' on input line 238.
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box70
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2024/08/29 v24.9 The Babel package
+\babel@savecnt=\count355
+\U@D=\dimen275
+\l@unhyphenated=\language89
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read4
+\bbl@dirlevel=\count356
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language23). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language23). Reported on input line 108.
+)) (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen276
+\TX@old@table=\dimen277
+\TX@old@col=\dimen278
+\TX@target=\dimen279
+\TX@delta=\dimen280
+\TX@cols=\count357
+\TX@ftn=\toks41
 )
-LaTeX Font Info:    Trying to load font information for T1+LibertinusSerif-TLF on input line 37.
+LaTeX Font Info:    Trying to load font information for T1+LibertinusSerif-TLF on input line 46.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/libertinus-type1/T1LibertinusSerif-TLF.fd
 File: T1LibertinusSerif-TLF.fd 2022/11/07 (autoinst) Font definitions for T1/LibertinusSerif-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 37.
+(Font)              scaled to size 10.95pt on input line 46.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-Package scrbase Info: activating english \abstractname on input line 37.
-Package scrbase Info: activating english \partname on input line 37.
-Package scrbase Info: activating english \figurename on input line 37.
-Package scrbase Info: activating english \tablename on input line 37.
-Package scrbase Info: activating english \contentsname on input line 37.
-Package scrbase Info: activating english \listfigurename on input line 37.
-Package scrbase Info: activating english \listtablename on input line 37.
-Package scrbase Info: activating english \refname on input line 37.
-Package scrbase Info: activating english \indexname on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+Package scrbase Info: activating english \abstractname on input line 46.
+Package scrbase Info: activating english \partname on input line 46.
+Package scrbase Info: activating english \figurename on input line 46.
+Package scrbase Info: activating english \tablename on input line 46.
+Package scrbase Info: activating english \contentsname on input line 46.
+Package scrbase Info: activating english \listfigurename on input line 46.
+Package scrbase Info: activating english \listtablename on input line 46.
+Package scrbase Info: activating english \refname on input line 46.
+Package scrbase Info: activating english \indexname on input line 46.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count355
-\scratchdimen=\dimen275
+\scratchcounter=\count358
+\scratchdimen=\dimen281
 \scratchbox=\box71
-\nofMPsegments=\count356
-\nofMParguments=\count357
-\everyMPshowfont=\toks41
-\MPscratchCnt=\count358
-\MPscratchDim=\dimen276
-\MPnumerator=\count359
-\makeMPintoPDFobject=\count360
-\everyMPtoPDFconversion=\toks42
+\nofMPsegments=\count359
+\nofMParguments=\count360
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count361
+\MPscratchDim=\dimen282
+\MPnumerator=\count362
+\makeMPintoPDFobject=\count363
+\everyMPtoPDFconversion=\toks43
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \microtypecontext on input line 37.
-Package microtype Info: Applying patch `item' on input line 37.
-Package microtype Info: Applying patch `toc' on input line 37.
-Package microtype Info: Applying patch `eqnum' on input line 37.
-Package microtype Info: Applying patch `footnote' on input line 37.
-Package microtype Info: Applying patch `verbatim' on input line 37.
+LaTeX Info: Redefining \microtypecontext on input line 46.
+Package microtype Info: Applying patch `item' on input line 46.
+Package microtype Info: Applying patch `toc' on input line 46.
+Package microtype Info: Applying patch `eqnum' on input line 46.
+Package microtype Info: Applying patch `footnote' on input line 46.
+Package microtype Info: Applying patch `verbatim' on input line 46.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 37.
+LaTeX Info: Redefining \showhyphens on input line 46.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1256,7 +1284,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusSerif-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package hyperref Info: Link coloring ON on input line 37.
+Package hyperref Info: Link coloring ON on input line 46.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -1268,18 +1296,17 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 37.
+(scrartcl)           before \begin{document} on input line 46.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
-\BKM@id=\count361
+\BKM@id=\count364
 ))
-\c@mv@tabular=\count362
-\c@mv@boldtabular=\count363
-\c@lstlisting=\count364
-Package tocbasic Info: omitting babel extension for `lol'
-(tocbasic)             because of missing \bbl@set@language on input line 37.
+\c@mv@tabular=\count365
+\c@mv@boldtabular=\count366
+\c@lstlisting=\count367
+Package tocbasic Info: setting babel extension for `lol' on input line 46.
 \scr@dte@lstlisting@maxnumwidth=\skip90
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: threeparttable package is loaded.
@@ -1288,104 +1315,104 @@ Package caption Info: End \AtBeginDocument code.
 \openout6 = `main.abs'.
 
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 116.
-LaTeX Font Info:    Trying to load font information for T1+LibertinusSans-TLF on input line 116.
+(Font)              scaled to size 10.95pt on input line 125.
+LaTeX Font Info:    Trying to load font information for T1+LibertinusSans-TLF on input line 125.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/libertinus-type1/T1LibertinusSans-TLF.fd
 File: T1LibertinusSans-TLF.fd 2022/11/07 (autoinst) Font definitions for T1/LibertinusSans-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 116.
+(Font)              scaled to size 10.95pt on input line 125.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusSans-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 116.
+(Font)              scaled to size 9.0pt on input line 125.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 121.
+(Font)              scaled to size 17.28pt on input line 130.
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 121.
+(Font)              scaled to size 17.28pt on input line 130.
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 121.
+(Font)              scaled to size 17.28pt on input line 130.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 121.
+(Font)              scaled to size 12.0pt on input line 130.
 <<ot1.cmap>> (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )<<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 121.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 130.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 121.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 130.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 121.
+(Font)              scaled to size 8.0pt on input line 130.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 121.
+(Font)              scaled to size 8.0pt on input line 130.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 121.
+(Font)              scaled to size 14.4pt on input line 130.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 121.
+(Font)              scaled to size 9.0pt on input line 130.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/it' will be
-(Font)              scaled to size 6.0pt on input line 121.
+(Font)              scaled to size 6.0pt on input line 130.
  (./main.abs)
-Overfull \hbox (376.42744pt too wide) detected at line 121
+Overfull \hbox (376.42744pt too wide) detected at line 130
 []
  []
 
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 121.
+(Font)              scaled to size 6.0pt on input line 130.
 
-Package hyperref Warning: Ignoring empty anchor on input line 121.
+Package hyperref Warning: Ignoring empty anchor on input line 130.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 121.
+Package hyperref Warning: Ignoring empty anchor on input line 130.
 
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 121.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 130.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
 
-Package hyperref Warning: Ignoring empty anchor on input line 121.
+Package hyperref Warning: Ignoring empty anchor on input line 130.
 
 <cc-by.pdf, id=15, 88.33pt x 31.11626pt>
 File: cc-by.pdf Graphic file (type pdf)
 <use cc-by.pdf>
-Package pdftex.def Info: cc-by.pdf  used on input line 121.
+Package pdftex.def Info: cc-by.pdf  used on input line 130.
 (pdftex.def)             Requested size: 31.22595pt x 11.0pt.
-LaTeX Font Info:    Trying to load font information for TS1+LibertinusSerif-TLF on input line 121.
+LaTeX Font Info:    Trying to load font information for TS1+LibertinusSerif-TLF on input line 130.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/libertinus-type1/TS1LibertinusSerif-TLF.fd
 File: TS1LibertinusSerif-TLF.fd 2022/11/07 (autoinst) Font definitions for TS1/LibertinusSerif-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 121.
+(Font)              scaled to size 6.0pt on input line 130.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusSerif-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (4.5pt too wide) in paragraph at lines 121--121
+Overfull \hbox (4.5pt too wide) in paragraph at lines 130--130
 [][][][]||$[]$ $[]$|  
  []
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 121.
+Package hyperref Warning: Ignoring empty anchor on input line 130.
 
 File: cc-by.pdf Graphic file (type pdf)
 <use cc-by.pdf>
-Package pdftex.def Info: cc-by.pdf  used on input line 121.
+Package pdftex.def Info: cc-by.pdf  used on input line 130.
 (pdftex.def)             Requested size: 31.22595pt x 11.0pt.
 <ceur-ws-logo.pdf, id=19, 412.56496pt x 113.81102pt>
 File: ceur-ws-logo.pdf Graphic file (type pdf)
 <use ceur-ws-logo.pdf>
-Package pdftex.def Info: ceur-ws-logo.pdf  used on input line 121.
+Package pdftex.def Info: ceur-ws-logo.pdf  used on input line 130.
 (pdftex.def)             Requested size: 31.22595pt x 8.6136pt.
 
-Overfull \hbox (4.5pt too wide) in paragraph at lines 121--121
+Overfull \hbox (4.5pt too wide) in paragraph at lines 130--130
 [][][][]||$[]$ $[]$|  
  []
 
@@ -1395,31 +1422,33 @@ LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 1.
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 43.
+(Font)              scaled to size 10.0pt on input line 76.
 <./img/Introduction - Wikidata 2.pdf, id=23, 774.97525pt x 310.27919pt>
 File: ./img/Introduction - Wikidata 2.pdf Graphic file (type pdf)
 <use ./img/Introduction - Wikidata 2.pdf>
-Package pdftex.def Info: ./img/Introduction - Wikidata 2.pdf  used on input line 46.
+Package pdftex.def Info: ./img/Introduction - Wikidata 2.pdf  used on input line 79.
 (pdftex.def)             Requested size: 418.25555pt x 167.4583pt.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 47.
+(Font)              scaled to size 10.0pt on input line 80.
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 47.
+(Font)              scaled to size 10.0pt on input line 80.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 50.
+(Font)              scaled to size 10.95pt on input line 83.
 
 
 [1
 
-{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_nufysp.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_rlktsf.enc} <./cc-by.pdf> <./ceur-ws-logo.pdf>])
+{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_nufysp.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_rlktsf.enc} <./cc-by.pdf> <./ceur-ws-logo.pdf>]
 
-[2 <./img/Introduction - Wikidata 2.pdf>] (./chapters/2 - related work/2 - related work.tex) (./chapters/3 - analytics framework/3 - analytics framework master.tex (./chapters/3 - analytics framework/31 - formal model.tex
+[2 <./img/Introduction - Wikidata 2.pdf>]) (./chapters/2 - related work/2 - related work.tex
+
+[3]) (./chapters/3 - analytics framework/3 - analytics framework master.tex (./chapters/3 - analytics framework/31 - formal model.tex
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
 
 
-[3]
-<./img/Wealth Type 1.png, id=90, 609.27625pt x 313.17pt>
+[4]
+<./img/Wealth Type 1.png, id=127, 609.27625pt x 313.17pt>
 File: ./img/Wealth Type 1.png Graphic file (type png)
 <use ./img/Wealth Type 1.png>
 Package pdftex.def Info: ./img/Wealth Type 1.png  used on input line 19.
@@ -1429,7 +1458,7 @@ Overfull \hbox (57.30634pt too wide) in paragraph at lines 19--20
  [][] 
  []
 
-<./img/Wealth Type 2.png, id=92, 609.27625pt x 313.17pt>
+<./img/Wealth Type 2.png, id=129, 609.27625pt x 313.17pt>
 File: ./img/Wealth Type 2.png Graphic file (type png)
 <use ./img/Wealth Type 2.png>
 Package pdftex.def Info: ./img/Wealth Type 2.png  used on input line 25.
@@ -1444,7 +1473,7 @@ Underfull \hbox (badness 1521) in paragraph at lines 26--26
 [][][]|\T1/LibertinusSerif-TLF/m/n/10 (+20) Il-lus-tra-tion of 3 types of
  []
 
-<./img/Wealth Type 3.png, id=93, 609.27625pt x 313.17pt>
+<./img/Wealth Type 3.png, id=130, 609.27625pt x 313.17pt>
 File: ./img/Wealth Type 3.png Graphic file (type png)
 <use ./img/Wealth Type 3.png>
 Package pdftex.def Info: ./img/Wealth Type 3.png  used on input line 31.
@@ -1456,9 +1485,7 @@ Overfull \hbox (57.30634pt too wide) in paragraph at lines 31--32
 
 
 
-[4 <./img/Wealth Type 1.png> <./img/Wealth Type 2.png> <./img/Wealth Type 3.png>]
-
-[5]
+[5 <./img/Wealth Type 1.png> <./img/Wealth Type 2.png> <./img/Wealth Type 3.png>]
 Underfull \hbox (badness 1259) in paragraph at lines 85--86
 \OML/cmm/m/it/10.95 s$ \T1/LibertinusSerif-TLF/m/n/10.95 (+20) us-ing set of prop-er-ties, cal-cu-lat-ing ob-ject and data but not ID prop-er-ties, and us-
  []
@@ -1468,136 +1495,154 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 N[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s; G\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 j$ \T1/LibertinusSerif-TLF/m/n/10.95 (+20) with $\OML/cmm/m/it/10.95 N[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s; G\OT1/cmr/m/n/10.95 ) =
  []
 
-) (./chapters/3 - analytics framework/32 - insight model.tex
+
+
+[6]) (./chapters/3 - analytics framework/32 - insight model.tex
 LaTeX Font Info:    Font shape `TS1/LibertinusSerif-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 5.
 
 
-[6]
+[7]
 Underfull \hbox (badness 1052) in paragraph at lines 23--24
 []\T1/LibertinusSerif-TLF/m/n/10.95 (+20) For an-other an-other ex-am-ple, let's say we have an-other ar-ray of 10 en-ti-ties $\OML/cmm/m/it/10.95 z \OT1/cmr/m/n/10.95 =
  []
 
 ) (./chapters/3 - analytics framework/33 - model application sample.tex
-<./img/Wealth Weighted.png, id=133, 1030.85126pt x 578.16pt>
+<./img/Wealth Weighted.png, id=174, 1030.85126pt x 578.16pt>
 File: ./img/Wealth Weighted.png Graphic file (type png)
 <use ./img/Wealth Weighted.png>
 Package pdftex.def Info: ./img/Wealth Weighted.png  used on input line 5.
 (pdftex.def)             Requested size: 412.33319pt x 231.2599pt.
 
 
-[7]
-<./img/Sample Lorenz Curve.png, id=146, 363.3575pt x 215.80624pt>
+[8]
+<./img/Sample Lorenz Curve.png, id=187, 363.3575pt x 215.80624pt>
 File: ./img/Sample Lorenz Curve.png Graphic file (type png)
 <use ./img/Sample Lorenz Curve.png>
-Package pdftex.def Info: ./img/Sample Lorenz Curve.png  used on input line 36.
+Package pdftex.def Info: ./img/Sample Lorenz Curve.png  used on input line 37.
 (pdftex.def)             Requested size: 218.01617pt x 129.48474pt.
 ) (./chapters/3 - analytics framework/34 - model implementation.tex
 
-[8 <./img/Wealth Weighted.png>]
-<./img/Model Implementation.pdf, id=160, 722.7pt x 176.5797pt>
+[9 <./img/Wealth Weighted.png> <./img/Sample Lorenz Curve.png>]
+<./img/Model Implementation.pdf, id=199, 722.7pt x 176.5797pt>
 File: ./img/Model Implementation.pdf Graphic file (type pdf)
 <use ./img/Model Implementation.pdf>
 Package pdftex.def Info: ./img/Model Implementation.pdf  used on input line 12.
 (pdftex.def)             Requested size: 418.25555pt x 102.19264pt.
-)) (./chapters/4 - use case/4 - use case master.tex (./chapters/4 - use case/41 - bias/41 - bias master.tex
+)) (./chapters/4 - use case/4 - use case master.tex (./chapters/4 - use case/41 - bias/41 - bias master.tex (./chapters/4 - use case/41 - bias/411 - gender bias.tex
 
-[9 <./img/Sample Lorenz Curve.png> <./img/Model Implementation.pdf>] (./chapters/4 - use case/41 - bias/411 - gender bias.tex
-
-[10]
+[10 <./img/Model Implementation.pdf>]
 
 [11]
-Overfull \hbox (35.02386pt too wide) in paragraph at lines 84--108
- [] 
- []
 
-<./img/Histogram of Wealth - Computer Scientist.png, id=198, 1500.60625pt x 526.96875pt>
+[12]
+<./img/Histogram of Wealth - Computer Scientist.png, id=241, 1500.60625pt x 526.96875pt>
 File: ./img/Histogram of Wealth - Computer Scientist.png Graphic file (type png)
 <use ./img/Histogram of Wealth - Computer Scientist.png>
-Package pdftex.def Info: ./img/Histogram of Wealth - Computer Scientist.png  used on input line 114.
+Package pdftex.def Info: ./img/Histogram of Wealth - Computer Scientist.png  used on input line 149.
 (pdftex.def)             Requested size: 418.25555pt x 146.8748pt.
-<./img/Histogram of Wealth - American Singer.png, id=200, 1500.60625pt x 526.96875pt>
+<./img/Histogram of Wealth - American Singer.png, id=243, 1500.60625pt x 526.96875pt>
 File: ./img/Histogram of Wealth - American Singer.png Graphic file (type png)
 <use ./img/Histogram of Wealth - American Singer.png>
-Package pdftex.def Info: ./img/Histogram of Wealth - American Singer.png  used on input line 118.
+Package pdftex.def Info: ./img/Histogram of Wealth - American Singer.png  used on input line 153.
 (pdftex.def)             Requested size: 418.25555pt x 146.8748pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[12]
+[13]
 
-[13 <./img/Histogram of Wealth - Computer Scientist.png> <./img/Histogram of Wealth - American Singer.png>]
-<./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Gender.png, id=218, 1500.60625pt x 526.96875pt>
+[14 <./img/Histogram of Wealth - Computer Scientist.png> <./img/Histogram of Wealth - American Singer.png>]
+<./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Gender.png, id=261, 1500.60625pt x 526.96875pt>
 File: ./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Gender.png Graphic file (type png)
 <use ./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Gender.png>
-Package pdftex.def Info: ./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Gender.png  used on input line 174.
+Package pdftex.def Info: ./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Gender.png  used on input line 239.
 (pdftex.def)             Requested size: 418.25555pt x 146.8748pt.
-<./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender.png, id=220, 1500.60625pt x 526.96875pt>
+<./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender.png, id=263, 1500.60625pt x 526.96875pt>
 File: ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender.png Graphic file (type png)
 <use ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender.png>
-Package pdftex.def Info: ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender.png  used on input line 178.
+Package pdftex.def Info: ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender.png  used on input line 243.
 (pdftex.def)             Requested size: 418.25555pt x 146.8748pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 ) (./chapters/4 - use case/41 - bias/412 - western bias.tex
 
-[14 <./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Gender.png> <./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender.png>]
-
 [15]
-Overfull \hbox (37.77388pt too wide) in paragraph at lines 66--86
- [] 
- []
 
-<./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png, id=242, 1500.60625pt x 526.96875pt>
+[16 <./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Gender.png> <./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender.png>]
+
+[17]
+<./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png, id=292, 1500.60625pt x 526.96875pt>
 File: ./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png Graphic file (type png)
 <use ./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png>
-Package pdftex.def Info: ./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png  used on input line 119.
+Package pdftex.def Info: ./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png  used on input line 154.
 (pdftex.def)             Requested size: 418.25555pt x 146.8748pt.
-<./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png, id=244, 1500.60625pt x 526.96875pt>
+<./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png, id=294, 1500.60625pt x 526.96875pt>
 File: ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png Graphic file (type png)
 <use ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png>
-Package pdftex.def Info: ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png  used on input line 123.
+Package pdftex.def Info: ./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png  used on input line 158.
 (pdftex.def)             Requested size: 418.25555pt x 146.8748pt.
 )) (./chapters/4 - use case/42 - gini/42 - gini master.tex
 
-[16]
+[18]
 
-[17 <./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png> <./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png>]
-<./img/Gini - Pure Literal.png, id=264, 1281.78876pt x 216.81pt>
+[19 <./img/Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Region.png> <./img/Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender - Region.png>]
+<./img/Gini - Pure Literal.png, id=315, 1281.78876pt x 216.81pt>
 File: ./img/Gini - Pure Literal.png Graphic file (type png)
 <use ./img/Gini - Pure Literal.png>
-Package pdftex.def Info: ./img/Gini - Pure Literal.png  used on input line 47.
+Package pdftex.def Info: ./img/Gini - Pure Literal.png  used on input line 48.
 (pdftex.def)             Requested size: 418.25555pt x 70.7436pt.
 
 
-[18 <./img/Gini - Pure Literal.png>]
-<./img/Gini - Outgoing.png, id=275, 1281.78876pt x 216.81pt>
+[20 <./img/Gini - Pure Literal.png>]
+<./img/Gini - Outgoing.png, id=326, 1281.78876pt x 216.81pt>
 File: ./img/Gini - Outgoing.png Graphic file (type png)
 <use ./img/Gini - Outgoing.png>
-Package pdftex.def Info: ./img/Gini - Outgoing.png  used on input line 73.
+Package pdftex.def Info: ./img/Gini - Outgoing.png  used on input line 74.
 (pdftex.def)             Requested size: 418.25555pt x 70.7436pt.
-<./img/Gini - Incoming.png, id=277, 1281.78876pt x 216.81pt>
+<./img/Gini - Incoming.png, id=328, 1281.78876pt x 216.81pt>
 File: ./img/Gini - Incoming.png Graphic file (type png)
 <use ./img/Gini - Incoming.png>
-Package pdftex.def Info: ./img/Gini - Incoming.png  used on input line 77.
+Package pdftex.def Info: ./img/Gini - Incoming.png  used on input line 78.
 (pdftex.def)             Requested size: 418.25555pt x 70.7436pt.
 ) (./chapters/4 - use case/43 - prop contribution/43 - prop contribution.tex
 
-[19 <./img/Gini - Outgoing.png> <./img/Gini - Incoming.png>]
+[21 <./img/Gini - Outgoing.png> <./img/Gini - Incoming.png>]
 
-[20])) (./chapters/5 - discussion/5 - discussion.tex
-
-[21]
-
-[22]) (./chapters/6 - conclusion/6 - conclusion.tex) (./main.bbl
+[22])) (./chapters/5 - discussion/5 - discussion.tex
 
 [23]
 
-Package natbib Warning: Empty `thebibliography' environment on input line 15.
+[24])
 
+[25] (./chapters/6 - conclusion/6 - conclusion.tex) (./main.bbl
+
+[26]
+LaTeX Font Info:    Trying to load font information for T1+LibertinusMono-TLF on input line 21.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/libertinus-type1/T1LibertinusMono-TLF.fd
+File: T1LibertinusMono-TLF.fd 2022/11/07 (autoinst) Font definitions for T1/LibertinusMono-TLF.
 )
+LaTeX Font Info:    Font shape `T1/LibertinusMono-TLF/m/n' will be
+(Font)              scaled to size 9.30756pt on input line 21.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LibertinusMono-TLF' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Character `guilsinglleft ' is missing
+(microtype)             in font `T1/LibertinusMono-TLF/m/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `guilsinglright ' is missing
+(microtype)             in font `T1/LibertinusMono-TLF/m/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
 
-[24] (./main.aux)
+
+[27{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_tll2u3.enc}])
+
+[28] (./main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-30>
@@ -1606,17 +1651,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30624 strings out of 473579
- 582766 string characters out of 5728228
- 1105336 words of memory out of 5000000
- 52495 multiletter control sequences out of 15000+600000
- 709694 words of font info for 344 fonts, out of 8000000 for 9000
+ 31895 strings out of 473579
+ 607949 string characters out of 5728228
+ 1140760 words of memory out of 5000000
+ 53647 multiletter control sequences out of 15000+600000
+ 717056 words of font info for 388 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,21n,121p,11005b,2548s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (24 pages, 1848476 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusMono-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on main.pdf (28 pages, 1906360 bytes).
 PDF statistics:
- 471 PDF objects out of 1000 (max. 8388607)
- 93 named destinations out of 1000 (max. 500000)
- 86333 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 569 PDF objects out of 1000 (max. 8388607)
+ 124 named destinations out of 1000 (max. 500000)
+ 88893 words of extra memory for PDF output out of 89155 (max. 10000000)
 

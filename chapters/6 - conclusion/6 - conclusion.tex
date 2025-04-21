@@ -1,3 +1,11 @@
 \section{Conclusions}
 
-TBD
+In this study, we introduce a novel framework for analyzing knowledge wealth in knowledge graphs, using Wikidata as a case study. By drawing an analogy between financial wealth and information richness, we develop 3 notions of knowledge wealth based on property cardinality, property type, and link direction. We demonstrate how these different definitions yield varying inequality levels, as reflected in measures such as the Gini coefficient and Lorenz curves. Our proposed metric—relative expectation ratio—offers a powerful and intuitive way to assess representation bias across different entity groups. Unlike raw entity counts or central tendency measures, this metric captures the distributional imbalances of information across quantiles, providing a more nuanced understanding of how knowledge is allocated within Wikidata.
+
+- mention library
+- link ke GitHub
+
+Future work may explore several things in order to improve the knowledge wealth framework. At the moment, our evaluation is limited to Wikidata. Applying this framework to other KGs beyond Wikidata would be valuable to assess the framework generalizability and to further explore the general quality of KGs. Another promising direction is to explore \textit{property-weighted knowledge wealth}, where not all properties are treated equally. In the current framework, each property contributes uniformly to an entity’s wealth, regardless of its importance or informativeness. Incorporating weights—based on factors such as semantic significance, frequency of use, or relevance to the class—could offer a more nuanced and realistic estimation of an entity's information richness. Last but not least, it is also of our interest to explore the use of machine learning algorithms to classify entities into “rich” and “poor” groups based on their knowledge wealth. Such clustering could assist contributors in identifying which segments require additional enrichment efforts, enabling more targeted and efficient improvements to knowledge graph completeness.
+
+- saat ini library kita open, framework-nya general. Jadi harapannya bisa di-extend ke KGs lain. dengan cara ganti endpoint dan query
+- di bagian machine learing, bisa bahas "beyond simply sorting dan pilih top x, bottom y", karena contohnya kalau uniform jadi ga ada rich dan poor

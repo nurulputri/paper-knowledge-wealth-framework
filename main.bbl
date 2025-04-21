@@ -1,4 +1,4 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{16}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -11,5 +11,81 @@
 \providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Misc
+\bibitem[{wea(nd)}]{wealthOed}
+\bibinfo{title}{{Wealth, N. meanings, etymology and more}}, \bibinfo{howpublished}{\url{https://www.oed.com/dictionary/wealth_n}}, \bibinfo{year}{n.d.} \bibinfo{note}{Accessed: 2025-03-19}.
+%Type = Article
+\bibitem[{Saez and Zucman(2016)}]{SaezG16}
+\bibinfo{author}{E.~Saez}, \bibinfo{author}{G.~Zucman},
+\newblock \bibinfo{title}{{Wealth Inequality in the United States since 1913: Evidence from Capitalized Income Tax Data}},
+\newblock \bibinfo{journal}{The Quarterly Journal of Economics} \bibinfo{volume}{131} (\bibinfo{year}{2016}). \URLprefix \url{https://doi.org/10.1093/qje/qjw004}. \DOIprefix\doi{10.1093/qje/qjw004}.
+%Type = Inproceedings
+\bibitem[{Mihindukulasooriya(2024)}]{Mihindukulasooriya24}
+\bibinfo{author}{N.~Mihindukulasooriya},
+\newblock \bibinfo{title}{{DBLP} to wikidata: Populating scholarly articles in wikidata},
+\newblock in: \bibinfo{editor}{L.~Etcheverry}, \bibinfo{editor}{V.~L. Garcia}, \bibinfo{editor}{F.~Osborne}, \bibinfo{editor}{R.~Pernisch} (Eds.), \bibinfo{booktitle}{Proceedings of the {ISWC} 2024 Posters, Demos and Industry Tracks: From Novel Ideas to Industrial Practice co-located with 23nd International Semantic Web Conference {(ISWC} 2024), Hanover, Maryland, USA, November 11-15, 2024}, volume \bibinfo{volume}{3828} of \textit{\bibinfo{series}{{CEUR} Workshop Proceedings}}, \bibinfo{publisher}{CEUR-WS.org}, \bibinfo{year}{2024}. \URLprefix \url{https://ceur-ws.org/Vol-3828/paper37.pdf}.
+%Type = Inproceedings
+\bibitem[{Mihindukulasooriya et~al.(2024)Mihindukulasooriya, Tiwari, Dobriy, Nielsen, Chhetri, and Polleres}]{MihindukulasooriyaTDNCP24}
+\bibinfo{author}{N.~Mihindukulasooriya}, \bibinfo{author}{S.~Tiwari}, \bibinfo{author}{D.~Dobriy}, \bibinfo{author}{F.~{\AA}. Nielsen}, \bibinfo{author}{T.~R. Chhetri}, \bibinfo{author}{A.~Polleres},
+\newblock \bibinfo{title}{Scholarly wikidata: Population and exploration of conference data in wikidata using llms},
+\newblock in: \bibinfo{editor}{M.~Alam}, \bibinfo{editor}{M.~Rospocher}, \bibinfo{editor}{M.~van Erp}, \bibinfo{editor}{L.~Hollink}, \bibinfo{editor}{G.~A. Gesese} (Eds.), \bibinfo{booktitle}{Knowledge Engineering and Knowledge Management - 24th International Conference, {EKAW} 2024, Amsterdam, The Netherlands, November 26-28, 2024, Proceedings}, volume \bibinfo{volume}{15370} of \textit{\bibinfo{series}{Lecture Notes in Computer Science}}, \bibinfo{publisher}{Springer}, \bibinfo{year}{2024}, pp. \bibinfo{pages}{243--259}. \URLprefix \url{https://doi.org/10.1007/978-3-031-77792-9\_15}. \DOIprefix\doi{10.1007/978-3-031-77792-9\_15}.
+%Type = Inproceedings
+\bibitem[{Bolinches and Garijo(2023)}]{BolinchesG23}
+\bibinfo{author}{J.~Bolinches}, \bibinfo{author}{D.~Garijo},
+\newblock \bibinfo{title}{Saltbot: Linking software and articles in wikidata},
+\newblock in: \bibinfo{editor}{L.~Kaffee}, \bibinfo{editor}{S.~Razniewski}, \bibinfo{editor}{K.~Alghamdi}, \bibinfo{editor}{H.~Arnaout} (Eds.), \bibinfo{booktitle}{Proceedings of the Wikidata Workshop 2023 co-located with 22nd International Semantic Web Conference {(ISWC} 2023), Athens, Greece, November 13, 2023}, volume \bibinfo{volume}{3640} of \textit{\bibinfo{series}{{CEUR} Workshop Proceedings}}, \bibinfo{publisher}{CEUR-WS.org}, \bibinfo{year}{2023}. \URLprefix \url{https://ceur-ws.org/Vol-3640/paper12.pdf}.
+%Type = Article
+\bibitem[{Wang and Strong(1996)}]{WangS96}
+\bibinfo{author}{R.~Y. Wang}, \bibinfo{author}{D.~M. Strong},
+\newblock \bibinfo{title}{Beyond accuracy: What data quality means to data consumers},
+\newblock \bibinfo{journal}{J. Manag. Inf. Syst.} \bibinfo{volume}{12} (\bibinfo{year}{1996}) \bibinfo{pages}{5--33}. \URLprefix \url{https://doi.org/10.1080/07421222.1996.11518099}. \DOIprefix\doi{10.1080/07421222.1996.11518099}.
+%Type = Article
+\bibitem[{Zaveri et~al.(2016)Zaveri, Rula, Maurino, Pietrobon, Lehmann, and Auer}]{ZaveriRMPLA16}
+\bibinfo{author}{A.~Zaveri}, \bibinfo{author}{A.~Rula}, \bibinfo{author}{A.~Maurino}, \bibinfo{author}{R.~Pietrobon}, \bibinfo{author}{J.~Lehmann}, \bibinfo{author}{S.~Auer},
+\newblock \bibinfo{title}{Quality assessment for linked data: {A} survey},
+\newblock \bibinfo{journal}{Semantic Web} \bibinfo{volume}{7} (\bibinfo{year}{2016}) \bibinfo{pages}{63--93}. \URLprefix \url{https://doi.org/10.3233/SW-150175}. \DOIprefix\doi{10.3233/SW-150175}.
+%Type = Inproceedings
+\bibitem[{Wisesa et~al.(2019)Wisesa, Darari, Krisnadhi, Nutt, and Razniewski}]{WisesaDKNR19}
+\bibinfo{author}{A.~Wisesa}, \bibinfo{author}{F.~Darari}, \bibinfo{author}{A.~Krisnadhi}, \bibinfo{author}{W.~Nutt}, \bibinfo{author}{S.~Razniewski},
+\newblock \bibinfo{title}{Wikidata completeness profiling using prowd},
+\newblock in: \bibinfo{editor}{M.~Kejriwal}, \bibinfo{editor}{P.~A. Szekely}, \bibinfo{editor}{R.~Troncy} (Eds.), \bibinfo{booktitle}{Proceedings of the 10th International Conference on Knowledge Capture, {K-CAP} 2019, Marina Del Rey, CA, USA, November 19-21, 2019}, \bibinfo{publisher}{{ACM}}, \bibinfo{year}{2019}, pp. \bibinfo{pages}{123--130}. \URLprefix \url{https://doi.org/10.1145/3360901.3364425}. \DOIprefix\doi{10.1145/3360901.3364425}.
+%Type = Article
+\bibitem[{Issa et~al.(2021)Issa, Adekunle, Hamdi, Cherfi, Dumontier, and Zaveri}]{IssaAHCDZ21}
+\bibinfo{author}{S.~Issa}, \bibinfo{author}{O.~Adekunle}, \bibinfo{author}{F.~Hamdi}, \bibinfo{author}{S.~S. Cherfi}, \bibinfo{author}{M.~Dumontier}, \bibinfo{author}{A.~Zaveri},
+\newblock \bibinfo{title}{Knowledge graph completeness: {A} systematic literature review},
+\newblock \bibinfo{journal}{{IEEE} Access} \bibinfo{volume}{9} (\bibinfo{year}{2021}) \bibinfo{pages}{31322--31339}. \URLprefix \url{https://doi.org/10.1109/ACCESS.2021.3056622}. \DOIprefix\doi{10.1109/ACCESS.2021.3056622}.
+%Type = Inproceedings
+\bibitem[{Luthfi et~al.(2022)Luthfi, Darari, and Ashardian}]{LuthfiDA22}
+\bibinfo{author}{M.~J. Luthfi}, \bibinfo{author}{F.~Darari}, \bibinfo{author}{A.~C. Ashardian},
+\newblock \bibinfo{title}{Sock: {SHACL} on completeness knowledge},
+\newblock in: \bibinfo{editor}{V.~Sv{\'{a}}tek}, \bibinfo{editor}{V.~A. Carriero}, \bibinfo{editor}{M.~Poveda{-}Villal{\'{o}}n}, \bibinfo{editor}{C.~Kindermann}, \bibinfo{editor}{L.~Zhou} (Eds.), \bibinfo{booktitle}{Proceedings of the 13th Workshop on Ontology Design and Patterns {(WOP} 2022) co-located with the 21th International Semantic Web Conference {(ISWC} 2022), Online, October 24, 2022}, volume \bibinfo{volume}{3352} of \textit{\bibinfo{series}{{CEUR} Workshop Proceedings}}, \bibinfo{publisher}{CEUR-WS.org}, \bibinfo{year}{2022}. \URLprefix \url{https://ceur-ws.org/Vol-3352/paper1.pdf}.
+%Type = Article
+\bibitem[{Xue and Zou(2023)}]{XueZ23}
+\bibinfo{author}{B.~Xue}, \bibinfo{author}{L.~Zou},
+\newblock \bibinfo{title}{Knowledge graph quality management: {A} comprehensive survey},
+\newblock \bibinfo{journal}{{IEEE} Trans. Knowl. Data Eng.} \bibinfo{volume}{35} (\bibinfo{year}{2023}) \bibinfo{pages}{4969--4988}. \URLprefix \url{https://doi.org/10.1109/TKDE.2022.3150080}. \DOIprefix\doi{10.1109/TKDE.2022.3150080}.
+%Type = Inproceedings
+\bibitem[{Ramadhana et~al.(2020)Ramadhana, Darari, Putra, Nutt, Razniewski, and Akbar}]{RamadhanaDPNRA20}
+\bibinfo{author}{N.~H. Ramadhana}, \bibinfo{author}{F.~Darari}, \bibinfo{author}{P.~O.~H. Putra}, \bibinfo{author}{W.~Nutt}, \bibinfo{author}{S.~Razniewski}, \bibinfo{author}{R.~I. Akbar},
+\newblock \bibinfo{title}{User-centered design for knowledge imbalance analysis: {A} case study of prowd},
+\newblock in: \bibinfo{editor}{V.~Ivanova}, \bibinfo{editor}{P.~Lambrix}, \bibinfo{editor}{C.~Pesquita}, \bibinfo{editor}{V.~Wiens} (Eds.), \bibinfo{booktitle}{Proceedings of the Fifth International Workshop on Visualization and Interaction for Ontologies and Linked Data co-located with the 19th International Semantic Web Conference {(ISWC} 2020), Virtual Conference (originally planned in Athens, Greece), November 02, 2020}, volume \bibinfo{volume}{2778} of \textit{\bibinfo{series}{{CEUR} Workshop Proceedings}}, \bibinfo{publisher}{CEUR-WS.org}, \bibinfo{year}{2020}, pp. \bibinfo{pages}{14--27}. \URLprefix \url{https://ceur-ws.org/Vol-2778/paper2.pdf}.
+%Type = Inproceedings
+\bibitem[{Ramadizsa et~al.(2023)Ramadizsa, Darari, Nutt, and Razniewski}]{RamadizsaDNR23}
+\bibinfo{author}{M.~Ramadizsa}, \bibinfo{author}{F.~Darari}, \bibinfo{author}{W.~Nutt}, \bibinfo{author}{S.~Razniewski},
+\newblock \bibinfo{title}{Knowledge gap discovery: {A} case study of wikidata},
+\newblock in: \bibinfo{editor}{L.~Kaffee}, \bibinfo{editor}{S.~Razniewski}, \bibinfo{editor}{K.~Alghamdi}, \bibinfo{editor}{H.~Arnaout} (Eds.), \bibinfo{booktitle}{Proceedings of the Wikidata Workshop 2023 co-located with 22nd International Semantic Web Conference {(ISWC} 2023), Athens, Greece, November 13, 2023}, volume \bibinfo{volume}{3640} of \textit{\bibinfo{series}{{CEUR} Workshop Proceedings}}, \bibinfo{publisher}{CEUR-WS.org}, \bibinfo{year}{2023}. \URLprefix \url{https://ceur-ws.org/Vol-3640/paper7.pdf}.
+%Type = Inproceedings
+\bibitem[{Abi{\'{a}}n et~al.(2022)Abi{\'{a}}n, Mero{\~{n}}o{-}Pe{\~{n}}uela, and Simperl}]{AbianMS22}
+\bibinfo{author}{D.~Abi{\'{a}}n}, \bibinfo{author}{A.~Mero{\~{n}}o{-}Pe{\~{n}}uela}, \bibinfo{author}{E.~Simperl},
+\newblock \bibinfo{title}{An analysis of content gaps versus user needs in the wikidata knowledge graph},
+\newblock in: \bibinfo{editor}{U.~Sattler}, \bibinfo{editor}{A.~Hogan}, \bibinfo{editor}{C.~M. Keet}, \bibinfo{editor}{V.~Presutti}, \bibinfo{editor}{J.~P.~A. Almeida}, \bibinfo{editor}{H.~Takeda}, \bibinfo{editor}{P.~Monnin}, \bibinfo{editor}{G.~Pirr{\`{o}}}, \bibinfo{editor}{C.~d'Amato} (Eds.), \bibinfo{booktitle}{The Semantic Web - {ISWC} 2022 - 21st International Semantic Web Conference, Virtual Event, October 23-27, 2022, Proceedings}, volume \bibinfo{volume}{13489} of \textit{\bibinfo{series}{Lecture Notes in Computer Science}}, \bibinfo{publisher}{Springer}, \bibinfo{year}{2022}, pp. \bibinfo{pages}{354--374}. \URLprefix \url{https://doi.org/10.1007/978-3-031-19433-7\_21}. \DOIprefix\doi{10.1007/978-3-031-19433-7\_21}.
+%Type = Book
+\bibitem[{Foster and Sean(1997)}]{FosterS1997}
+\bibinfo{author}{J.~Foster}, \bibinfo{author}{A.~Sean}, \bibinfo{title}{On Economic Inequality}, \bibinfo{publisher}{Oxford University Press}, \bibinfo{year}{1997}.
+%Type = Article
+\bibitem[{Kakwani(1977)}]{Kakwani1977}
+\bibinfo{author}{N.~C. Kakwani},
+\newblock \bibinfo{title}{{Applications of Lorenz Curves in Economic Analysis}},
+\newblock \bibinfo{journal}{Econometrica} \bibinfo{volume}{45} (\bibinfo{year}{1977}) \bibinfo{pages}{719--728}. \URLprefix \url{https://doi.org/10.2307/1911684}.
 
 \end{thebibliography}

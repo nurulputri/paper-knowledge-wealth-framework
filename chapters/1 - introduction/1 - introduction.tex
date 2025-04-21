@@ -21,6 +21,39 @@
 % 12. Bibliografi
 % 13. [DONE] Introduction: tambahkan 1 paragraf tentang ide formalisasi, dari contoh yang diberikan. Kaitkan dengan 3 poin kontribusi di paragraf akhir.
 
+% To do (part 3):
+% 7. [IN PROGRESS] Revisi penulisan bias wikidata: justifikasi pemilihan class & kasus
+% 14. [NEED PLACEHOLDER FOR NOW] link ke Github baru + readme + contoh kode + notebook sederhana buat nunjukin how to pakai (query, visualisasi, stat summary, dll)
+% 15. [DONE] autoref subsection S kapital
+% 16. [DONE] footnote lhkpn di english
+% 17. [DONE] setelah contribution, paper outline: the rest of the paper will discuss ...
+% 18. [DONE] discussion: scalability
+% 11. !!! Conclusions
+% 12. [IN PROGRESS] Bibliografi
+% 13. [] All citation bibtex -> Sitasi ke gini formula
+% 14. [] Use case: justifikasi kenapa pakai class-class yang disebutkan
+
+% To do (part 4):
+% 7. [IN PROGRESS] Revisi penulisan bias wikidata
+% 14. [NEED PLACEHOLDER FOR NOW] link ke Github baru + readme + contoh kode + notebook sederhana buat nunjukin how to pakai (query, visualisasi, stat summary, dll)
+    %- Python implementation -> nanti notebooknya harus self explanatory, ada comment2 dan step by step apa yang harus dilakukan
+% 18. [DONE] discussion: scalability -> tambahan point tentang solution
+% 11. !!! Conclusions
+% 12. [DONE] Bibliografi
+% 13. [DONE] All citation bibtex
+% 14. [DONE] Use case: justifikasi kenapa pakai class-class yang disebutkan
+    %- justifikasi pemilihan class & kasus
+    %- Various kind of occupation, karena representasi di masing2 pekerjaan bisa berbeda2
+    %- American: scalability, representative
+    %- Western bias: berbeda2 benua 
+
+% To do (part 5):
+% 7. [DONE] Revisi penulisan bias wikidata
+    %- bagian yang graphical/qualitative, kita tambahkan insight
+% 11. [DONE] Conclusions
+% 14. [NEED PLACEHOLDER FOR NOW] link ke Github baru + readme + contoh kode + notebook sederhana buat nunjukin how to pakai (query, visualisasi, stat summary, dll)
+    %- Python implementation -> nanti notebooknya harus self explanatory, ada comment2 dan step by step apa yang harus dilakukan
+
 % %% include motivating scenario
 
 % (tambahkan 2 paragraf pembukaan)
@@ -47,7 +80,7 @@
     \caption{Data on Wikidata about the Romani people, the Minangkabau, and the Ambonese. This figure illustrates how entities of the same class can have variations in their representation, including differences in (i) the properties associated with them, (ii) the data types of property values (e.g., objects vs. literals vs. IDs), (iii) the cardinality of properties (single vs. multiple values), and (iv) the direction of information association (whether entities appear in the subject or object position in RDF triples).} \label{fig:intro-wikidata}
 \end{figure}
 
-Wealth is the abundance of valuable possessions or money, or the state of having this abundance (Oxford English Dictionary). In economics, wealth is defined as the net value of all assets owned by individuals or households, calculated as total assets minus liabilities, and used to assess economic inequality (Saez \& Zucman, 2016). When considering individual (human) wealth, the most common measure is net worth. Foe instance, in Indonesia, wealth reporting for public officials is conducted through the \textit{Laporan Harta Kekayaan Penyelenggara Negara} (LHKPN), which includes components such as immovable assets (e.g., land and buildings), movable assets (e.g., vehicles), securities, cash and cash equivalents, receivables, and liabilities. On the other hand, in knowledge graphs (KGs), wealth can be defined as the amount of information (in terms of properties or links) an entity possesses. Just like the different components of wealth in LHKPN, the wealth of an entity in a KG can be calculated based on different types of properties or links, and with different notion of calculation.
+Wealth is the abundance of valuable possessions or money, or the state of having this abundance~\cite{wealthOed}. In economics, wealth is defined as the current market value of all assets owned by individuals or households, calculated as total assets minus liabilities~\cite{SaezG16}. When considering individual (human) wealth, the most common measure is net worth. For instance, in Indonesia, wealth reporting for public officials is conducted through the \textit{Laporan Harta Kekayaan Penyelenggara Negara} (LHKPN\footnote{State Official Wealth Report, a mandatory annual report that requires government officials to report their assets to Indonesia's Corruption Eradication Commission (KPK)}), which includes components such as immovable assets (e.g., land and buildings), movable assets (e.g., vehicles), securities, cash and cash equivalents, receivables, and liabilities. On the other hand, in knowledge graphs (KGs), wealth can be defined as the amount of information (in terms of properties or links) an entity possesses. Just like the different components of wealth in LHKPN, the wealth of an entity in a KG can be calculated based on different types of properties or links, and with different notion of calculation.
 
 \autoref{fig:intro-wikidata} shows three Wikidata entities of the type ethnic group: the Romani people, the Minangkabau, and the Ambonese, along with some information about them. For example, the entity Romani people includes information such as its class, flag, native languages, population, and associated Freebase ID. We can observe that a type of information can have a single value, such as the property \textit{flag} for each entity, which is exactly one (or zero, if the information does not exist), or multiple value, such as the property \textit{native languange}. Both of these properties have values that are other Wikidata entities. Additionally, there are other types of properties, such as \textit{population}, which has a static numerical value, and \textit{Freebase ID}, which provides a string used to identify the entity in the Freebase database.
 
@@ -66,4 +99,8 @@ The example in \autoref{fig:intro-wikidata} provides a clear picture of how enti
 
 % Existing approaches often focus on (...), lacking a way of quantifying the amount of information contained in KGs. Our study addresses this gap by proposing a formal model to define the knowledge wealth in the RDF knowledge graph. Specifically, we focus on three key contributions: (i) introducing three notions of quantifying knowledge wealth for knowledge graphs and demonstrating how they can be used to further characterize knowledge wealth; (ii) implementing the formal and insight model using Python and making it accessible for broader use; and (iii) conducting a case study on Wikidata classes, illustrating how biases can be identified, how different definitions of wealth impact the imbalance level of a class, and how the composition of wealth varies between classes.
 
-Existing approaches often focus on (...), lacking a way of quantifying the amount of information contained in KGs. However, quantification of the amount of information is important to ensure more effective effort in tackling the imbalance and incompleteness issue within KGs. From the previous example, we already see the wealth of an entity from three different views: wealth based on the cardinality of property, wealth based on types of property, and wealth based on the direction of link. In addressing the aforementioned gap, our study proposes a formal model to define the knowledge wealth in the RDF knowledge graph. Specifically, we focus on three key contributions: (i) introducing three notions of quantifying knowledge wealth for knowledge graphs and demonstrating how they can be used to further characterize knowledge wealth; (ii) implementing the formal and insight model using Python and making it accessible for broader use; and (iii) conducting a case study on Wikidata classes, illustrating how biases can be identified, how different definitions of wealth impact the imbalance level of a class, and how the composition of wealth varies between classes.
+Existing approaches often focus on (...), lacking a way of quantifying the amount of information contained in KGs. However, quantification of the amount of information is important to ensure more effective effort in tackling the imbalance and incompleteness issue within KGs. From the previous example, we already see the wealth of an entity from three different views: wealth based on the cardinality of property, wealth based on types of property, and wealth based on the direction of link. In addressing the aforementioned gap, our study proposes a formal model to define the knowledge wealth in the RDF knowledge graph.
+
+Specifically, we focus on three key contributions: \text{(i)} introducing three notions of quantifying knowledge wealth for knowledge graphs and demonstrating how they can be used to further characterize knowledge wealth; \textit{(ii)} implementing the formal and insight model using Python and making it accessible for broader use; and \textit{(iii)} conducting a case study on Wikidata classes, illustrating how biases can be identified, how different definitions of wealth impact the imbalance level of a class, and how the composition of wealth varies between classes.
+
+The remainder of this paper is organized into the following sections: Section 2 reviews related work on data completeness and knowledge gaps in knowledge graphs, highlighting existing methodologies and their limitations; Section 3 introduces the proposed knowledge wealth analytics framework, detailing its formal model, statistical measures, and implementation; Section 4 presents the use cases and evaluation results, demonstrating the framework's effectiveness in identifying knowledge gaps within Wikidata; and Section 5 discusses the broader implications of the findings, potential improvements, and future research directions before concluding the study.

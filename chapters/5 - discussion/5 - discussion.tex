@@ -8,10 +8,28 @@
 \paragraph{Generality of Framework}
 The framework that is proposed in this study is applicable to any kind of knowledge graph. However, the library that we built for experimentation is specifically for Wikidata, because the query service, structure, and response is very unique for each knowledge graph. If further experimentation is to be conducted for other knowledge graph, then the library needs to be modified.
 
+\paragraph{Scalability}
+% In the Wikidata use case, we performed the analysis on human-related and non-human classes based on the filters that we specified. While conducting analysis on the whole human class (that is, all entites \(?s\) that satisfy the triple \((?s, instanceOf (P31), human (Q5))\) will be insightful, using smaller classes are not without any reason. The reason is the limitation of Wikidata Query Service itself, particularly on query time. The largest class that we get in a single query is the class of American politician with an entity count of 96507. Querying this class required 34 seconds. When we tried to query large classes, for example all politician without filtering their nationalities, we got errors like timeout or out of memory error.
+
+In our Wikidata use case, we analyzed both human-related and non-human classes based on predefined filters. While analyzing the entire human class (i.e., all entities \(s\) that satisfy the triple 
+\((s,instanceOf(P31),human(Q5)))\) would provide valuable insights, we opted for smaller classes due to practical constraints. The primary limitation comes from the Wikidata Query Service itself, particularly its restrictions on query execution time.
+
+The largest class we successfully retrieved in a single query was "American politicians" which contained 96,507 entities and required 34 seconds for query execution. However, when attempting to query significantly larger classes—such as all politicians without filtering by nationality—we encountered system limitations, including timeouts and out-of-memory errors.
+
+For Wikidata or other KGs developer, a potential solution to overcome these limitations is to host them on a more reliable infrastructure with optimized indexing and caching mechanisms. This would allow for faster query execution and improved scalability for large-scale data retrieval.
+
+That said, it is important to note that the analysis performed in this study is non-transactional, meaning it does not require real-time execution. Instead, it is designed for periodic analyses (e.g., monthly or quarterly), where latency constraints and query limitations are less critical. Given this characteristic, our current approach remains viable despite the performance limitations of the Wikidata Query Service.
+
+% - kenapa kita pakai class yang kecil? kenapa ga full human?
+% - jumlah item terbanyak di dalam class = ...
+% - experience tentang pengerjaan, gmn waktu eksekusi, kena timeout dll
+% - Solution: host Wikidata / KGs itu di-host di service yang lebih reliable, memungkinkan query lebih cepat, dll
+% - Solution: analisi yang kita lakukan ini non-transactional, ga mesti tiap detik. sifat analisis lebih ke regular analysis (monthly, quarterly, ...) sehingga latency dan limitation ini ga jadi masalah besar
+
 \paragraph{Issue of Incoming Link}
 Wikidata is an entity-centric knowledge graph which means in the editathon efforts, the subject \(s\) is always be the subject of interest and the starting point to be edited by contributors. It is very unlikely that the opposite approach is done, that is, an object \((o)\) is given and a pair subject and property \((s, p)\) is to be searched. Not only from the contributors, the platform itself does not support the later view. This explains the phenomenon that we observed in \autoref{wealth & gini} regarding outgoing and incoming link. With existing subject-centric point of view, the number of new outgoing link introduced to the knowledge graph will grow in a much higher rate as opposed to incoming link. As a result, incoming link will be very rare, or even only present in certain entites.
 
-\paragraph{Weight of Property}
+\paragraph{Weight of Property (TO BE DELETED)}
 %Content dump for weighted form
 
 % It is intuitive that the measure of bag of properties will always give higher (or at least, equal) amount of wealth compared to the measure of set. Set of property will have an upper bound of number of unique property, while bag of property does not have any upper bound. Moreover, using bag of properties, a large number of triples having the same property may inflate the wealth substantially--though this is not necessarily a problem nor an advantage.
