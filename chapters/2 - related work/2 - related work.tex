@@ -10,40 +10,23 @@
 
 \section{Related Work}
 
+In this section, we present related work in knowledge graph (KG) population, KG completeness, and knowledge gaps. KG population concerns adding more information about entities in a KG, thus enriching the knowledge wealth of such entities. KG completeness deals with ensuring whether sufficient information in a KG is available for the task at hand. Intuitively, when a KG possesses more wealth, it has a better chance of being complete for a given task. Knowledge gaps, on the other hand, focus more on measuring whether knowledge wealth in a KG is accumulated in an imbalanced manner.
+
 \paragraph{KG Population.}
 Mihindukulasooriya~\cite{Mihindukulasooriya24} introduced a tool and a method to populate Wikidata with scholarly information from DBLP, particularly co-authors and proceedings.
-Furthermore, Mihindukulasooriya et al.~\cite{MihindukulasooriyaTDNCP24} argued that Wikidata offers a sustainable approach to providing structured scholarly data and 
-that they developed an LLM-based method to populate Wikidata with conference metadata from unstructured sources.
-They analyzed 105 Semantic Web-related conferences and 
-improved the description of over 6000 Wikidata entities.
-Bolinches and Garijo~\cite{BolinchesG23} made available in Wikidata
-links between software and their related articles through their SALTbot tool.
-In addition to creating a new software item in Wikidata (if not there yet),
-SALTbot will add properties such as ``main subject software''
-and also its inverse, ``described by source article''.
-These initiatives demonstrate that
-improving the quantity in Wikidata is crucial and that
-measuring how such an improvement makes a difference
-(by computing the wealth difference of the before-and-after state) is,
-therefore, a great addition to such efforts.
+Furthermore, Mihindukulasooriya et al.~\cite{MihindukulasooriyaTDNCP24} argued that Wikidata offers a sustainable approach to providing structured scholarly data and that they developed an LLM-based method to populate Wikidata with conference metadata from unstructured sources.
+They analyzed 105 Semantic Web-related conferences and improved the description of over 6000 Wikidata entities. Bolinches and Garijo~\cite{BolinchesG23} made available in Wikidata links between software and their related articles through their SALTbot tool. In addition to creating a new software item in Wikidata (if not there yet), SALTbot will add properties such as ``main subject software'' and also its inverse, ``described by source article''. These initiatives demonstrate that improving the quantity in Wikidata is crucial and that measuring how such an improvement makes a difference (by computing the wealth difference of the before-and-after state) is, therefore, a great addition to such efforts.
 
 \paragraph{KG Completeness.} Wang and Strong~\cite{WangS96} devised a conceptual framework of data quality, highlighting related aspects such as completeness and the appropriate amount of data. Similarly, Zaveri et al.~\cite{ZaveriRMPLA16} conducted a systematic review of Linked Data (LD) quality dimensions, focusing on aspects like relevancy (R2) and completeness.
-Wisesa et al.~\cite{WisesaDKNR19} contributed by developing a tool to profile attribute completeness in Wikidata,
-aligning with initiatives aimed at assessing data quality.
+Wisesa et al.~\cite{WisesaDKNR19} contributed by developing a tool to profile attribute completeness in Wikidata, aligning with initiatives aimed at assessing data quality.
 Issa et al.~\cite{IssaAHCDZ21} provided a comprehensive review of knowledge graph completeness research, identifying seven distinct types of completeness.
 Additionally, Luthfi et al.~\cite{LuthfiDA22} introduced a SHACL-based method to profile completeness in knowledge graphs, further expanding the methodologies available for evaluating data quality.
-In~\cite{XueZ23},
-Xue and Zou surveyed related work on KG quality management. They discovered that
-most of the work focused on accuracy and completeness. In contrast, no mention was made about the work in KG gaps/imbalances.
+In~\cite{XueZ23}, Xue and Zou surveyed related work on KG quality management. They discovered that most of the work focused on accuracy and completeness. In contrast, no mention was made about the work in KG gaps/imbalances.
 
-\paragraph{Knowledge Gaps.} Ramadhana et al.~\cite{RamadhanaDPNRA20}
-designed a tool for analyzing knowledge imbalances.
+\paragraph{Knowledge Gaps.} Ramadhana et al.~\cite{RamadhanaDPNRA20} designed a tool for analyzing knowledge imbalances.
 The tool featured property quantification for classes and Gini index analysis.
 Nevertheless, the tool focused only on Wikidata and did not offer fine-grained measures for wealth and imbalances.
-Ramadizsa et al.~\cite{RamadizsaDNR23} introduced the concept of gap properties that
-helps to characterize class-level knowledge gaps within knowledge graphs.
+Ramadizsa et al.~\cite{RamadizsaDNR23} introduced the concept of gap properties that helps to characterize class-level knowledge gaps within knowledge graphs.
 The framework adapts association rule mining and empirically analyzes property gaps among various Wikidata classes.
 Our work complements both of the work with more general yet more detailed wealth analysis over KGs, including Wikidata.
-Furthermore,
-in~\cite{AbianMS22},
-Abi{\'{a}}n et al.\ examined gaps in Wikidata content, analyzing edit metrics (contributions to Wikidata) in relation to corresponding Wikipedia pageviews (user needs). Their findings suggest that gaps in gender and recency are not driven by internal factors within Wikidata. However, gaps related to socio-economic factors may be partially endogenous to Wikidata.
+Furthermore, in~\cite{AbianMS22}, Abi{\'{a}}n et al.\ examined gaps in Wikidata content, analyzing edit metrics (contributions to Wikidata) in relation to corresponding Wikipedia pageviews (user needs). Their findings suggest that gaps in gender and recency are not driven by internal factors within Wikidata. However, gaps related to socio-economic factors may be partially endogenous to Wikidata.

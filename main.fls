@@ -225,6 +225,9 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/stringenc/se-utf8.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pdfx/8bit.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pdfx/8bit.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pdfx/8bit.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pdfx/8bit.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pdfx/8bit.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pdfx/8bit.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pdftex/glyphtounicode.tex
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pdfx/glyphtounicode-cmr.tex
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pdfx/glyphtounicode-ntx.tex
@@ -329,6 +332,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel/locale/en/babel-engli
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel/locale/en/babel-en.ini
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/libertinus-type1/T1LibertinusSerif-TLF.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/libertinus-type1/T1LibertinusSerif-TLF.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/libertinus-type1/T1LibertinusSerif-TLF.fd
@@ -430,10 +435,6 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/Liber
 INPUT ./main.abs
 INPUT main.abs
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Regular-tlf-t1.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/fontawesome5/fa5free1regular.tfm
 INPUT ./cc-by.pdf
 INPUT ./cc-by.pdf
 INPUT ./cc-by.pdf
@@ -461,6 +462,7 @@ INPUT ./img/Introduction - Wikidata 2.pdf
 INPUT ./img/Introduction - Wikidata 2.pdf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Regular-tlf-t1.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Bold-tlf-t1.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Italic-tlf-t1.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
@@ -495,9 +497,6 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/Libert
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Bold-tlf-t1--base.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSerif-Italic-tlf-t1.vf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Italic-tlf-t1--base.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSerif-Regular-tlf-t1.vf
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Regular-tlf-t1--base.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSerif-Regular-tlf-ts1.vf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Regular-tlf-ts1--base.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_rlktsf.enc
@@ -507,9 +506,14 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/Libert
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Bold-tlf-t1--base.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSans-Regular-tlf-t1.vf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Regular-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSans-Italic-tlf-t1.vf
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Italic-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_hvvyjb.enc
 INPUT ./chapters/2 - related work/2 - related work.tex
 INPUT ./chapters/2 - related work/2 - related work.tex
 INPUT chapters/2 - related work/2 - related work.tex
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSerif-Regular-tlf-t1.vf
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Regular-tlf-t1--base.tfm
 INPUT ./chapters/3 - analytics framework/3 - analytics framework master.tex
 INPUT ./chapters/3 - analytics framework/3 - analytics framework master.tex
 INPUT chapters/3 - analytics framework/3 - analytics framework master.tex
@@ -517,31 +521,31 @@ INPUT ./chapters/3 - analytics framework/31 - formal model.tex
 INPUT ./chapters/3 - analytics framework/31 - formal model.tex
 INPUT chapters/3 - analytics framework/31 - formal model.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Bold-tlf-t1.tfm
+INPUT ./img/Wealth Type 1.png
+INPUT ./img/Wealth Type 1.png
+INPUT ./img/Wealth Type 1.png
+INPUT ./img/Wealth Type 1.png
+INPUT ./img/Wealth Type 2.png
+INPUT ./img/Wealth Type 2.png
+INPUT ./img/Wealth Type 2.png
+INPUT ./img/Wealth Type 2.png
+INPUT ./img/Wealth Type 3.png
+INPUT ./img/Wealth Type 3.png
+INPUT ./img/Wealth Type 3.png
+INPUT ./img/Wealth Type 3.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSans-Bold-tlf-t1.vf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Bold-tlf-t1--base.tfm
-INPUT ./img/Wealth Type 1.png
-INPUT ./img/Wealth Type 1.png
-INPUT ./img/Wealth Type 1.png
-INPUT ./img/Wealth Type 1.png
-INPUT ./img/Wealth Type 2.png
-INPUT ./img/Wealth Type 2.png
-INPUT ./img/Wealth Type 2.png
-INPUT ./img/Wealth Type 2.png
-INPUT ./img/Wealth Type 3.png
-INPUT ./img/Wealth Type 3.png
-INPUT ./img/Wealth Type 3.png
-INPUT ./img/Wealth Type 3.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSerif-Regular-tlf-t1.vf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Regular-tlf-t1--base.tfm
 INPUT ./chapters/3 - analytics framework/32 - insight model.tex
 INPUT ./chapters/3 - analytics framework/32 - insight model.tex
 INPUT chapters/3 - analytics framework/32 - insight model.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Regular-tlf-ts1.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSerif-Regular-tlf-ts1.vf
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Regular-tlf-ts1--base.tfm
 INPUT ./chapters/3 - analytics framework/33 - model application sample.tex
 INPUT ./chapters/3 - analytics framework/33 - model application sample.tex
 INPUT chapters/3 - analytics framework/33 - model application sample.tex
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSerif-Regular-tlf-ts1.vf
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Regular-tlf-ts1--base.tfm
 INPUT ./img/Wealth Weighted.png
 INPUT ./img/Wealth Weighted.png
 INPUT ./img/Wealth Weighted.png
@@ -630,15 +634,14 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_t
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusMono-Regular.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Bold.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Italic.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Regular.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Italic.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Regular.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb

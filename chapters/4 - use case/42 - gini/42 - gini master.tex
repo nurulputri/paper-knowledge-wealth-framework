@@ -1,10 +1,25 @@
-\subsection{Effect of Type of Wealth on Inequality Measure} \label{wealth & gini}
+% \subsection{Effect of Type of Wealth on Inequality Measure} \label{wealth & gini}
+\subsection{Impact of Wealth Type on Knowledge Inequality} \label{wealth & gini}
 
 % \input{chapters/4 - use case/42 - gini/421 - gini bag-set.tex}
 % \input{chapters/4 - use case/42 - gini/422 - gini object-literal-id.tex}
 % \input{chapters/4 - use case/42 - gini/423 - gini outgoing-incoming.tex}
 
-In this subchapter, analysis is done to see how each wealth type affects the level of inequality of Wikidata classes. There are 2 ways this is done--quantitatively using Gini coefficient and qualitatively using Lorenz curve. The analysis is performed on 8 Wikidata classes, in which 4 of them are human-related class while the other 4 are not.
+\begin{table}[!htbp]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{|l p{12cm}|} 
+        \hline
+        \multicolumn{2}{|l|}{\textbf{Impact of Wealth Type on Knowledge Inequality}} \\
+        \hline
+        \textbf{Insight 1:} & Wealth based on the bag of properties is always higher than that based on the set of properties, leading to higher value of Gini coefficient. \\
+        \textbf{Insight 2:} & Wealth measured using incoming links shows significantly higher inequality than outgoing links. Lorenz curves confirm that very few entities have incoming links, while most have none. \\
+        \textbf{Insight 3:} & In general, the order of Gini coefficient values from smallest to largest is: object properties, literal properties, and ID properties. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+In this subchapter, analysis is done to see how each wealth type affects the level of knowledge inequality of Wikidata classes. There are 2 ways this is done--quantitatively using Gini coefficient and qualitatively using Lorenz curve. The analysis is performed on 8 Wikidata classes, in which 4 of them are human-related class while the other 4 are not.
 
 \begin{center}
     \scriptsize

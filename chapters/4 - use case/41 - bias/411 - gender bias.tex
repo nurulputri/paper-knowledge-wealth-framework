@@ -1,7 +1,8 @@
-\paragraph{Gender Bias in Wikidata}
-Gender bias analysis in Wikidata will be performed on 10 Wikidata classes: computer scientist, American singer, American actress/actor, badminton player, businessperson, lawyer, American politician, American writer, American researcher, and American journalist. These classes are chosen to ensure variation in occupations, as gender representation differs across professions. Additionally, six of these classes are limited to American entities to manage scalability, as querying large, global datasets can lead to excessive query time and computational resource constraints. The United States, being a large and well-known country, is expected to provide a broadly reflective sample while keeping the analysis computationally feasible.
+% \paragraph{Gender Bias in Wikidata.}
+\paragraph{Gender-Based Knowledge Gap: Male vs. Female Representation.}
+Gender-based knowledge gap analysis in Wikidata will be performed on 10 Wikidata classes: computer scientist, American singer, American actress/actor, badminton player, businessperson, lawyer, American politician, American writer, American researcher, and American journalist. These classes are chosen to ensure variation in occupations, as gender representation differs across professions. Additionally, six of these classes are limited to American entities to manage scalability, as querying large, global datasets can lead to excessive query time and computational resource constraints. The United States, being a large and well-known country, is expected to provide a broadly reflective sample while keeping the analysis computationally feasible.
 
-To analyze the bias, the first aspect that will be considered is the proportion of each gender in every class. We assume that there are equal numbers of males and females in real-world and this will be the basis to determine if there is any bias in the data. Pearson's chi-square test (goodness-of-fit) is then performed to test the null and alternative hypotheses with significance level of \(\alpha=5\%\) as follows:
+To analyze the gap, the first aspect that will be considered is the proportion of each gender in every class. We assumed that there are equal numbers of males and females in real-world and this will be the basis to determine if there is any gap in the data. Pearson's chi-square test (goodness-of-fit) is then performed to test the null and alternative hypotheses with significance level of \(\alpha=\)5\% as follows:
 
 % \(H_0\): The proportions of males and females in a particular class are equal to the real-world proportion
 
@@ -12,17 +13,17 @@ To analyze the bias, the first aspect that will be considered is the proportion 
     \renewcommand{\arraystretch}{1.3}
     \begin{tabular}{|l p{12cm}|} 
         \hline
-        \multicolumn{2}{|l|}{\textbf{Gender Bias: Entity Count Gap (Pearson's chi-square test)}} \\
+        \multicolumn{2}{|l|}{\textbf{Gender-Based Knowledge Gap: Entity Count Gap (Pearson's chi-square test)}} \\
         \hline
-        \textbf{$H_0$} & The proportions of males and females in a particular class are equal to the real-world proportion. \\
-        \textbf{$H_1$} & The proportions of males and females in a particular class are not equal to the real-world proportion. \\
+        \textbf{$H_0$} & The proportions of males and females in a particular class are equal to the assumed real-world proportion of 50\%-50\%. \\
+        \textbf{$H_1$} & The proportions of males and females in a particular class are not equal to the assumed real-world proportion of 50\%-50\%. \\
+        \hline
+        \textbf{Insight 1:} & Across all 10 classes, male entities significantly outnumber female entities in all classes. This suggests a systematic underrepresentation of female entities in Wikidata. \\
         \hline
     \end{tabular}
 \end{table}
 
-From \autoref{tab:gender - entity count}, we can see that there are more male entities than female entities in all of the classes. In terms of entity count, the gender gaps in some classes such as American singer, American actress/actor, badminton player, and American writer, are slim. The gender gaps in some other classes are huge, and it can be observed in the classes of computer scientist, businessperson, lawyer, American politician, journalist, and researcher. This phenomenon can also be easily identified through visualization, as exhibited in \autoref{fig:bias histogram-computer scientist}, where the histogram of the female subclass is much smaller compared to the male. Looking at the chi-square test result, as p-value is well below the chosen significance level, the null hypothesis is rejected in all classes. Hence, we consider the difference of entity count to be significant and conclude that the proportions of males and females in each Wikidata class are not the same as the assumed real-world proportion of 50\%-50\%.
-
-However, it is arguable that, for some classes, the gap in entity count between both genders is expected because, in reality, there are more men than women in the workforce, especially in particular fields such as engineering. As a consequence, it is not reasonable if we expect to have an equal number of males and females entities in Wikidata. Therefore, entity count may not be a good measure of bias because of the nature of the data itself. To address this, we need to evaluate other metrics which can quantify the bias on entity-level.
+% \vspace{-3em}
 
 \begin{center}
     \scriptsize
@@ -58,6 +59,10 @@ However, it is arguable that, for some classes, the gap in entity count between 
     }
 \end{center}
 
+From \autoref{tab:gender - entity count}, we can see that there are more male entities than female entities in all of the classes. In terms of entity count, the gender gaps in some classes such as American singer, American actress/actor, badminton player, and American writer, are slim. The gender gaps in some other classes are huge, and it can be observed in the classes of computer scientist, businessperson, lawyer, American politician, journalist, and researcher. This phenomenon can also be easily identified through visualization, as exhibited in \autoref{fig:bias histogram-computer scientist}, where the histogram of the female subclass is much smaller compared to the male. Looking at the chi-square test result, as p-value is well below the chosen significance level, the null hypothesis is rejected in all classes. Hence, we considered the difference of entity count to be significant and conclude that the proportions of males and females in each Wikidata class are not the same as the assumed real-world proportion of 50\%-50\%.
+
+However, it is arguable that, for some classes, the gap in entity count between both genders is expected because, in reality, there are more men than women in the workforce, especially in particular fields such as engineering. As a consequence, it is not reasonable if we expect to have an equal number of males and females entities in Wikidata. Therefore, entity count may not be a good measure of gap because of the nature of the data itself. To address this, we need to evaluate other metrics which can quantify the gap at entity-level.
+
 The next metrics to be considered are the measures of central tendency and dispersion to see where the wealth distribution is concentrated and how the data spread.
 
 \begin{table}[h]
@@ -65,16 +70,15 @@ The next metrics to be considered are the measures of central tendency and dispe
     \renewcommand{\arraystretch}{1.3}
     \begin{tabular}{|l p{12cm}|} 
         \hline
-        \multicolumn{2}{|l|}{\textbf{Gender Bias: Measures of Central Tendency and Dispersion}} \\
+        \multicolumn{2}{|l|}{\textbf{Gender-Based Knowledge Gap: Measures of Central Tendency and Dispersion}} \\
         \hline
-        \textbf{Insight 1:} & A ratio value of 1 indicates a balanced distribution, where the group's actual share of wealth aligns with its expected share under equal representation. \\
-        \textbf{Insight 2:} & On average across all 8 classes, the bottom six quantiles (i.e., the lower wealth segments) are predominantly composed of female entities, while the top four quantiles (i.e., the wealthier segments) are predominantly male. \\
-        \textbf{Insight 3:} & At the individual class level, 6 out of 8 classes show male dominance in the upper wealth quantiles. The exceptions are the businessperson and badminton player classes. \\
+        \textbf{Insight 1:} & For all 10 classes, female values for mean, median, and mode are generally lower than those of males. Only in the American Singer class does a female (Madonna) appear as the richest individual. \\
+        \textbf{Insight 2:} & Positive value of skewness and high value of kurtosis are observed across the board, indicating right-skewed distribution and frequent extreme outliers. \\
         \hline
     \end{tabular}
 \end{table}
 
-From \autoref{tab:gender - central tendency}, female entities generally have lower values of measure of central tendency (mean, median, mode). These characteristics can also be observed from the histogram in \autoref{fig:bias histogram-computer scientist}: female histograms’ peak and dense area are located on the left of the male’s. From \autoref{tab:gender - dispersion and symmetry}, the range of property count of females is generally also lower than males. However, there are some classes in which the richest entity is a female. An example for this is the class of American Singer, which is shown by \autoref{fig:bias histogram-american singer}. Though the value of mean, median, and mode of count of properties are lower for female compared to male, the richest entity on that class is a female entity \textit{Madonna} (Q1744) with bag of property count of 703, with a significant difference with \textit{Michael Jackson} (Q2831) with bag of property count of 585. We also observed positive values of skewness (skewness > 0) and high kurtosis values (kurtosis > 3) in all classes, denoting the wealth distribution is right skewed and leptokurtic.
+% \vspace{-3em}
 
 \begin{center}
     \scriptsize
@@ -109,6 +113,7 @@ From \autoref{tab:gender - central tendency}, female entities generally have low
     }
 \end{center}
 
+% \vspace{-2em}
 
 \begin{center}
     \scriptsize
@@ -142,6 +147,10 @@ From \autoref{tab:gender - central tendency}, female entities generally have low
     }
 \end{center}
 
+From \autoref{tab:gender - central tendency}, female entities generally have lower values of measure of central tendency (mean, median, mode). These characteristics can also be observed from the histogram in \autoref{fig:bias histogram-computer scientist}: female histograms’ peak and dense area are located on the left of the male’s. However, there are some classes in which the richest entity is a female. An example for this is the class of American Singer, which is shown by \autoref{fig:bias histogram-american singer}. Though the value of mean, median, and mode of count of properties are lower for female compared to male, the richest entity on that class is a female entity \textit{Madonna} (Q1744) with bag of property count of 703, with a significant difference with \textit{Michael Jackson} (Q2831) with bag of property count of 585.
+
+From \autoref{tab:gender - dispersion and symmetry}, we also observed positive values of skewness (skewness > 0) and high kurtosis values (kurtosis > 3) in all classes, denoting the wealth distribution is right-skewed and leptokurtic. The high skewness values indicate that a small number of individuals accumulate disproportionately large property counts. Moreover, high kurtosis values across all genders suggest wealth distributions with heavy tails, meaning that extreme outliers are relatively frequent. Furthermore, we saw higher variability among males, as reflected in their generally wider range of property counts and higher standard deviations. These statistical properties point toward a more unequal wealth distribution among male entities, while females tend to cluster within a lower and more compressed wealth range.
+
 \begin{figure}[!h]
 \centering 
 \subfloat[Histogram and Marginal Distribution Plot of Wealth for Class Computer Scientist\label{fig:bias histogram-computer scientist}]{%
@@ -156,7 +165,7 @@ From \autoref{tab:gender - central tendency}, female entities generally have low
 
 \end{figure}
 
-At a glance we saw female classes are poorer compared to the male classes. To test this, we will use t-test and Welch's test. First, we performed F-test to check if the male and female classes have equal variance. The result of F-test is then used to determine the appropiate test to be used in each class. Those with equal variance, i.e., if the p-value is more than 0.05, will use t-test; otherwise Welch's test is used. Then, we performed the tests to verify the null and alternative hypotheses with significance level of \(\alpha=5\%\) as follows:
+At a glance we saw female classes are poorer compared to the male classes. To test this, we used t-test and Welch's test. First, we performed F-test to check if the male and female classes have equal variance. The result of F-test is then used to determine the appropiate test to be used in each class. Those with equal variance, i.e., if the p-value is more than 0.05, will use t-test; otherwise Welch's test is used. Then, we performed the appropiate tests to verify the null and alternative hypotheses with significance level of \(\alpha=5\%\) as follows:
 
 % \(H_0\): The means of wealth of males and females in a particular class are equal
 
@@ -167,15 +176,17 @@ At a glance we saw female classes are poorer compared to the male classes. To te
     \renewcommand{\arraystretch}{1.3}
     \begin{tabular}{|l p{12cm}|} 
         \hline
-        \multicolumn{2}{|l|}{\textbf{Gender Bias: Mean of Wealth Gap (two-sided t-test and Welch's test)}} \\
+        \multicolumn{2}{|l|}{\textbf{Gender-Based Knowledge Gap: Mean of Wealth Gap (two-sided t-test and Welch's test)}} \\
         \hline
         \textbf{$H_0$} & The means of wealth of males and females in a particular class are equal. \\
         \textbf{$H_1$} & The means of wealth of males and females in a particular class are not equal. \\
         \hline
+        \textbf{Insight 1:} & 9 out of 10 classes shows unequal mean, with 7 of them are in favor of males. \\
+        \hline
     \end{tabular}
 \end{table}
 
-From the test results in \autoref{tab:gender - mean test}, we rejected the null hypothesis in 9 out of 10 class--American singer being the only exception. 7 out of 9 classes are in favor of male. The other 2 classes, American singer and . We concluded that female classes are more likely to have smaller means than male classes.
+% \vspace{-3em}
 
 \begin{center}
     \scriptsize
@@ -211,16 +222,18 @@ From the test results in \autoref{tab:gender - mean test}, we rejected the null 
     }
 \end{center}
 
-Entity count alone might not be a reliable measure of bias because the nature of the data itself. For instance, in real world, the number of male computer scientists is greater than that of female computer scientists. Therefore, expecting an equal number of male and female entities in Wikidata for this class would be unreasonable. Similarly, measures of central tendency—such as the mean or median—may offer a general overview but fail to capture the distributional nuances of individual entities within a class. To address this, a more holistic metric is needed.
+Based on F-test on the 10 classes, variance between male and female subclasses was found to be unequal (p < 0.05) in 4 classes, requiring the use of Welch’s test. From the test results in \autoref{tab:gender - mean test}, we rejected the null hypothesis in 9 out of 10 class--American singer being the only exception with p-value > 0.05. Among them, 7 classes' means are in favor of male. The other 2 classes, badminton player and businessperson, deviate from this trend, where Welch’s test results indicate that the female subclasses actually have a higher mean wealth. The extremely small p-values in classes such as American writer and lawyer indicate a very strong statistical signal that the mean wealth differs significantly between genders. Finally, we may conclude that female classes are more likely to have smaller means than male classes, although certain classes may reflect localized or domain-specific representation imbalances. These results reinforce our earlier observations that female entities tend to be poorer in terms of knowledge wealth.
 
-Here, we introduce a new measure: the ratio of top \(x\)\% representation (of male/female) relative to expectation. The value of expectation of a gender in a class is equal to the percentage of that particular in the class. Top \(x\)\% male relative to expectation is the ratio of percentage of male entities in the top \(x\)\% to the expectation. Similarly, top \(x\)\% female relative to expectation is the ratio of percentage of female entities in the top \(x\)\% to the expectation.
+Entity count alone might not be a reliable measure of gap because the nature of the data itself. For instance, in real world, the number of male computer scientists is greater than that of female computer scientists. Therefore, expecting an equal number of male and female entities in Wikidata for this class would be unreasonable. Similarly, measures of central tendency—such as the mean or median—may offer a general overview but fail to capture the distributional nuances of individual entities within a class. To address this, a more holistic metric is needed.
+
+Here, we introduced a new measure: the ratio of top \(x\)\% representation (of male/female) relative to expectation. The value of expectation of a gender in a class is equal to the percentage of that particular in the class. Top \(x\)\% male relative to expectation is the ratio of percentage of male entities in the top \(x\)\% to the expectation. Similarly, top \(x\)\% female relative to expectation is the ratio of percentage of female entities in the top \(x\)\% to the expectation.
 
 \begin{table}[h]
     \centering
     \renewcommand{\arraystretch}{1.3}
     \begin{tabular}{|l p{12cm}|} 
         \hline
-        \multicolumn{2}{|l|}{\textbf{Gender Bias: Relative Expectation Ratios}} \\
+        \multicolumn{2}{|l|}{\textbf{Gender-Based Knowledge Gap: Relative Expectation Ratios}} \\
         \hline
         \textbf{Insight 1:} & A ratio value of 1 indicates a balanced distribution, where the group's actual share of wealth aligns with its expected share under equal representation. \\
         \textbf{Insight 2:} & On average across all 8 classes, the bottom six quantiles (i.e., the lower wealth segments) are predominantly composed of female entities, while the top four quantiles (i.e., the wealthier segments) are predominantly male. \\
@@ -229,22 +242,24 @@ Here, we introduce a new measure: the ratio of top \(x\)\% representation (of ma
     \end{tabular}
 \end{table}
 
-When the shape of distribution of male and female of a class is the same (in other word, the wealth is distributed equivalently to male and female entities), then the value of top \(x\)\% relative to expectation should be 1 for both male and female subclasses. A value higher than 1 indicates domination by that particular gender. Conversely, a value lower than 1 indicates underrepresentation.
+% \vspace{-2em}
 
 \begin{figure}[!h]
-\centering 
-\subfloat[Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average
-\label{fig:test1}]{%
-  \includegraphics[clip,width=1.0\columnwidth]{Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Gender}%
-}
-
-\subfloat[Ratio of Class Wealth to Expectation per Quantile - All Classes Average\label{fig:test2}]{%
-  \includegraphics[clip,width=1.0\columnwidth]{Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender}%
-}
-
-\caption{Ratio of each gender wealth to expectaion} \label{fig:gender - ratio of gender wealth to expectation}
-
+    \centering 
+    \subfloat[Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average
+    \label{fig:test1}]{%
+      \includegraphics[clip,width=1.0\columnwidth]{Ratio of Class Wealth to Expectation per Cumulative Top Percentage - All Classes Average - Gender}%
+    }
+    
+    \subfloat[Ratio of Class Wealth to Expectation per Quantile - All Classes Average\label{fig:test2}]{%
+      \includegraphics[clip,width=1.0\columnwidth]{Ratio of Class Wealth to Expectation per Quantile - All Classes Average - Gender}%
+    }
+    
+    \caption{Ratio of each gender wealth to expectaion} \label{fig:gender - ratio of gender wealth to expectation}
+    
 \end{figure}
+
+When the shape of distribution of male and female of a class is the same (in other word, the wealth is distributed equivalently to male and female entities), then the value of top \(x\)\% relative to expectation should be 1 for both male and female subclasses. A value higher than 1 indicates domination by that particular gender. Conversely, a value lower than 1 indicates underrepresentation.
 
 From \autoref{fig:gender - ratio of gender wealth to expectation} the value of ratio between top \(x\)\% potion to the expectation in the above tables, we can see that on average, the rich entities are dominated by male. Exceptions are held for 2 classes, that is classes businessperson, and badminton player. In the businessperson class, female dominance in the top quantile (Q10) creates an exception. However, quantiles 2–9 are predominantly male-dominated, albeit only slightly and very close to the balance line. Meanwhile, the lowest quantile (Q1) is significantly female-dominated. The badminton player class deviates from all other classes by exhibiting a distinct zig-zag pattern across quantiles, indicating alternating dominance between males and females, without a clear upward or downward trend.
 

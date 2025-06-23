@@ -1,0 +1,54 @@
+\paragraph{Weight of Property (FULL VERSION)}
+%Content dump for weighted form
+
+% It is intuitive that the measure of bag of properties will always give higher (or at least, equal) amount of wealth compared to the measure of set. Set of property will have an upper bound of number of unique property, while bag of property does not have any upper bound. Moreover, using bag of properties, a large number of triples having the same property may inflate the wealth substantially--though this is not necessarily a problem nor an advantage.
+
+Set of properties might be more suitable if the main concern is the presence of properties, instead of the abundance of information it contains. We will take \textit{William Shakespeare} (Q692) in Wikidata as an example. It is reasonable if property like  \textit{date of birth} (P569) to be treated using set of properties, but for a well-known playwright and poet, we shall expect the property \textit{notable work} (P800) to incorporate all or most of his well-known works. If only few works registered in \(G\) despite he has dozens of works, then we might conclude the entity is poor. For this case, treating the property using the notion of set is not preferable because it will fail to capture the aforementioned poor condition, while blatantly using bag of properties might skew the wealth amount.
+
+Due to this, the notion of (non-)uniqueness can be extended to a weighted form. The weight is given independently for each property and can be defined in such a way that is most appropriate for the nature of the property. Example of weight is inverse of median of property count of each entity.
+
+Let \(h_{p_i}\) be the weight of property \(p_i\) in graph \(G\). Let \(N_{bag}(s,G,p_i)\) be a set that comprises all pair  \((p_i,o)\), that is, property \(p_i\) and an object \(o\) that is connected to \(s\). Then \(W_{weighted}(s, G)\) is the sum of \(N_{bag}(s,G,p_i)\) multiplied by the associated weight \(h_{p_i}\).
+
+% \textit{how can we formalize wi to be the function of set(amount of pi in class C in G)??}
+
+% \[
+%     \forall p_i, h_i = f_i(....)
+% \]
+\[
+    N_{bag}(s,G,p_i) = \{(p_i, o) | (s, p_i, o) \in G\}
+\]
+\[
+    W_{weighted}(s, G) = \sum_i |N_{bag}(s,G,p_i)| * h_{p_i}
+\]
+
+Using \autoref{fig:wealth-weighted}, we can show how the notion of weighted wealth can be calculated. Let's define \(h_{p_1} = 1/median\) and \(h_{p_2} = 1\). For property \(p_1\), \(\{1, 2, 2, 4\}\) is the sorted amount of information contributed from \(p_1\) in each individual entity from \(s_1\) to \(s_4\), from which we get \(h_{p_1} = 1/median = 1/2\). With the above definition, \(W_{weighted}(s_1, G) = 2\), \(W_{weighted}(s_2, G) = 2\), \(W_{weighted}(s_3, G) = 3.5\), \(W_{weighted}(s_4, G) = 1.5\).
+
+Another phenomena that should also be considered is that an entity might have several occurrences of the same property, but this property might just be 'trivial'. This is similar to a document having a lot of 'the' or 'a' (stopwords). Conversely, an entity might just have a single occurrence of a property, but it is a non-trivial one. Perhaps, the property is a highly relevant one for the entity's class. For example, \textit{time period} (P2348) for \textit{William Shakespeare} (Q692) will be a highly relevant one for prominent poets. However, the property \textit{sibling} (P3373) might not be too relevant for Shakespeare's career. One idea to handle such trivial is to regard those porperties using the notion of set of properties--thus we care only on its existence rather than its actual count--or, we can use threshold function to set a tolerance for how much of such trivial we allow.
+
+% =====> OR (alternative of weighted, or generalized form of Wealth based on the (non-)uniqueness of individual properties)
+
+% =====> \(T_i\) is a multiset \(T_i = ... \) -> isinya list semua kontribusi wealth dari property \(p_i\) pada seluruh entity \(S\) pada class \(C\) di graph \(G\) -> keuntungannya disini kita jadi bisa punya fungsi konstan, sehingga bisa catter definisi set, bag, dan weighted secara bersamaan.
+
+Thus, the notion of (non-)uniqueness can be generalized to accommodate the bag, set, and weighted concept. Let \(s_1\), \(s_2\), ... \(s_m\) be \(m\) distinct entities in graph \(G\), which all of them collectively create a class \(C\). Let \(N_{bag}(s,G,p_i)\) be a set that comprises all pair of a particular property \(p_i\) and object, \((p_i,o)\), that is connected to \(s\). We define \(T_{C,p_i}\) a multiset consisted of the number of non-unique properties of each entity of \(C\) contributed from property \(p_i\), i.e., multiset of cardinality of \(N_{bag}(s,G,p_i)\) for all \(s\) in \(C\). For each \(p_i\), let \(f_{p_i}\) be a multivariate function with 2 arguments: \(T_{C,p_i}\) and \(N_{bag}(s,G,p_i)\). \(w_{p_i}\) is the amount of wealth of \(s\) attributed from property \(p_i\), which is calculated by function \(f_{p_i}\). Then \(W_{}(s, G)\) is the sum of \(w_{p_i}\).
+
+
+\[
+    N_{bag}(s,G,p_i) = \{(p_i,o) | (s_j, p_i, o) \in G\}
+\]
+\[
+    T_{C,p_i} = \{|N_{bag}(s,G,p_i)|\ | s \in C\}
+\]
+\[
+    w_{p_i} = f_{p_i}(T_{C,p_i}, |N_{bag}(s,G,p_i)|)
+\]
+\[
+    W_{}(s, G) = \sum_i w_{p_i}
+\]
+
+Using \autoref{fig:wealth-weighted}, we can show how the generalized form can be utilized. From the definition, we get \(T_{C,p_1} = \{2, 2, 5, 1\}\) and \(T_{C,p_2} = \{1, 1, 1, 1\}\). Property \(p_1\) illustrates the former issue of trivial. Here, we define $f_{p_1}(x,y) = \begin{cases}
+      x & \text{if }x \leq 1 \\
+      \frac{x}{2} + 1 & \text{if }1 < x \leq 4 \\
+      3 & \text{if }x > 4
+    \end{cases}\, $.
+For \(p_2\), we want to handle it using the notion of set of properties, thus we define it using a constant function \(f_{p_2}(x,y) = 1\).
+With the above definition, \(W_{}(s_1, G) = 3\), \(W_{}(s_2, G) = 3\), \(W_{}(s_3, G) = 4\), \(W_{}(s_4, G) = 2\).

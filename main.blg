@@ -9,45 +9,45 @@ Warning--empty pages in Mihindukulasooriya24
 Warning--empty pages in BolinchesG23
 Warning--empty pages in LuthfiDA22
 Warning--empty pages in RamadizsaDNR23
-You've used 16 entries,
+You've used 17 entries,
             2918 wiz_defined-function locations,
-            771 strings with 10536 characters,
-and the built_in function-call counts, 12996 in all, are:
-= -- 902
-> -- 573
+            778 strings with 10728 characters,
+and the built_in function-call counts, 13549 in all, are:
+= -- 941
+> -- 600
 < -- 18
-+ -- 209
-- -- 191
-* -- 1720
-:= -- 1736
-add.period$ -- 39
-call.type$ -- 16
-change.case$ -- 147
-chr.to.int$ -- 16
-cite$ -- 23
-duplicate$ -- 981
-empty$ -- 918
-format.name$ -- 250
-if$ -- 2405
++ -- 219
+- -- 200
+* -- 1787
+:= -- 1816
+add.period$ -- 41
+call.type$ -- 17
+change.case$ -- 156
+chr.to.int$ -- 17
+cite$ -- 24
+duplicate$ -- 1025
+empty$ -- 954
+format.name$ -- 262
+if$ -- 2503
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 214
-newline$ -- 91
-num.names$ -- 76
-pop$ -- 292
+missing$ -- 222
+newline$ -- 94
+num.names$ -- 80
+pop$ -- 308
 preamble$ -- 1
-purify$ -- 131
+purify$ -- 139
 quote$ -- 0
-skip$ -- 232
+skip$ -- 242
 stack$ -- 0
-substring$ -- 446
-swap$ -- 876
+substring$ -- 460
+swap$ -- 906
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 141
+type$ -- 150
 warning$ -- 5
-while$ -- 75
+while$ -- 78
 width$ -- 0
-write$ -- 259
+write$ -- 271
 (There were 5 warnings)

@@ -26,6 +26,7 @@
 \usepackage{booktabs}  % For professional table formatting
 \usepackage{tabularx}  % For flexible column width
 \usepackage{array}     % For better column formatting
+\usepackage{float}
 
 \addto\extrasenglish{
   \def\subsectionautorefname{Subsection}
@@ -55,12 +56,13 @@
 
 %%
 %% This command is for the conference information
-\conference{To be decided}
+% \conference{To be decided}
+\conference{}
 
 %%
 %% The "title" command
 % \title{Quantifying Knowledge Wealth in Knowledge Graphs: A Case Study of Wikidata}
-\title{How Quantifying Knowledge Wealth Reveals Knowledge Gap: A Case Study of Wikidata}
+\title{Quantifying Knowledge Wealth to Reveal Knowledge Gaps: A Case Study of Wikidata}
 
 % \tnotemark[1]
 % \tnotetext[1]{You can use this document as the template for preparing your
@@ -69,37 +71,31 @@
 %%
 %% The "author" command and its associated commands are used to define
 %% the authors and their affiliations.
-\author[1]{Nurul Srianda Putri}[%
-% orcid=0000-0002-0877-7063,
-email=nurul.srianda@ui.ac.id,
-% url=https://yamadharma.github.io/,
-]
-% \cormark[1]
-% \fnmark[1]
-\author[1]{Fariz Darari}[%
-% orcid=0000-0002-0877-7063,
-email=tbd@tbd.com,
-% url=https://yamadharma.github.io/,
-]
-% \cormark[1]
-% \fnmark[1]
-\address[1]{TBD}
 
-\author[2]{TBD}[%
+% \cormark[1]
+% \fnmark[1]
+\author[1]{Authors}[%
+% orcid=,
+% email=tbd@tbd.com,
+url=,
+]
+% \cormark[1]
+% \fnmark[1]
+\address[1]{Affiliations}
+
+% \author[2]{TBD}[%
 % orcid=0000-0001-7116-9338,
-email=tbd@tbd.com,
-% url=https://kmitd.github.io/ilaria/,
-]
+% email=tbd@tbd.com,
+% url=,]
 % \fnmark[1]
-\address[2]{TBD}
+% \address[2]{TBD}
 
-\author[3]{TBD}[%
-% orcid=0000-0002-9421-8566,
-email=tbd@tbd.com,
-% url=http://conceptbase.sourceforge.net/mjf/,
-]
+% \author[3]{TBD}[%
+% orcid=,
+% email=tbd@tbd.com,
+% url=,]
 % \fnmark[1]
-\address[3]{TBD}
+% \address[3]{TBD}
 
 %% Footnotes
 % \cortext[1]{Corresponding author.}
@@ -110,16 +106,18 @@ email=tbd@tbd.com,
 %% article.
 \begin{abstract}
 % Along with the rapid development of data volumes, the need for machine-readable data is inevitable. As a result, the use of knowledge graph data structures becomes more popular. With its development, quality aspects of a knowledge graph need to be considered, one of which is knowledge wealth: the amount of information contained in a knowledge graph. A high level of knowledge wealth in a knowledge graph may indicate the high quality of a knowledge graph; conversely, a low level of knowledge wealth can be a sign of poor quality of a knowledge graph. However, there is no formal way to define knowledge wealth and how to measure and analyze it. This study proposes a framework to analyze knowledge wealth and the level of knowledge imbalance in the RDF knowledge graph by seeing how the knowledge wealth of an entity class is spread over the knowledge graph using statistical measures and visualization. To evaluate this framework, some use cases were conducted on several classes on Wikidata to detect bias as well as to explore how different definitions of type of wealth impact the magnitude of the Gini coefficient. It is hoped that the results of this study can assist in researching knowledge wealth in the knowledge graph and be used to optimize the efforts of editing and developing knowledge graph projects by the contributors.
-The increasing volume of data has amplified the demand for structured, machine-readable information, making knowledge graphs essential for organizing and storing knowledge. One key aspect of knowledge graph quality is knowledge wealth, which represents the amount of information an entity possess. A higher knowledge wealth suggests a more informative and robust knowledge graph, whereas a low wealth level indicates gaps and potential biases. However, there is no standardized method to quantify and analyze knowledge wealth. This study introduces a framework to measure knowledge wealth and assess knowledge imbalance within knowledge graphs, and focusing on Wikidata as a case study. The proposed approach employs statistical measures and visualizations to analyze the distribution of knowledge wealth across entity classes. Through various use cases, the study demonstrates how disparities in knowledge representation impact balance in data. The framework also examines how different definitions of knowledge wealth influence inequality measurements, such as the Gini coefficient and Lorenz curves. The findings provide valuable insights for knowledge graph contributors, assisting in optimizing the efforts of editathon and developing knowledge graph projects by the contributors and reducing information imbalances.
+The increasing volume of data has amplified the demand for structured, machine-readable information, making knowledge graphs essential for organizing and storing knowledge. Understanding and ensuring the quality of knowledge graphs is essential to improving their fairness and usability. One key aspect of knowledge graph quality is knowledge wealth, which represents the amount of information an entity possess. A higher knowledge wealth suggests a more informative and robust knowledge graph, whereas a low wealth level indicates gaps and potential biases. However, there is no standardized method to quantify and analyze knowledge wealth. This study introduces a novel framework for quantifying knowledge wealth and assessing knowledge gap within knowledge graphs, and focuses on Wikidata as a case study. The proposed approach formalizes three notions of knowledge wealth based on property cardinality, property type, and link direction, and employs statistical measures and visualizations, including metrics such as the Gini coefficient and Lorenz curves, to analyze the distribution of knowledge wealth across entity classes. We also develop a Python-based implementation that supports both analysis and insight generation. Through empirical evaluation, we reveal significant knowledge gaps across gender (males vs. female entities) and geographic regions (western vs. non-western entities). We also examine how different definitions of knowledge wealth influence inequality measurements. Additionally, we uncover a structural gap across property types, where certain properties (e.g., object, literal, ID) contribute unequally to entity wealth, leading to systemic imbalances. Our findings offer valuable insights for identifying underrepresented entities and support data enrichment efforts aimed at closing knowledge gaps in open KGs.
+% Through various use cases, the study demonstrates how disparities in knowledge representation impact balance in data. The framework also examines how different definitions of knowledge wealth influence inequality measurements, such as the Gini coefficient and Lorenz curves. The findings provide valuable insights for knowledge graph contributors, assisting in optimizing the efforts of editathon and developing knowledge graph projects by the contributors and reducing information imbalances.
 \end{abstract}
 
 %%
 %% Keywords. The author(s) should pick words that accurately describe
 %% the work being presented. Separate the keywords with commas.
 \begin{keywords}
-  Knowledge graphs \sep
+  Knowledge graph \sep
   knowledge wealth \sep
-  knowledge imbalance \sep
+  % knowledge imbalance \sep
+  knowledge gap \sep
   data quality \sep
   Wikidata
 \end{keywords}
